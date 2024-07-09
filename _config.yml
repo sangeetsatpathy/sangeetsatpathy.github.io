@@ -21,9 +21,9 @@ repository               : "sangeetsatpathy/sangeetsatpathy.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "IMG_2383.png"
   name             : "Sangeet Satpathy"
-  pronouns         : # example: "she/her"  
+  pronouns         : "he/him"  
   bio              : "An aspiring engineer who hopes to leverage his electronics, engineering, robotics, math, physics, chemistry  and programming skills to solve real world problems."
   location         : "San Francisco Bay Area, California"
   employer         : "Henry M. Gunn High School"

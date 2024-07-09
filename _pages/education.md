@@ -5,7 +5,7 @@ permalink: /education/
 author_profile: true
 ---
 
-**Henry M. Gunn High School, Palo Alto, CA    &nbsp;&nbsp;  \| &nbsp;&nbsp; High School Diploma  &nbsp;&nbsp;   \| &nbsp;&nbsp;  August 2021 – May 2025**
+**A. Henry M. Gunn High School, Palo Alto, CA    &nbsp;&nbsp;  \| &nbsp;&nbsp; High School Diploma  &nbsp;&nbsp;   \| &nbsp;&nbsp;  August 2021 – May 2025**
 
 *Unweighted GPA: 4  \| Weighted GPA: 4.40*
 
@@ -60,7 +60,7 @@ author_profile: true
  Member of French National Honor Society (Société Honoraire de Français), Feb 2022 - Present 
 
 
-**Foothill College, Los Altos Hills, CA  &nbsp;&nbsp;  \| &nbsp;&nbsp;  Dual Enrollment		 &nbsp;&nbsp;     \|          &nbsp;&nbsp;                       Aug 2021 – May 2025**
+**B. Foothill College, Los Altos Hills, CA  &nbsp;&nbsp;  \| &nbsp;&nbsp;  Dual Enrollment		 &nbsp;&nbsp;     \|          &nbsp;&nbsp;                       Aug 2021 – May 2025**
 
 *GPA: 4  \| Dean’s List - Fall 2021, Spring 2022, Winter 2023, Fall 2023, Winter 2024*
 
@@ -110,7 +110,7 @@ author_profile: true
 <ul>
 </ul>
 
-**Certificates**
+**C. Certificates**
 <ul>
 <li> <a href="https://naf.org/our-approach/naftrack">NAFTrack Certificate  - Engineering  </a>(expected May 2025, all  requirements completed  except high school graduation)</li>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text">Certificate of Achievement in Software Development in C++</a>, Issued by Foothill College,  December 2023 </li>
@@ -122,26 +122,36 @@ author_profile: true
 
 </ul>
 
-**Test Scores**
+**D. Test Scores**
 
-SAT (June 2024): 1560/1600
+<ul>
 
-PSAT (October 2023): 1500/1520
+<li>SAT (June 2024): 1560/1600</li>
+
+<li>PSAT (October 2023): 1500/1520</li>
+
+
+
+
+<li>AP Exams </li>
+
 
 <details>
-<summary>
-AP Exams:
-</summary>
-May 2024:
+<summary>May 2024:</summary>
 <ul>
 <li>AP Chemistry: 5/5</li>
 <li>AP US History: 5/5</li>
 <li>AP Calculus BC: 5/5</li>
 </ul>
+</details>
 
-May 2023:
+<details>
+
+<summary>May 2023: </summary>
 <ul>
 <li>AP Computer Science A: 5/5</li>
 <li>AP Statistics: 5/5</li>
 </ul>
 </details>
+
+</ul>
