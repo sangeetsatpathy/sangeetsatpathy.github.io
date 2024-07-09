@@ -121,3 +121,27 @@ author_profile: true
 <li> <a href="https://www.padi.com/courses/open-water-diver">PADI Open Water Diver Certification</a>, Issued by PADI, August 2019</li>
 
 </ul>
+
+**Test Scores**
+
+SAT (June 2024): 1560/1600
+
+PSAT (October 2023): 1500/1520
+
+<details>
+<summary>
+AP Exams:
+</summary>
+May 2024:
+<ul>
+<li>AP Chemistry: 5/5</li>
+<li>AP US History: 5/5</li>
+<li>AP Calculus BC: 5/5</li>
+</ul>
+
+May 2023:
+<ul>
+<li>AP Computer Science A: 5/5</li>
+<li>AP Statistics: 5/5</li>
+</ul>
+</details>
