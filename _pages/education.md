@@ -56,8 +56,9 @@ author_profile: true
 </ul>
 </details>
 
-  Gunn High School Sports Team:  Track & Field (Spring 2023, Spring 2022)
- Member of French National Honor Society (Société Honoraire de Français), Feb 2022 - Present 
+1.  Member of French National Honor Society (Société Honoraire de Français), Feb 2022 - Present 
+<br>
+2. Gunn High School Sports Team:  Track & Field (Spring 2023, Spring 2022)
 
 
 **B. Foothill College, Los Altos Hills, CA  &nbsp;&nbsp;  \| &nbsp;&nbsp;  Dual Enrollment		 &nbsp;&nbsp;     \|          &nbsp;&nbsp;                       Aug 2021 – May 2025**
@@ -135,9 +136,10 @@ author_profile: true
 
 <li>AP Exams </li>
 
+Received a score on 5/5 on all AP exams taken till date.
 
 <details>
-<summary>May 2024:</summary>
+<summary>May 2024</summary>
 <ul>
 <li>AP Chemistry: 5/5</li>
 <li>AP US History: 5/5</li>
@@ -147,7 +149,7 @@ author_profile: true
 
 <details>
 
-<summary>May 2023: </summary>
+<summary>May 2023 </summary>
 <ul>
 <li>AP Computer Science A: 5/5</li>
 <li>AP Statistics: 5/5</li>
