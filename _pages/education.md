@@ -105,7 +105,9 @@ author_profile: true
 
 <details>
 <summary> Courses (2024-2025)</summary>
-
+<ul>
+<li>Math 1D (Multivariable Calculus)</li>
+</ul>
 </details>
 
 <ul>
