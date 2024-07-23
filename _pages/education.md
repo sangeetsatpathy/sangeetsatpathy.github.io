@@ -5,7 +5,7 @@ permalink: /education/
 author_profile: true
 ---
 
-**A. Henry M. Gunn High School, Palo Alto, CA    &nbsp;&nbsp;  \| &nbsp;&nbsp; High School Diploma  &nbsp;&nbsp;   \| &nbsp;&nbsp;  August 2021 – May 2025**
+<h3>A. <a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   August 2021 – May 2025</h3>
 
 *Unweighted GPA: 4  \| Weighted GPA: 4.40*
 
@@ -61,9 +61,9 @@ author_profile: true
 2. Gunn High School Sports Team:  Track & Field (Spring 2023, Spring 2022)
 
 
-**B. Foothill College, Los Altos Hills, CA  &nbsp;&nbsp;  \| &nbsp;&nbsp;  Dual Enrollment		 &nbsp;&nbsp;     \|          &nbsp;&nbsp;                       Aug 2021 – May 2025**
+<h3>B.  <a href="https://www.foothill.edu/">Foothill College</a>, Los Altos Hills, CA   |  Dual Enrollment     |    Aug 2021 – May 2025 </h3>
 
-*GPA: 4  \| Dean’s List - Fall 2021, Spring 2022, Winter 2023, Fall 2023, Winter 2024*
+*GPA: 4  \| Dean’s List - Fall 2021, Spring 2022, Winter 2023, Fall 2023*
 
 <details>
 <summary> Courses (2021-2022)</summary>
@@ -139,6 +139,7 @@ author_profile: true
 <li>AP Exams </li>
 
 Received a score on 5/5 on all AP exams taken till date.
+<br>
 
 <details>
 <summary>May 2024</summary>
