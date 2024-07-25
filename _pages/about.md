@@ -9,7 +9,7 @@ redirect_from:
 
 <br>
 
-I aspire to become an engineer leveraging my electronics, engineering, robotics, math, physics, chemistry and programming skills. I am proficient in several programming languages. In addition, I have excellent problem-solving skills, deep conceptual understanding of sciences and a high level of analytical and mathematical skills. 
+I aspire to become an engineer leveraging my electronics, engineering, robotics, math, physics, chemistry and programming skills to solve real world problems. I am proficient in several programming languages. In addition, I have excellent problem-solving skills, deep conceptual understanding of sciences and a high level of analytical and mathematical skills. 
 
 
 I have the ability to generate a plan dissecting pros and cons and develop innovative ideas using my creativity. I have good presentation and public speaking skills and present information in an organized manner that serves the purpose of the message, context, and audience. I actively listen to understand and ask clarifying questions. 
