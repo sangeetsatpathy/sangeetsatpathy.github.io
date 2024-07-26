@@ -23,7 +23,7 @@ author_profile: true
 
 <details>
 
-<summary> Relevant Course (Grade 11) </summary>
+<summary> Relevant Courses (Grade 11) </summary>
 <ul>
   <li> Engineering Technology (Gunn Robotics Team) </li>
   <li> Digital Electronics </li>
@@ -35,7 +35,7 @@ author_profile: true
 </details>
 
 <details>
- <summary> Relevant Course (Grade 10) </summary>
+ <summary> Relevant Courses (Grade 10) </summary>
  <ul>
   <li> Principles of Engineering and Robotics PLTW Honors </li>
   <li> AP Computer Science A </li>
