@@ -1,6 +1,6 @@
 ---
-permalink: /stemstart/
-title: "STEMStart!"
+permalink: /founder/
+title: "Founder"
 author_profile: true
 redirect_from: 
   - /md/
