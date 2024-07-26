@@ -15,5 +15,8 @@ main:
   - title: "Publications"
     url: /publications/
     
-  - title: "Projects"
-    url: /projects/
+  - title: "Scouting Journey"
+    url: /scouting/
+
+  - title: "STEMStart!"
+    url: /stemstart/

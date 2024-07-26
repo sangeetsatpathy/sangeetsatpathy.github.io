@@ -25,7 +25,7 @@ author:
   name             : "Sangeet Satpathy"
   pronouns         : "he/him/his"  
   bio              : "An aspiring electrical engineer who aims to design, prototype, build, assemble, and program devices for the benefit of humanity."
-  location         : "San Francisco Bay Area, California"
+  location         :
   employer         : "Henry M. Gunn High School"
   uri              : # URL
   email            : "sangeet.satpathy@gmail.com" 
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "sangeet-satpathy" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
