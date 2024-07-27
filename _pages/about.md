@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-My name, Sangeet, means "music" in Hindi. True to my name, my mind is filled with songs across genres.  I love mixing tunes across different cultures and eras. Back in elementary and middle school, I played the violin and trombone.
+My name, Sangeet, means "music" in Sanskrit. True to my name, my mind is filled with songs across genres.  I love mixing tunes across different cultures and eras. Back in elementary and middle school, I played the violin and trombone.
 
 I aspire to become an engineer leveraging my electronics, engineering, robotics, math, physics, chemistry and programming skills to solve real world problems. I am proficient in several programming languages. In addition, I have excellent problem-solving skills, deep conceptual understanding of sciences and a high level of analytical and mathematical skills. 
 
