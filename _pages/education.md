@@ -5,13 +5,13 @@ permalink: /education/
 author_profile: true
 ---
 
-<h3>A. <a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   August 2021 – May 2025</h3>
+<h3>A. <a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   Aug 2021 – May 2025</h3>
 
-*Unweighted GPA: 4  \| Weighted GPA: 4.40*
+*Unweighted GPA: 4.0  \| Weighted GPA: 4.40*
 
 <details> 
 
-<summary>Relevant Courses (Grade 12) </summary>
+<summary> <b>Relevant Courses (Grade 12)</b> </summary>
 <ul>
   <li> Engineering Technology (Gunn Robotics Team) </li>
   <li> AP Physics C (Mechanics and Electricity & Magnetism) </li>
@@ -23,7 +23,7 @@ author_profile: true
 
 <details>
 
-<summary> Relevant Courses (Grade 11) </summary>
+<summary><b> Relevant Courses (Grade 11) </b></summary>
 <ul>
   <li> Engineering Technology (Gunn Robotics Team) </li>
   <li> Digital Electronics </li>
@@ -35,7 +35,7 @@ author_profile: true
 </details>
 
 <details>
- <summary> Relevant Courses (Grade 10) </summary>
+ <summary><b> Relevant Courses (Grade 10) </b></summary>
  <ul>
   <li> Principles of Engineering and Robotics PLTW Honors </li>
   <li> AP Computer Science A </li>
@@ -47,7 +47,7 @@ author_profile: true
 </details>
 
 <details>
-<summary> Relevant Courses (Grade 9)  </summary>
+<summary><b> Relevant Courses (Grade 9)  </b></summary>
 <ul>
   <li> Introduction to Engineering and Design PLTW Honors </li>
   <li> Algebra 2/Trigonometry Honors </li>
@@ -63,50 +63,52 @@ author_profile: true
 
 <h3>B.  <a href="https://www.foothill.edu/">Foothill College</a>, Los Altos Hills, CA   |  Dual Enrollment     |    Aug 2021 – May 2025 </h3>
 
-*GPA: 4  \| Dean’s List - Fall 2021, Spring 2022, Winter 2023, Fall 2023*
+*GPA: 4.0  \| Dean’s List - Fall 2021, Spring 2022, Winter 2023, Fall 2023*
 
 <details>
-<summary> Courses (2021-2022)</summary>
+<summary><b>Courses (2024-2025)</b></summary>
 <ul>
-<li> CS 1A  (Object-Oriented Programming Methodologies in Java) </li>
-<li> CS 3A  (Object-Oriented Programming Methodologies in Python)</li> 
-<li> CS 1B  (Intermediate Software Design in Java) </li> 
-<li> CS 2A  (Object-Oriented Programming Methodologies in C++) </li>
-<li> CS 3B  (Intermediate Software Design in Python) </li>
-<li> CS 22A (JavaScript for Programmers) </li> 
+<li>Multivariable Calculus Part 2 (Math 1D) - Planned</li>
+<li>Differential Equations (Math 2A) - Planned</li>
+<li>Linear Algebra (Math 2B) - Planned</li>
 </ul>
 </details>
 
 <details>
-<summary> Courses (2022-2023)</summary>
+<summary><b> Courses (2023-2024)</b></summary>
 <ul>
-<li> CS 1C  (Advanced Data Structures & Algorithms in Java)</li> 
-<li> CS 31A (Introduction to Database Management Systems)</li>
-<li> Math 10 (Elementary Statistics) </li>
-<li> CS 2B   (Intermediate Software Design in C++) </li>
+<li> Discrete Mathematics (Math 22) </li> 
+<li> Search/Research Internet (LINC 66C)</li> 
+<li> Design Thinking Overview  (LINC 77) </li>
+<li> Multivariable Calculus Part 1 (Math 1C) </li>
+<li> Cloud-Based Data Analysis Tools  (LINC 63) </li>
+<li> Online Collaboration Tools (LINC 90C) </li> 
+<li> Global Project-Based Learning  (LINC 58)</li>
+<li> Cloud-Based Publishing Tools (LINC 66E) </li>
+<li> Multi-media Project Production (LINC 79) </li>
+</ul>
+</details>
+
+<details>
+<summary><b> Courses (2022-2023) </b></summary>
+<ul>
+<li> Advanced Data Structures & Algorithms in Java  (CS 1C)</li> 
+<li> Introduction to Database Management Systems (CS 31A)</li>
+<li> Elementary Statistics (Math 10) </li>
+<li> Intermediate Software Design in C++ (CS 2B) </li>
 </ul>
 </details>
 
 
 <details>
-<summary> Courses (2023-2024)</summary>
+<summary><b> Courses (2021-2022) </b></summary>
 <ul>
-<li> Math 22 (Discrete Mathematics) </li>
-<li> LINC	66C (Search/Research Internet)</li> 
-<li> LINC 77  (Design Thinking Overview) </li>
-<li> Math 1C (Multivariable Calculus) </li>
-<li> LINC 63  (Cloud-Based Data Analysis Tools) </li>
-<li> LINC 90C (Online Collaboration Tools) </li> 
-<li> LINC 58  (Global Project-Based Learning)</li>
-<li> LINC 66E (Cloud-Based Publishing Tools) </li>
-<li> LINC 79  (Multi-media Project Production) </li>
-</ul>
-</details>
-
-<details>
-<summary> Courses (2024-2025)</summary>
-<ul>
-<li>Math 1D (Multivariable Calculus)</li>
+<li> Object-Oriented Programming Methodologies in Java  (CS 1A) </li>
+<li> Object-Oriented Programming Methodologies in Python  (CS 3A)</li> 
+<li> Intermediate Software Design in Java (CS 1B) </li> 
+<li> Object-Oriented Programming Methodologies in C++ (CS 2A) </li>
+<li> Intermediate Software Design in Python  (CS 3B) </li>
+<li> JavaScript for Programmers (CS 22A) </li> 
 </ul>
 </details>
 
