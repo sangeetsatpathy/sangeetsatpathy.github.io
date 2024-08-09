@@ -15,8 +15,8 @@ main:
   - title: "Publications"
     url: /publications/
     
-  #- title: "Scouting Journey"
-  #  url: /scouting/
+  - title: "Scouting"
+    url: /scouting/
 
   #- title: "Founder"
   #  url: /founder/
