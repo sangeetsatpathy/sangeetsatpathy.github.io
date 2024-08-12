@@ -14,7 +14,7 @@ Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service
 
 <h2>Boy Scouts of America Awards</h2>
 
-<h3><a href="https://www.scouting.org/programs/scouts-bsa/">Scouts BSA</a> program </h3>
+<h3><a href="https://www.scouting.org/programs/scouts-bsa/">Scouts BSA</a> program (March 2018-Present)</h3>
 
 <ul>
 <li><a href="https://www.scouting.org/about/research/eagle-scouts/">Eagle Scout</a> and 4 Eagle Palms, July 2023 (Grade 11) </li>
@@ -32,10 +32,11 @@ Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service
 <li>Edgar A. McDowell Award, given to BSA Troop 37’s most active and engaged first year Boy Scout exemplifying the Scout Oath & Law, June 2019 (Grade 7)</li>
 </ul>
 
-<h3><a href="https://www.scouting.org/programs/cub-scouts/">Cub Scouts</a> program </h3>
+<h3><a href="https://www.scouting.org/programs/cub-scouts/">Cub Scouts</a> program (August 2014-March 2018)</h3>
 <ul>
 <li>Spirit of Akela award, March 2017 (Grade 4), Issued by Stanford District of Pacific Skyline Council.</li>
  This is a Stanford district-wide award given to Cub Scouts who exemplify the Scout Oath & Law, by exhibiting attributes of being trustworthy, thrifty and helpful behavior.
+<br>
 <li>Recruiter Strip Award, September 2016 (Grade 4) - I recruited a lot of new students to our Cub Scout Pack. </li>
 <li>Cub Scout Patch contest, 1st prize  (Council award), Issued by Pacific Skyline Council, March 2016 (Grade 3) 
 I designed the patch for the summer Cub Scout camp (Camp Ta-Ki-Ma), representing a rocket ship circling around the globe, with a cub scout looking at it in awe. </li>
