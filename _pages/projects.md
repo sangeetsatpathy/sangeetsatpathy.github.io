@@ -18,6 +18,8 @@ Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service
 
 <ul>
 <li><a href="https://www.scouting.org/about/research/eagle-scouts/">Eagle Scout</a> and 4 Eagle Palms, July 2023 (Grade 11) </li>
+<li> <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/noa/">National Outdoor Achievement award for Camping</a>, August 2024  (Grade 12) </li>
+<li> <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/noa/">National Outdoor Achievement award for Conservation</a>, August 2024  (Grade 12) </li>
 <li> <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/noa/">National Outdoor Achievement award for Hiking</a>, February 2023  (Grade 10) </li>
 <li> <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/noa/">National Outdoor Achievement award for Aquatics</a>, February 2023 (Grade 10)</li>
 <li> <a href="https://www.scouting.org/stem-nova-awards/awards/scouts-bsa-supernova-awards/">Dr. Bernard Harris Supernova award </a>, National BSA Award, May 2022 (Grade 9)</li>
