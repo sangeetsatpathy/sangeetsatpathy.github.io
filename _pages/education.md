@@ -9,13 +9,17 @@ author_profile: true
 
 *Unweighted GPA: 4.0  \| Weighted GPA: 4.40*
 
+1.  Member of French National Honor Society (Société Honoraire de Français), Feb 2022 - Present 
+<br>
+2. Gunn High School Sports Team:  Track & Field (Spring 2023, Spring 2022)
+
 <details> 
 
 <summary> <b>Relevant Courses (Grade 12)</b> </summary>
 <ul>
   <li> Engineering Technology (Gunn Robotics Team) </li>
   <li> AP Physics C (Mechanics and Electricity & Magnetism) </li>
-  <li> Advanced Video Production Honors </li>
+  <li> AP Art History </li>
   <li> AP English Literature & Comprehension </li>
   <li> AP Economics (Macro & Micro) </li>
   </ul>
@@ -56,9 +60,7 @@ author_profile: true
 </ul>
 </details>
 
-1.  Member of French National Honor Society (Société Honoraire de Français), Feb 2022 - Present 
-<br>
-2. Gunn High School Sports Team:  Track & Field (Spring 2023, Spring 2022)
+
 
 
 <h3>B.  <a href="https://www.foothill.edu/">Foothill College</a>, Los Altos Hills, CA   |  Dual Enrollment     |    Aug 2021 – May 2025 </h3>

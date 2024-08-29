@@ -12,6 +12,17 @@ redirect_from:
 
 Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service Project of the Year, out of several Eagle Scout projects completed in the previous year, to recognize valuable service of an exceptional nature by an Eagle Scout candidate to a the community, through the completion of an Eagle Scout project.
 
+<h2>Boy Scouts of America Leadership (August 2018-Present)</h2>
+<ul>
+<li>Den Chief (3 terms, including current term)</li>
+<li>Assistant Senior Patrol Leader (ASPL)</li>
+<li>Troop Guide (3 terms)</li>
+<li>Quartermaster</li>
+<li>Troop Webmaster</li>
+<li>Patrol Leader</li>
+</ul>
+
+
 <h2>Boy Scouts of America Awards</h2>
 
 <h3><a href="https://www.scouting.org/programs/scouts-bsa/">Scouts BSA</a> program (March 2018-Present)</h3>
