@@ -79,10 +79,10 @@ author_profile: true
 <details>
 <summary><b> Courses (2023-2024)</b></summary>
 <ul>
-<li> Discrete Mathematics (Math 22) </li> 
-<li> Search/Research Internet (LINC 66C)</li> 
-<li> Design Thinking Overview  (LINC 77) </li>
-<li> Multivariable Calculus Part 1 (Math 1C) </li>
+<li> Discrete Mathematics <a href="https://catalog.foothill.edu/course-outlines/MATH-22/">(Math 22)</a> </li> 
+<li> Search/Research Internet <a href="https://catalog.foothill.edu/course-outlines/LINC-66C/">(LINC 66C)</a></li> 
+<li> Design Thinking Overview  <a href="https://catalog.foothill.edu/course-outlines/LINC-77/">(LINC 77)</a> </li>
+<li> Multivariable Calculus Part 1 <a href="https://catalog.foothill.edu/course-outlines/MATH-1C/">(Math 1C)</a> </li>
 <li> Cloud-Based Data Analysis Tools  (LINC 63) </li>
 <li> Online Collaboration Tools (LINC 90C) </li> 
 <li> Global Project-Based Learning  (LINC 58)</li>
@@ -94,10 +94,10 @@ author_profile: true
 <details>
 <summary><b> Courses (2022-2023) </b></summary>
 <ul>
-<li> Advanced Data Structures & Algorithms in Java  (CS 1C)</li> 
-<li> Introduction to Database Management Systems (CS 31A)</li>
-<li> Elementary Statistics (Math 10) </li>
-<li> Intermediate Software Design in C++ (CS 2B) </li>
+<li> Advanced Data Structures & Algorithms in Java  <a href="https://catalog.foothill.edu/course-outlines/C-S-1C/">(CS 1C)</a></li> 
+<li> Introduction to Database Management Systems <a href="https://catalog.foothill.edu/course-outlines/C-S-31A/">(CS 31A)</a></li>
+<li> Elementary Statistics <a href="https://foothill.edu/assessment/courses/math10.html">(Math 10)</a> </li>
+<li> Intermediate Software Design in C++ <a href="https://catalog.foothill.edu/course-outlines/C-S-2B/">(CS 2B)</a> </li>
 </ul>
 </details>
 
@@ -105,12 +105,12 @@ author_profile: true
 <details>
 <summary><b> Courses (2021-2022) </b></summary>
 <ul>
-<li> Object-Oriented Programming Methodologies in Java  (CS 1A) </li>
-<li> Object-Oriented Programming Methodologies in Python  (CS 3A)</li> 
-<li> Intermediate Software Design in Java (CS 1B) </li> 
-<li> Object-Oriented Programming Methodologies in C++ (CS 2A) </li>
-<li> Intermediate Software Design in Python  (CS 3B) </li>
-<li> JavaScript for Programmers (CS 22A) </li> 
+<li> Object-Oriented Programming Methodologies in Java  <a href="https://catalog.foothill.edu/course-outlines/C-S-1A/">(CS 1A)</a> </li>
+<li> Object-Oriented Programming Methodologies in Python  <a href="https://catalog.foothill.edu/course-outlines/C-S-3A/">(CS 3A)</a></li> 
+<li> Intermediate Software Design in Java <a href="https://catalog.foothill.edu/course-outlines/C-S-1B/">(CS 1B)</a> </li> 
+<li> Object-Oriented Programming Methodologies in C++ <a href="https://catalog.foothill.edu/course-outlines/C-S-2A/">(CS 2A)</a> </li>
+<li> Intermediate Software Design in Python  <a href="https://catalog.foothill.edu/course-outlines/C-S-3B/">(CS 3B)</a> </li>
+<li> JavaScript for Programmers <a href="https://catalog.foothill.edu/course-outlines/C-S-22A/">(CS 22A)</a> </li> 
 </ul>
 </details>
 
