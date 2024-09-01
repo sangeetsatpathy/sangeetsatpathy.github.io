@@ -83,11 +83,11 @@ author_profile: true
 <li> Search/Research Internet <a href="https://catalog.foothill.edu/course-outlines/LINC-66C/">(LINC 66C)</a></li> 
 <li> Design Thinking Overview  <a href="https://catalog.foothill.edu/course-outlines/LINC-77/">(LINC 77)</a> </li>
 <li> Multivariable Calculus Part 1 <a href="https://catalog.foothill.edu/course-outlines/MATH-1C/">(Math 1C)</a> </li>
-<li> Cloud-Based Data Analysis Tools  (LINC 63) </li>
-<li> Online Collaboration Tools (LINC 90C) </li> 
-<li> Global Project-Based Learning  (LINC 58)</li>
-<li> Cloud-Based Publishing Tools (LINC 66E) </li>
-<li> Multi-media Project Production (LINC 79) </li>
+<li> Cloud-Based Data Analysis Tools  <a href="https://catalog.foothill.edu/course-outlines/LINC-63/">(LINC 63)</a> </li>
+<li> Online Collaboration Tools <a href="https://catalog.foothill.edu/course-outlines/LINC-90C/">(LINC 90C)</a> </li> 
+<li> Global Project-Based Learning  <a href="https://catalog.foothill.edu/course-outlines/LINC-58/">(LINC 58)</a></li>
+<li> Cloud-Based Publishing Tools <a href="https://catalog.foothill.edu/course-outlines/LINC-66E/">(LINC 66E)</a> </li>
+<li> Multi-media Project Production <a href="https://catalog.foothill.edu/course-outlines/LINC-79/">(LINC 79)</a> </li>
 </ul>
 </details>
 
