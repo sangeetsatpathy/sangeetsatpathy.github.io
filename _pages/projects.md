@@ -34,6 +34,13 @@ Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service
 <li> <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/noa/">National Outdoor Achievement award for Hiking</a>, February 2023  (Grade 10) </li>
 <li> <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/noa/">National Outdoor Achievement award for Aquatics</a>, February 2023 (Grade 10)</li>
 <li> <a href="https://www.scouting.org/stem-nova-awards/awards/scouts-bsa-supernova-awards/">Dr. Bernard Harris Supernova award </a>, National BSA Award, May 2022 (Grade 9)</li>
+As a part of the Bernard Harris Supernova Award, Scouts must complete two "activity topics" of their choice.
+
+I chose to pursue activity topics in the fields of Science and Mathematics.
+
+For my Science Activity topic, I focused on plastic recycling -- specifically, I looked into the recycling of tires and plastic toys. I learnt about the process and analyzed the impact of properly recycling these products. For the second part of the activity topic, I looked into the feasibility of recycling single-use plastics to be used as paper. Upon researching other solutions, I found an Indian-based company that had been working on fusing plastics with cotton fibers to form paper that absorbs ink. However, the problem with this is that there is no economic incentive to choose this kind of paper over tree-based paper. Since feasibility is established, further research into this kind of product is worthwhile.
+
+For my Mathematics Activity Topic, I focused on analyzing data on past Old Faithful Geyser eruptions to perform data inference on the next eruption. Using graphing tools such as Desmos, I was able to generate a mathematical prediction of the eruption cycles.
 <li> <a href="https://www.scouting.org/stem-nova-awards/awards/scouts-bsa/">Four STEM  Nova awards</a>: Designed to Crunch (June 2021), Hello World! (March 2021), Whoosh! (March 2021), Shoot! (Dec 2018)</li>
 <li> <a href="https://www.scouting.org/awards/awards-central/whitewater-rafting-bsa/">Whitewater Rafting BSA Award </a>, July 2022 (Grade 10)</li>
 <li> <a href="https://www.scouting.org/awards/awards-central/snorkeling/">Snorkeling BSA Award </a>, July 2022 (Grade 10)</li>

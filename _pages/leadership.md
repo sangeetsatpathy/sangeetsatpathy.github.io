@@ -46,7 +46,7 @@ As the sole selected Student Representative from both high schools in Palo Alto,
 <br>1\. Express students’ views, concerns and requirements about dual enrollment at Foothill College (local community college) 
 <br>2\. Formulate policies benefiting the high school students.
 
-<h2>Content Director | Gunn UAV (Unmanned Aerial Vehicle) Club, Palo Alto, CA                                  </h2>
+<h2>Content Director | GunnUAVs (Gunn Unmanned Aerial Vehicles) Club, Palo Alto, CA                                  </h2>
 <h3> Sep 2021 - June 2022</h3>
 Created content and presentation slides for the club’s meetings.  Helped teach inexperienced attendees on how to build and fly a drone.
 
