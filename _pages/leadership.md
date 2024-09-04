@@ -23,7 +23,8 @@ help of over 1,700 adult volunteers.
 <h3> Jan 2023 – Present</h3>
 
 1\. Founded Gunn Intramural Sports Club, a highly inclusive club that provides an opportunity to participate in a variety of recreational sports and activities for Gunn high school students of all skill levels, ranging from newcomers (inexperienced players) looking to exercise outdoors to veterans bettering their skills. 
-<br>2. Our club welcomes everyone while engaging in teamwork and fair play, helping club members play hard while making friends and having fun. Our club provides an opportunity for a refreshing stress-buster amid high-intensity academic rigor. Our club attendance has always been very high week-on-week due to the engaging, equitable and open nature of the club. 
+<br>2. Our club welcomes everyone while engaging in teamwork and fair play, helping club members play hard while making friends and having fun. Our club provides an opportunity for a refreshing stress-buster amid high-intensity academic rigor. Our club attendance has always been very high week-on-week due to the engaging, equitable and open nature of the club.
+<br>3. We have played sports such as: Flag Football, Basketball, Volleyball, Dodgeball, Tennis, Badminton, Frisbee, and Soccer.
 
 
 <h2>Student District Representative  | <a href="https://www.pausd.org/about-us/committees-task-forces/adhoc-committees/technologyai">PAUSD AI & Technology  Committee</a>, Palo Alto, CA              </h2>
