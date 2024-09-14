@@ -30,11 +30,13 @@ author_profile: true
 <summary><b> Relevant Courses (Grade 11) </b></summary>
 <ul>
   <li> Engineering Technology (Gunn Robotics Team) </li>
-  <li> Digital Electronics </li>
+  <li> Digital Electronics PLTW</li>
   <li> AP Calculus BC </li>
   <li> AP Chemistry </li>
   <li> AP US History </li>
   <li> AAR-D (Advanced Authentic Research-Dual Enrollment) </li>
+  <li> World Classics Honors (semester-long) </li>
+  <li> Analytical College Writing (semester-long)</li>
 </ul>
 </details>
 
@@ -43,10 +45,12 @@ author_profile: true
  <ul>
   <li> Principles of Engineering and Robotics PLTW Honors </li>
   <li> AP Computer Science A </li>
-  <li> Analysis Honors </li>
+  <li> Math Analysis Honors </li>
   <li> Chemistry Honors  </li>
   <li> French 3 </li>
-  <li> Social Justice Pathway courses (US Govt, Contemporary World History) </li>
+  <li> US Government, Social Justice (semester-long) </li>
+  <li> Contemporary World History, Social Justice (semester-long) </li>
+  <li> English 10A </li>
   </ul>
 </details>
 
@@ -57,6 +61,9 @@ author_profile: true
   <li> Algebra 2/Trigonometry Honors </li>
   <li> Biology Honors </li>
   <li> French 2 </li>
+  <li> World History </li>
+  <li> Communications A (semester-long)</li>
+  <li> Western Culture A (semester-long)</li>
 </ul>
 </details>
 
