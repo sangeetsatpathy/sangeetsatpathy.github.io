@@ -18,7 +18,8 @@ author_profile: true
 <summary> <b>Relevant Courses (Grade 12)</b> </summary>
 <ul>
   <li> Engineering Technology (Gunn Robotics Team) </li>
-  <li> AP Physics C (Mechanics and Electricity & Magnetism) </li>
+  <li> AP Physics C: Mechanics (semester-long) </li>
+  <li> AP Physics C: Electricity & Magnetism (semester-long)</li>
   <li> AP Art History </li>
   <li> AP English Literature & Comprehension </li>
   <li> AP Economics (Macro & Micro) </li>
