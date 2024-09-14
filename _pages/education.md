@@ -88,9 +88,9 @@ author_profile: true
 <summary><b> Courses (2023-2024)</b></summary>
 <ul>
 <li> Discrete Mathematics <a href="https://catalog.foothill.edu/course-outlines/MATH-22/">(Math 22)</a> </li> 
+<li> Multivariable Calculus Part 1 <a href="https://catalog.foothill.edu/course-outlines/MATH-1C/">(Math 1C)</a> </li>
 <li> Search/Research Internet <a href="https://catalog.foothill.edu/course-outlines/LINC-66C/">(LINC 66C)</a></li> 
 <li> Design Thinking Overview  <a href="https://catalog.foothill.edu/course-outlines/LINC-77/">(LINC 77)</a> </li>
-<li> Multivariable Calculus Part 1 <a href="https://catalog.foothill.edu/course-outlines/MATH-1C/">(Math 1C)</a> </li>
 <li> Cloud-Based Data Analysis Tools  <a href="https://catalog.foothill.edu/course-outlines/LINC-63/">(LINC 63)</a> </li>
 <li> Online Collaboration Tools <a href="https://catalog.foothill.edu/course-outlines/LINC-90C/">(LINC 90C)</a> </li> 
 <li> Global Project-Based Learning  <a href="https://catalog.foothill.edu/course-outlines/LINC-58/">(LINC 58)</a></li>
