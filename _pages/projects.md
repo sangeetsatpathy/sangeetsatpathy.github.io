@@ -10,7 +10,7 @@ redirect_from:
 <h2> <a href="https://pacsky.org/scouting/eagles-nest/adams-award-winners/">2024 Pacific Skyline Council Winner</a>, February 2024 </h2>
 <b> Glenn A. and Melinda W. Adams Eagle Scout Service Project of the Year Award </b>
 
-Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service Project of the Year, out of several Eagle Scout projects completed in the previous year, to recognize valuable service of an exceptional nature by an Eagle Scout candidate to a the community, through the completion of an Eagle Scout project.
+Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service Project of the Year, out of several Eagle Scout projects completed in the previous year. This award recognizes valuable service, of an exceptional nature by an Eagle Scout candidate, to the community through the completion of an Eagle Scout project.
 
 <h2>Boy Scouts of America Leadership (August 2018-Present)</h2>
 <ul>

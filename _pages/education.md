@@ -126,8 +126,9 @@ author_profile: true
 </ul>
 
 **C. Certificates**
-<ul>
-<li> <a href="https://naf.org/our-approach/naftrack">NAFTrack Certificate  - Engineering  </a>(expected May 2025, all  requirements completed  except high school graduation)</li>
+<ul id="certificates">
+<li> <a href="https://naf.org/our-approach/naftrack">NAFTrack Certificate  - Engineering</a>, to be issued by NAF, expected May 2025 (all  requirements completed  except high school graduation)</li>
+<li> <a href="https://catalog.foothill.edu/degrees-certificates/learning-in-new-media-classrooms/">Certificate of Achievement in Research, Design, and Development for Global Good</a>, Issued by Foothill College,  June 2024 </li>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text">Certificate of Achievement in Software Development in C++</a>, Issued by Foothill College,  December 2023 </li>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text">Certificate of Achievement in Software Development in Python</a>, Issued by Foothill College, December 2023</li>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text">Certificate of Achievement in Advanced Software Development</a>, Issued by Foothill College, March 2023</li>
