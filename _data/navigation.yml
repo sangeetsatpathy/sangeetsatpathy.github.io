@@ -18,5 +18,5 @@ main:
   - title: "Scouting"
     url: /scouting/
 
-  #- title: "Founder"
-  #  url: /founder/
+  - title: "STEMStart!"
+    url: /stemstart/
