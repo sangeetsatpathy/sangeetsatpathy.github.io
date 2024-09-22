@@ -13,13 +13,21 @@ redirect_from:
 Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service Project of the Year, out of several Eagle Scout projects completed in the previous year. This award recognizes valuable service, of an exceptional nature by an Eagle Scout candidate, to the community through the completion of an Eagle Scout project.
 
 <h2>Boy Scouts of America Leadership (August 2018-Present)</h2>
+<a href="https://troop37losaltos.com">Troop 37</a> is one of the larger troops within the <a href="https://pacsky.org/">Pacific Skyline Council</a> and is completely Scout-run.
+I served continuously in various leadership roles within the troop; troop leadership positions had a lot of responsibilities and work associated with them due to the size of our troop. Troop 37 Leadership terms are 6 months long, with the exception of Den Chiefs that have a 10-month term.
 <ul>
 <li>Den Chief (3 terms, including current term)</li>
+Den chiefs are Boy Scouts who assist a Cub Scout den leader. They help den meetings by leading activities, games, and ceremonies and are good role models for the Cub Scouts. In additon, Den Chiefs help Cub Scouts advance through their ranks and encourage them to join a Boy Scout Troop upon graduating from Cub Scouts.
 <li>Assistant Senior Patrol Leader (ASPL)</li>
+The Assistant Senior Patrol Leader’s specific duties are providing training and guidance for the troop’s quartermaster, scribe, Order of the Arrow representative, historian, librarian, webmaster, and chaplain's aide. ASPLs also plan, organize, and run the Troop's weekly meetings.
 <li>Troop Guide (3 terms)</li>
+Troop Guides are usually experienced Boy Scouts who have strong teaching skills and possess the patience to work well with younger Scouts. As a mentor for the younger Scouts, a Troop Guide teaches them varied Scouting skills that can help them in rank advancement. They also introduce the younger Scouts to Troop operations, sets a good example, and counsels individual Scouts on Scouting challenges.
 <li>Quartermaster</li>
+Scout Quartermasters serve as the troop's supply boss. They keep an inventory of troop equipment and see that the gear is in good condition. They issue equipment to different patrols and ensure that it is returned in good conditions. They also make suggestions for new or replacement items and work with the adult Quartermaster.
 <li>Troop Webmaster</li>
-<li>Patrol Leader</li>
+The Troop Webmaster is responsible for maintaining the troop's website, making sure the information posted on the website is correct and up-to-date, and that the privacy of youth and adult troop members is protected.
+<li>Patrol Leader(3 terms)</li>
+Patrol leaders plan and lead patrol meetings and activities. They represent their patrol at all patrol leaders' council meetings and at the annual program planning conference. They know the needs and capabilities of their patrol members and work to make them successful.
 </ul>
 
 
