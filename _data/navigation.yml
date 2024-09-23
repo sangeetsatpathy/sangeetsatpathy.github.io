@@ -12,11 +12,11 @@ main:
   - title: "Awards"
     url: /awards/    
     
-  - title: "Publications"
-    url: /publications/
-    
   - title: "Scouting"
     url: /scouting/
 
   - title: "STEMStart!"
     url: /stemstart/
+    
+  - title: "Publications"
+    url: /publications/

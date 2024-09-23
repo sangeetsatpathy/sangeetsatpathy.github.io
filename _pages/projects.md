@@ -16,6 +16,8 @@ Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service
 <a href="https://troop37losaltos.com">Troop 37</a> is one of the larger troops within the <a href="https://pacsky.org/">Pacific Skyline Council</a> and is completely Scout-run.
 I served continuously in various leadership roles within the troop; troop leadership positions had a lot of responsibilities and work associated with them due to the size of our troop. Troop 37 Leadership terms are 6 months long, with the exception of Den Chiefs that have a 10-month term.
 
+<div><i>
+Expand each role below to know more.</i></div> 
 <details>
 <summary>Den Chief (3 terms, including current term)</summary>
 Den chiefs are Boy Scouts who assist a Cub Scout den leader. They help den meetings by leading activities, games, and ceremonies and are good role models for the Cub Scouts. In additon, Den Chiefs help Cub Scouts advance through their ranks and encourage them to join a Boy Scout Troop upon graduating from Cub Scouts. <br><br>

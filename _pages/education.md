@@ -12,7 +12,9 @@ author_profile: true
 1.  Member of French National Honor Society (Société Honoraire de Français), Feb 2022 - Present 
 <br>
 2. Gunn High School Sports Team:  Track & Field (Spring 2023, Spring 2022)
-
+<br>
+<div><i>
+Expand each grade below to know more.</i></div> 
 <details> 
 
 <summary> <b>Relevant Courses (Grade 12)</b> </summary>
@@ -74,6 +76,9 @@ author_profile: true
 <h3>B.  <a href="https://www.foothill.edu/">Foothill College</a>, Los Altos Hills, CA   |  Dual Enrollment     |    Aug 2021 – May 2025 </h3>
 
 *GPA: 4.0  \| Dean’s List - Fall 2021, Spring 2022, Winter 2023, Fall 2023*
+
+<div><i>
+Expand each year below to know more.</i></div> 
 
 <details>
 <summary><b>Courses (2024-2025)</b></summary>
@@ -148,12 +153,12 @@ author_profile: true
 
 
 
-
 <li>AP Exams </li>
 
 Received a score on 5/5 on all AP exams taken till date.
 <br>
-
+<div><i>
+Expand each year below to know more.</i></div> 
 <details>
 <summary>May 2024</summary>
 <ul>
