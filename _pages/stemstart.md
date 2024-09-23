@@ -17,7 +17,7 @@ The workshop topics have included:
 - Nuclear Science (1 workshop)
 - Electrical Engineering and Circuitry (4 workshops)
 
- STEMStart! has partnered with <a href="https://www.planetbee.org/">Planet Bee</a>, <a href="https://lawrencehallofscience.org/">UC Berkeley Lawrence Hall of Science</a>, and Subject Matter Experts in electrical engineering and nuclear science. These Subject Matter Experts have studied at Stanford and worked in the Silicon Valley for decades. Apart from these, STEMStart! has also partnered with the Los Altos County Library and Palo Alto Library for providing the large rooms (free of cost) for executing these workshops. 
+ STEMStart! has partnered with <a href="https://www.planetbee.org/">Planet Bee</a>, <a href="https://lawrencehallofscience.org/">UC Berkeley Lawrence Hall of Science</a>, and Subject Matter Experts in Electrical Engineering and Nuclear Science. These Subject Matter Experts have studied at Stanford Universisty and worked in the Silicon Valley for decades. Apart from these, STEMStart! has also partnered with the Los Altos County Library and Palo Alto Library for providing the large rooms (free of cost) for executing these workshops. 
  
  The workshops were able to gain a good amount of participants (241 participants over 8 workshops). STEMStart! has fostered an enriching STEM learning experience for the participants, instilling scientific thinking, nurturing  intellectual curiosity, and shedding light on potential careers. The non-profit has helped participants identify and carry forward their passions in STEM, with workshop themes, hands-on activities, and 1:1 guidance that were tailored to the participants’ age group, knowledge and interests. 
 
