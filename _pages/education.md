@@ -5,7 +5,7 @@ permalink: /education/
 author_profile: true
 ---
 
-<h3>A. <a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   Aug 2021 – May 2025</h3>
+<h3><a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   Aug 2021 – May 2025</h3>
 
 *Unweighted GPA: 4.0  \| Weighted GPA: 4.40*
 
@@ -72,8 +72,8 @@ Expand each grade below to know more.</i></div>
 
 
 
-
-<h3>B.  <a href="https://www.foothill.edu/">Foothill College</a>, Los Altos Hills, CA   |  Dual Enrollment     |    Aug 2021 – May 2025 </h3>
+<hr>
+<h3><a href="https://www.foothill.edu/">Foothill College</a>, Los Altos Hills, CA   |  Dual Enrollment     |    Aug 2021 – May 2025 </h3>
 
 *GPA: 4.0  \| Dean’s List - Fall 2021, Spring 2022, Winter 2023, Fall 2023*
 
@@ -129,8 +129,8 @@ Expand each year below to know more.</i></div>
 
 <ul>
 </ul>
-
-**C. Certificates**
+<hr>
+**Certificates**
 <ul id="certificates">
 <li> <a href="https://naf.org/our-approach/naftrack">NAFTrack Certificate  - Engineering</a>, to be issued by NAF, expected May 2025 (pending high school graduation)</li>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/learning-in-new-media-classrooms/">Certificate of Achievement in Research, Design, and Development for Global Good</a>, Foothill College,  June 2024 </li>
@@ -143,7 +143,9 @@ Expand each year below to know more.</i></div>
 
 </ul>
 
-**D. Test Scores**
+<hr>
+
+**Test Scores**
 
 <ul>
 
