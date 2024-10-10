@@ -18,5 +18,5 @@ main:
   - title: "STEMStart!"
     url: /stemstart/
     
-  - title: "Publications"
-    url: /publications/
+  #- title: "Publications"
+   # url: /publications/
