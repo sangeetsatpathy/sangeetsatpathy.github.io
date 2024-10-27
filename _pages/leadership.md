@@ -30,6 +30,14 @@ help of over 1,700 adult volunteers. </li>
 <li> We have played sports such as: Flag Football, Basketball, Volleyball, Dodgeball, Tennis, Badminton, Frisbee, and Soccer. </li>
 </ul>
 <hr>
+<h2><a href="https://sangeetsatpathy.github.io/scouting">Scouting Leadership</a> | <a href="https://troop37losaltos.com/">Troop 37</a>, Los Altos, CA</h2>
+<h3>August 2018 - Present</h3>
+<a href="https://troop37losaltos.com">Troop 37</a> is one of the larger troops within the <a href="https://pacsky.org/">Pacific Skyline Council</a> and is completely Scout-run.
+I served continuously in various leadership roles within the troop; troop leadership positions had a lot of responsibilities and work associated with them due to the size of our troop.
+
+See <a href="https://sangeetsatpathy.github.io/scouting">Scouting</a> for more information on the leadership positions I have held.
+<hr>
+
 <h2>Student District Representative  | <a href="https://www.pausd.org/about-us/committees-task-forces/adhoc-committees/technologyai">PAUSD AI & Technology  Committee</a>, Palo Alto, CA              </h2>
 <h3>Aug 2023 - May 2024</h3>
 As the selected Student Representative at the PAUSD (school district) level, I worked to:
@@ -55,6 +63,7 @@ As the sole selected Student Representative from both high schools in Palo Alto,
 <li>Express students’ views, concerns and requirements about dual enrollment at Foothill College (local community college)</li>
 <li>Formulate policies benefiting the high school students. </li>
 </ul>
+
 <hr>
 <h2>Content Director | GunnUAVs (Gunn Unmanned Aerial Vehicles) Club, Palo Alto, CA                                  </h2>
 <h3> Sep 2021 - June 2022</h3>
@@ -67,10 +76,3 @@ As the sole Student Representative from <a href="https://jls.pausd.org/">JLS Mid
 <h2>Site Council Representative | <a href="https://jls.pausd.org/">JLS Middle School</a>, Palo Alto, CA                                                                  </h2>
 <h3>Sep 2018 - May 2021</h3>
 Served on the school site council, which reviews equity, safety and school events
-<hr>
-<h2><a href="https://sangeetsatpathy.github.io/scouting">Scouting Leadership</a> | <a href="https://troop37losaltos.com/">Troop 37</a>, Los Altos, CA</h2>
-<h3>August 2018 - Present</h3>
-<a href="https://troop37losaltos.com">Troop 37</a> is one of the larger troops within the <a href="https://pacsky.org/">Pacific Skyline Council</a> and is completely Scout-run.
-I served continuously in various leadership roles within the troop; troop leadership positions had a lot of responsibilities and work associated with them due to the size of our troop.
-
-See <a href="https://sangeetsatpathy.github.io/scouting">Scouting</a> for more information on the leadership positions I have held.
