@@ -33,7 +33,7 @@ help of over 1,700 adult volunteers. </li>
 <h2><a href="https://sangeetsatpathy.github.io/scouting">Scouting Leadership</a> | <a href="https://troop37losaltos.com/">Troop 37</a>, Los Altos, CA</h2>
 <h3>August 2018 - Present</h3>
 <a href="https://troop37losaltos.com">Troop 37</a> is one of the larger troops within the <a href="https://pacsky.org/">Pacific Skyline Council</a> and is completely Scout-run.
-I served continuously in various leadership roles within the troop; troop leadership positions had a lot of responsibilities and work associated with them due to the size of our troop.
+I have been serving continuously in various leadership roles within the troop; Troop 37 leadership positions have a lot of responsibilities and work associated with them due to the size of our troop.
 
 See <a href="https://sangeetsatpathy.github.io/scouting">Scouting</a> for more information on the leadership positions I have held.
 <hr>
