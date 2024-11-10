@@ -55,7 +55,7 @@ This internship was for 6 weeks (32 hours per week).
 
 <h2> Machinist, CAD Designer, Curriculum Lead, Publicity Lead | <a href='https://www.gunnrobotics.com/'>Gunn Robotics Team (GRT)</a>       			      </h2>
 <h3> Aug 2023 - Present</h3>
-<div style="text-align: justify;">The Gunn Robotics Team (FRC 192), is a completely student-run team that participates in the annual First Robotics Competition Challenge. When in off-season, the team participates in various community outreach events, such as building a “Haunted House” for Juana Briones elementary school. We design, CAD and  machine wooden Halloween-themed mechanisms that are powered by pneumatics i.e. build moving contraptions, such as ghosts popping out from the house, skeleton petting a styrofoam cat, and more.</div>
+<div style="text-align: justify;">The Gunn Robotics Team (FRC 192), is a completely student-run team that participates in the annual First Robotics Competition Challenge. </div>
 <br>
 
 <div><i>
@@ -95,6 +95,157 @@ As a Curriculum Lead for the <a href='https://www.gunnrobotics.com/summer'>2024 
 </ul>
 </details>
 
+<br>
+<div><i>Explore my projects on GRT!</i></div>
+<details>
+    <summary><b>Haunted House Mechanisms (October 2023 and October 2024)</b></summary>
+    When in off-season, the team participates in various community outreach events, such as building a “Haunted House” for an elementary school. 
+    We design, CAD and  machine wooden Halloween-themed mechanisms that are powered by pneumatics.
+    These mechanisms include ghosts popping out from the house, skeletons petting styrofoam cats, moving creepers, and more.
+    <div style="display: table-cell">
+    <video id="video1" width="320" height="240" autoplay muted>
+        <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/HH_1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+        <div style="display: flex; justify-content: center;">
+            <button onclick="PlayPause(1)">Play/Pause</button>
+            <button onclick="Reset(1)" >Reset</button>
+        </div>
+    </div>
+    <div style="display: table-cell">
+      <video id="video2" width="320" height="240" autoplay muted>
+        <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/HH_2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+        <div style="display: flex; justify-content: center;">
+            <button onclick="PlayPause(2)">Play/Pause</button>
+            <button onclick="Reset(2)" >Reset</button>
+        </div>
+    </div>
+    <div style="display: table-cell">
+
+    
+      <video id="video3" width="320" height="240" autoplay muted>
+        <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/HH_3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+        <div style="display: flex; justify-content: center;">
+            <button onclick="PlayPause(3)">Play/Pause</button>
+            <button onclick="Reset(3)" >Reset</button>
+        </div>
+    </div>
+   
+    <script> 
+        var myVideo1 = document.getElementById("video1"); 
+        var myVideo2 = document.getElementById("video2"); 
+        var myVideo3 = document.getElementById("video3"); 
+
+        function PlayPause(id) { 
+            if (id == 1){
+                vid = myVideo1;
+            } else if(id == 2){
+                vid = myVideo2;
+            } else {
+                vid = myVideo3;
+            }
+          if (vid.paused) 
+            vid.play(); 
+          else 
+            vid.pause(); 
+        } 
+
+        function Reset(id) { 
+            if (id == 1){
+                vid = myVideo1;
+            } else if(id == 2){
+                vid = myVideo2;
+            } else {
+                vid = myVideo3;
+            }
+            vid.currentTime = 0;
+            vid.play();
+        } 
+
+        </script>
+</details>
+
+<details>
+    <summary><b>Shop Project Robot</b></summary>
+    Before the competition season, GRT hosts a "Shop Project" competition, in which both of the GRT classes compete against each other in a FIRST-style mini robotics competition. This helps the team practice for the competition season.
+    My shop project robot used a funnel to intake game pieces and used pneumatics to transfer the pieces into the shooter. The one-wheeled flywheel shooter had a ramp designed to launch the note at a precise angle into the scoring objective.
+    <br><br>
+    <i>Robot CAD:</i>
+    <br>
+    <img src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/blob/master/shop_project_pic.png?raw=true">
+    <br><br>
+    <i>Robot Video:</i>
+    <br>
+    <div style="display: flex; justify-content: center;"><video id="shop-proj-vid" width="640" height="280" autoplay muted>
+        <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/Final_ShopProject_Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video></div>
+        <div style="display: flex; justify-content: center;">
+            <button onclick="PlayPauseShop()">Play/Pause</button>
+            <button onclick="ResetShop()">Reset</button>
+        </div>
+    <script> 
+        var vidShop = document.getElementById("shop-proj-vid");
+        function PlayPauseShop() { 
+            if (vidShop.paused) 
+            vidShop.play(); 
+            else 
+            vidShop.pause(); 
+        } 
+
+        function ResetShop() { 
+            vidShop.currentTime = 0;
+            vidShop.play();
+        } 
+    </script>
+    
+</details>
+
+<details>
+    <summary><b>The robot that won regionals: Dissonance!</b></summary>
+    Dissonance was GRT's robot for the 2024 FIRST "Crescendo!" challenge. It features a 
+    roller-intake system (powered by linkages), a 2-stage elevator mechanism, 
+    a winch-powered climb mechanism, and a double-roller shooter mechanism with an adjustable launch angle.
+    <br><br>
+    <i>Robot CAD:</i>
+    <br>
+    <img src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/blob/master/dissonance_pic.png?raw=true">
+    
+    <br><br>
+    <i>Robot Video:</i>
+    <br><br>
+
+    <div style="display: flex; justify-content: center;"><video id="dissonance-vid" width="640" height="280" autoplay muted>
+        <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/Final_Dissonance_Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video></div>
+        <div style="display: flex; justify-content: center;">
+            <button onclick="PlayPauseDissonance()">Play/Pause</button>
+            <button onclick="ResetDissonance()" >Reset</button>
+        </div>
+    
+        <script> 
+            var vid = document.getElementById("dissonance-vid");
+    
+            function PlayPauseDissonance() { 
+              if (vid.paused) 
+                vid.play(); 
+              else 
+                vid.pause(); 
+            } 
+    
+            function ResetDissonance() { 
+                vid.currentTime = 0;
+                vid.play();
+            } 
+    
+            </script>
+    
+</details>
 <br> <b>Skills:</b> Design, CAD, Java, Circuitry, Machining
 
 <hr>
