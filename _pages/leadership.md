@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<h2> Sole 2024 Youth Executive Board Member | <a href="https://pacsky.org/">Pacific Skyline Council</a>, Foster City, CA		     </h2>
+<h2> Sole Youth Executive Board Member | <a href="https://pacsky.org/">Pacific Skyline Council</a>, Foster City, CA		     </h2>
 
 <h3> Feb 2024 - Present </h3>
 <ul>
