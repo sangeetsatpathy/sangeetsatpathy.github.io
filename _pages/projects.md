@@ -25,7 +25,7 @@ I served continuously in various leadership roles within the troop; troop leader
 Expand each role below to know more.</i></div> 
 <details>
 <summary><b>Den Chief</b> (3 terms, including current term)</summary>
-Den chiefs are Boy Scouts who assist a Cub Scout den leader. They help den meetings by leading activities, games, and ceremonies and are good role models for the Cub Scouts. In additon, Den Chiefs help Cub Scouts advance through their ranks and encourage them to join a Boy Scout Troop upon graduating from Cub Scouts. <br><br>
+Den chiefs are Boy Scouts who assist a Cub Scout den leader. They help den meetings by leading activities, games, and ceremonies and are good role models for the Cub Scouts. In addition, Den Chiefs help Cub Scouts advance through their ranks and encourage them to join a Boy Scout Troop upon graduating from Cub Scouts. <br><br>
 </details>
 
 <details>

@@ -25,8 +25,10 @@ help of over 1,700 adult volunteers. </li>
 <h3> Jan 2023 – Present</h3>
 
 <ul>
-<li> Founded Gunn Intramural Sports Club, a highly inclusive club that provides an opportunity to participate in a variety of recreational sports and activities for Gunn high school students of all skill levels, ranging from newcomers (inexperienced players) looking to exercise outdoors to veterans bettering their skills. </li>
-<li>Our club welcomes everyone while engaging in teamwork and fair play, helping club members play hard while making friends and having fun. Our club provides an opportunity for a refreshing stress-buster amid high-intensity academic rigor. Our club attendance has always been very high week-on-week due to the engaging, equitable and open nature of the club.</li>
+<li> Founded Gunn Intramural Sports Club, a highly inclusive club that provides an opportunity to participate in a variety of recreational sports. Gunn high school students of all grades and skill levels are members--ranging from newcomers looking to exercise outdoors to veterans improving their skills. </li>
+<li>Our club welcomes everyone while engaging in teamwork and fair play, helping club members play hard while making friends and having fun.</li>
+<li>Our club provides an opportunity for a refreshing stress-buster amid high-intensity academic rigor.</li> 
+<li>Intramural Sports Club attendance has always been very high week-on-week due to the engaging, equitable and open nature of the club.</li>
 <li> We have played sports such as: Flag Football, Basketball, Volleyball, Dodgeball, Tennis, Badminton, Frisbee, and Soccer. </li>
 </ul>
 <hr>
@@ -67,12 +69,19 @@ As the sole selected Student Representative from both high schools in Palo Alto,
 <hr>
 <h2>Content Director | GunnUAVs (Gunn Unmanned Aerial Vehicles) Club, Palo Alto, CA                                  </h2>
 <h3> Sep 2021 - June 2022</h3>
-Created content and presentation slides for the club’s meetings.  Helped teach inexperienced attendees on how to build and fly a drone.
+<ul>
+<li>Created content and presentation slides for the club’s meetings.</li>
+<li> Helped teach inexperienced attendees on how to build and fly a drone. </li>
+</ul>
 <hr>
 <h2>Student Representative | <a href="https://go.boarddocs.com/ca/pausd/Board.nsf/goto?open&id=BLZPUJ65DE6B">PAUSD Middle School Science Textbook Selection Advisory Committee</a>, Palo Alto, CA                    </h2>
 <h3>Sep 2018 - May 2020</h3>
-As the sole Student Representative from <a href="https://jls.pausd.org/">JLS Middle School</a>, I voiced students’ views and opinions as a  part of the decision-making committee to finalize the science textbook for PAUSD middle schools  
+<ul>
+<li>As the sole Student Representative from <a href="https://jls.pausd.org/">JLS Middle School</a>, I voiced students’ views and opinions as a  part of the decision-making committee to finalize the science textbook for PAUSD middle schools </li> 
+</ul>
 <hr>
 <h2>Site Council Representative | <a href="https://jls.pausd.org/">JLS Middle School</a>, Palo Alto, CA                                                                  </h2>
 <h3>Sep 2018 - May 2021</h3>
-Served on the school site council, which reviews equity, safety and school events
+<ul>
+<li>Served on the school site council, which reviews equity, safety and school events</li>
+</ul>

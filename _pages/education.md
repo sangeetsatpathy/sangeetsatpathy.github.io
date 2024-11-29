@@ -130,7 +130,7 @@ Expand each year below to know more.</i></div>
 <ul>
 </ul>
 <hr>
-**Certificates**
+**Certificates Earned [8 Certificates]**
 <ul id="certificates">
 <li> <a href="https://naf.org/our-approach/naftrack">NAFTrack Certificate  - Engineering</a>, to be issued by NAF, expected May 2025 (pending high school graduation)</li>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/learning-in-new-media-classrooms/">Certificate of Achievement in Research, Design, and Development for Global Good</a>, Foothill College,  June 2024 </li>
