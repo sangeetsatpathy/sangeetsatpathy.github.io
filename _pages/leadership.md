@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<h2> 2024 Youth Executive Board Member | <a href="https://pacsky.org/">Pacific Skyline Council</a>, Foster City, CA		     </h2>
+<h2> Sole 2024 Youth Executive Board Member | <a href="https://pacsky.org/">Pacific Skyline Council</a>, Foster City, CA		     </h2>
 
 <h3> Feb 2024 - Present </h3>
 <ul>
@@ -58,7 +58,7 @@ As the elected Treasurer, my responsibilities include:
 <li>Managing club funds</li> <li>Organizing fund-raisers</li>  <li>Reimbursing club expenses</li> <li>Planning out weekly meetings</li>
 </ul>
 <hr>
-<h2> Student Representative | <a href="https://www.pausd.org/about-us/committees-task-forces/archived-committees/dual-enrollment">PAUSD Dual Enrollment Committee</a>, Palo Alto, CA		          </h2>
+<h2> Sole Student Representative | <a href="https://www.pausd.org/about-us/committees-task-forces/archived-committees/dual-enrollment">PAUSD Dual Enrollment Committee</a>, Palo Alto, CA		          </h2>
 <h3>Feb 2023 - May 2023</h3>
 As the sole selected Student Representative from both high schools in Palo Alto, I worked to:
 <ul>
