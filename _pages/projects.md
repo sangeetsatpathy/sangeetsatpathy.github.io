@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <h2> <a href="https://www.youtube.com/watch?v=0TpKLfB5cvw">2024 Pacific Skyline Council Winner</a>, February 2024 </h2>
-<b> Glenn A. and Melinda W. Adams Eagle Scout Service Project of the Year Award </b>
+<b> <a href="https://nesa.org/awards-and-recognition/service-project-of-the-year-award/">Glenn A. and Melinda W. Adams Eagle Scout Service Project of the Year Award</a> </b>
 
 
 <div style="width:560px; height:316px">
