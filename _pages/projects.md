@@ -7,7 +7,7 @@ redirect_from:
   - /markdown.html
 ---
 
-<h2> <a href="https://pacsky.org/scouting/eagles-nest/adams-award-winners/">2024 Pacific Skyline Council Winner</a>, February 2024 </h2>
+<h2> <a href="https://www.youtube.com/watch?v=0TpKLfB5cvw">2024 Pacific Skyline Council Winner</a>, February 2024 </h2>
 <b> Glenn A. and Melinda W. Adams Eagle Scout Service Project of the Year Award </b>
 
 

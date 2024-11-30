@@ -33,4 +33,4 @@ The workshop topics have included:
  The workshops were able to gain a good amount of participants (241 participants over 8 workshops). STEMStart! has fostered an enriching STEM learning experience for the participants, instilling scientific thinking, nurturing  intellectual curiosity, and shedding light on potential careers. The non-profit has helped participants identify and carry forward their passions in STEM, with workshop themes, hands-on activities, and 1:1 guidance that were tailored to the participants’ age group, knowledge and interests. 
 </div>
 <br>
-STEMStart! recently won the <a href="https://pacsky.org/scouting/eagles-nest/adams-award-winners/">2024 Glenn A. and Melinda W. Adams Eagle Scout Service Project of the Year Award</a>.
+STEMStart! recently won the <a href="https://www.youtube.com/watch?v=0TpKLfB5cvw">2024 Glenn A. and Melinda W. Adams Eagle Scout Service Project of the Year Award</a>.

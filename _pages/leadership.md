@@ -40,7 +40,7 @@ I have been serving continuously in various leadership roles within the troop; T
 See <a href="https://sangeetsatpathy.github.io/scouting">Scouting</a> for more information on the leadership positions I have held.
 <hr>
 
-<h2>Student District Representative  | <a href="https://www.pausd.org/about-us/committees-task-forces/adhoc-committees/technologyai">PAUSD AI & Technology  Committee</a>, Palo Alto, CA              </h2>
+<h2>Student District Representative  | <a href="https://www.pausd.org/about-us/committees-task-forces/archived-committees/technologyai">PAUSD AI & Technology  Committee</a>, Palo Alto, CA              </h2>
 <h3>Aug 2023 - May 2024</h3>
 As the selected Student Representative at the PAUSD (school district) level, I worked to:
 <ul>
@@ -72,6 +72,7 @@ As the sole selected Student Representative from both high schools in Palo Alto,
 <ul>
 <li>Created content and presentation slides for the club’s meetings.</li>
 <li> Helped teach inexperienced attendees on how to build and fly a drone. </li>
+<li>Topics included drone safety, flight controllers, motors, soldering, cameras, sensors, compass calibration, batteries, power, and route planning.</li>
 </ul>
 <hr>
 <h2>Student Representative | <a href="https://go.boarddocs.com/ca/pausd/Board.nsf/goto?open&id=BLZPUJ65DE6B">PAUSD Middle School Science Textbook Selection Advisory Committee</a>, Palo Alto, CA                    </h2>
