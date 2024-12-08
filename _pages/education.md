@@ -5,8 +5,7 @@ permalink: /education/
 author_profile: true
 ---
 
-<h3><a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   Aug 2021 – May 2025</h3>
-
+<h3><a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   Aug 2021 – May 2025 <br>Palo Alto Unified School District (PAUSD) </h3>
 *Unweighted GPA: 4.0  \| Weighted GPA: 4.40*
 
 1.  Member of French National Honor Society (Société Honoraire de Français), Feb 2022 - Present 
