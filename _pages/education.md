@@ -138,6 +138,7 @@ Expand each year below to know more.</i></div>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text">Certificate of Achievement in Advanced Software Development</a>, Issued by Foothill College, March 2023</li>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text">Certificate of Achievement in Software Development in Java</a>, Issued by Foothill College, March 2023</li>
 <li> <a href="https://learn.onshape.com/courses/certified-onshape-associate">Certificate of CAD (Computer Aided-Design) Onshape Associate</a>, Issued by Onshape, May 2022</li>
+<li> <a href="https://nesa.org/">NESA (National Eagle Scout Association)</a> Lifetime Member, August 2023</li>
 <li> <a href="https://www.padi.com/courses/open-water-diver">PADI Open Water Diver Certification</a>, Issued by PADI, August 2019</li>
 
 </ul>
