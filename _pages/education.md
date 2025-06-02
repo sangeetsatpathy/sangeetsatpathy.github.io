@@ -71,12 +71,8 @@ Expand each grade below to know more.</i></div>
 </ul>
 </details>
 
-
-
 <hr>
-<h3><a href="https://www.foothill.edu/">Foothill College</a>, Los Altos Hills, CA   |  Dual Enrollment     |    Aug 2021 – May 2025 </h3>
-
-*GPA: 4.0  \| Dean’s List - Fall 2021, Spring 2022, Winter 2023, Fall 2023*
+<h3><a href="https://www.foothill.edu/">De Anza College</a>, Cupertino, CA   |  Dual Enrollment     |    August 2024 – May 2025 </h3>
 
 <div><i>
 Expand each year below to know more.</i></div> 
@@ -85,10 +81,18 @@ Expand each year below to know more.</i></div>
 <summary><b>Courses (2024-2025)</b></summary>
 <ul>
 <li>Multivariable Calculus Part 2 (Math 1D) - In Progress</li>
-<li>Differential Equations (Math 2A) - Planned</li>
 <li>Linear Algebra (Math 2B) - Planned</li>
 </ul>
 </details>
+
+
+<hr>
+<h3><a href="https://www.foothill.edu/">Foothill College</a>, Los Altos Hills, CA   |  Dual Enrollment     |    Aug 2021 – May 2024 </h3>
+
+*GPA: 4.0  \| Dean’s List - Fall 2021, Spring 2022, Winter 2023, Fall 2023*
+
+<div><i>
+Expand each year below to know more.</i></div> 
 
 <details>
 <summary><b> Courses (2023-2024)</b></summary>
