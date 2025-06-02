@@ -22,7 +22,7 @@ help of over 1,700 adult volunteers. </li>
 </ul>
 <hr>
 <h2>Founder & President | <a href="https://www.instagram.com/gunn_intramural_sports_club/"> Gunn Intramural Sports Club </a>, Palo Alto, CA                                        </h2>
-<h3> Jan 2023 – Present</h3>
+<h3> Jan 2023 – June 2025</h3>
 
 <ul>
 <li> Founded Gunn Intramural Sports Club, a highly inclusive club that provides an opportunity to participate in a variety of recreational sports. Gunn high school students of all grades and skill levels are members--ranging from newcomers looking to exercise outdoors to veterans improving their skills. </li>
@@ -33,7 +33,7 @@ help of over 1,700 adult volunteers. </li>
 </ul>
 <hr>
 <h2><a href="https://sangeetsatpathy.github.io/scouting">Scouting Leadership</a> | <a href="https://troop37losaltos.com/">Troop 37</a>, Los Altos, CA</h2>
-<h3>August 2018 - Present</h3>
+<h3>August 2018 - April 2025</h3>
 <a href="https://troop37losaltos.com">Troop 37</a> is one of the larger troops within the <a href="https://pacsky.org/">Pacific Skyline Council</a> and is completely Scout-run.
 I have been serving continuously in various leadership roles within the troop; Troop 37 leadership positions have a lot of responsibilities and work associated with them due to the size of our troop.
 
@@ -52,7 +52,7 @@ As the selected Student Representative at the PAUSD (school district) level, I w
 
 <hr>
 <h2> Treasurer  | Gunn French Club, Palo Alto, CA		                                                                             </h2>
-<h3>Mar 2023 - Present</h3>
+<h3>Mar 2023 - June 2025</h3>
 As the elected Treasurer, my responsibilities include:
 <ul>
 <li>Managing club funds</li> <li>Organizing fund-raisers</li>  <li>Reimbursing club expenses</li> <li>Planning out weekly meetings</li>
