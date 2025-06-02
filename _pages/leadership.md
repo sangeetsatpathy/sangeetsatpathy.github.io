@@ -11,7 +11,7 @@ redirect_from:
 
 <h2> Sole Youth Executive Board Member | <a href="https://pacsky.org/">Pacific Skyline Council</a>, Foster City, CA		     </h2>
 
-<h3> Feb 2024 - Present </h3>
+<h3> February 2024 - Present </h3>
 <ul>
 <li> The Pacific Skyline Council (PacSky), California is one of 272 councils of <a href="https://www.scouting.org">Boy Scouts of America </a> across the nation. 
 PacSky oversees Scouting programs on the San Francisco Peninsula and supports over 4,500 youth with the dedicated
@@ -22,7 +22,7 @@ help of over 1,700 adult volunteers. </li>
 </ul>
 <hr>
 <h2>Founder & President | <a href="https://www.instagram.com/gunn_intramural_sports_club/"> Gunn Intramural Sports Club </a>, Palo Alto, CA                                        </h2>
-<h3> Jan 2023 – June 2025</h3>
+<h3> January 2023 – June 2025</h3>
 
 <ul>
 <li> Founded Gunn Intramural Sports Club, a highly inclusive club that provides an opportunity to participate in a variety of recreational sports. Gunn high school students of all grades and skill levels are members--ranging from newcomers looking to exercise outdoors to veterans improving their skills. </li>
@@ -41,7 +41,7 @@ See <a href="https://sangeetsatpathy.github.io/scouting">Scouting</a> for more i
 <hr>
 
 <h2>Student District Representative  | <a href="https://www.pausd.org/about-us/committees-task-forces/archived-committees/technologyai">PAUSD AI & Technology  Committee</a>, Palo Alto, CA              </h2>
-<h3>Aug 2023 - May 2024</h3>
+<h3>August 2023 - May 2024</h3>
 As the selected Student Representative at the PAUSD (school district) level, I worked to:
 <ul>
 <li>Enrich the educational experience of students by strategically leveraging cutting-edge technological capabilities. </li>
@@ -52,14 +52,14 @@ As the selected Student Representative at the PAUSD (school district) level, I w
 
 <hr>
 <h2> Treasurer  | Gunn French Club, Palo Alto, CA		                                                                             </h2>
-<h3>Mar 2023 - June 2025</h3>
+<h3>March 2023 - June 2025</h3>
 As the elected Treasurer, my responsibilities include:
 <ul>
 <li>Managing club funds</li> <li>Organizing fund-raisers</li>  <li>Reimbursing club expenses</li> <li>Planning out weekly meetings</li>
 </ul>
 <hr>
 <h2> Sole Student Representative | <a href="https://www.pausd.org/about-us/committees-task-forces/archived-committees/dual-enrollment">PAUSD Dual Enrollment Committee</a>, Palo Alto, CA		          </h2>
-<h3>Feb 2023 - May 2023</h3>
+<h3>February 2023 - May 2023</h3>
 As the sole selected Student Representative from both high schools in Palo Alto, I worked to:
 <ul>
 <li>Express students’ views, concerns and requirements about dual enrollment at Foothill College (local community college)</li>
@@ -68,7 +68,7 @@ As the sole selected Student Representative from both high schools in Palo Alto,
 
 <hr>
 <h2>Content Director | GunnUAVs (Gunn Unmanned Aerial Vehicles) Club, Palo Alto, CA                                  </h2>
-<h3> Sep 2021 - June 2022</h3>
+<h3> September 2021 - June 2022</h3>
 <ul>
 <li>Created content and presentation slides for the club’s meetings.</li>
 <li> Helped teach inexperienced attendees on how to build and fly a drone. </li>
@@ -76,13 +76,13 @@ As the sole selected Student Representative from both high schools in Palo Alto,
 </ul>
 <hr>
 <h2>Student Representative | <a href="https://go.boarddocs.com/ca/pausd/Board.nsf/goto?open&id=BLZPUJ65DE6B">PAUSD Middle School Science Textbook Selection Advisory Committee</a>, Palo Alto, CA                    </h2>
-<h3>Sep 2018 - May 2020</h3>
+<h3>September 2018 - May 2020</h3>
 <ul>
 <li>As the sole Student Representative from <a href="https://jls.pausd.org/">JLS Middle School</a>, I voiced students’ views and opinions as a  part of the decision-making committee to finalize the science textbook for PAUSD middle schools </li> 
 </ul>
 <hr>
 <h2>Site Council Representative | <a href="https://jls.pausd.org/">JLS Middle School</a>, Palo Alto, CA                                                                  </h2>
-<h3>Sep 2018 - May 2021</h3>
+<h3>September 2018 - May 2021</h3>
 <ul>
 <li>Served on the school site council, which reviews equity, safety and school events</li>
 </ul>

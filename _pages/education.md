@@ -4,10 +4,10 @@ title: "Education"
 permalink: /education/
 author_profile: true
 ---
-<h3><a href="https://www.stanford.edu/">Stanford University</a> | BS, Electrical Engineering, Computer Science   |   Sep 2025 – June 2029</h3>
+<h3><a href="https://engineering.stanford.edu/">Stanford University</a> | BS, Electrical Engineering, Computer Science   |   Sep 2025 – June 2029</h3>
 
 
-<h3><a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   Aug 2021 – May 2025 <br>Palo Alto Unified School District (PAUSD) </h3>
+<h3><a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   Aug 2021 – June 2025 <br>Palo Alto Unified School District (PAUSD) </h3>
 *Unweighted GPA: 4.0  \| Weighted GPA: 4.40*
 
 1.  Member of French National Honor Society (Société Honoraire de Français), Feb 2022 - Present 
@@ -72,7 +72,7 @@ Expand each grade below to know more.</i></div>
 </details>
 
 <hr>
-<h3><a href="https://www.foothill.edu/">De Anza College</a>, Cupertino, CA   |  Dual Enrollment     |    August 2024 – May 2025 </h3>
+<h3><a href="https://www.deanza.edu/">De Anza College</a>, Cupertino, CA   |  Dual Enrollment     |    August 2024 – May 2025 </h3>
 
 <div><i>
 Expand each year below to know more.</i></div> 
@@ -87,7 +87,7 @@ Expand each year below to know more.</i></div>
 
 
 <hr>
-<h3><a href="https://www.foothill.edu/">Foothill College</a>, Los Altos Hills, CA   |  Dual Enrollment     |    Aug 2021 – May 2024 </h3>
+<h3><a href="https://www.foothill.edu/">Foothill College</a>, Los Altos Hills, CA   |  Dual Enrollment     |    August 2021 – May 2024 </h3>
 
 *GPA: 4.0  \| Dean’s List - Fall 2021, Spring 2022, Winter 2023, Fall 2023*
 
@@ -137,7 +137,7 @@ Expand each year below to know more.</i></div>
 <hr>
 **Certificates Earned [8 Certificates]**
 <ul id="certificates">
-<li> <a href="https://naf.org/our-approach/naftrack">NAFTrack Certificate  - Engineering</a>, to be issued by NAF, expected May 2025 (pending high school graduation)</li>
+<li> <a href="https://naf.org/our-approach/naftrack">NAFTrack Certificate  - Engineering</a>, Issued by NAF, June 2025</li>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/learning-in-new-media-classrooms/">Certificate of Achievement in Research, Design, and Development for Global Good</a>, Foothill College,  June 2024 </li>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text">Certificate of Achievement in Software Development in C++</a>, Issued by Foothill College,  December 2023 </li>
 <li> <a href="https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text">Certificate of Achievement in Software Development in Python</a>, Issued by Foothill College, December 2023</li>

@@ -17,7 +17,7 @@ redirect_from:
 <br>
 Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service Project of the Year, out of several Eagle Scout projects completed in the previous year. This award recognizes valuable service, of an exceptional nature by an Eagle Scout candidate, to the community through the completion of an Eagle Scout project.
 <hr>
-<h2>Boy Scouts of America Leadership (August 2018-Present)</h2>
+<h2>Boy Scouts of America Leadership (August 2018-April 2025)</h2>
 <a href="https://troop37losaltos.com">Troop 37</a> is one of the larger troops within the <a href="https://pacsky.org/">Pacific Skyline Council</a> and is completely Scout-run.
 I served continuously in various leadership roles within the troop; troop leadership positions had a lot of responsibilities and work associated with them due to the size of our troop. Troop 37 Leadership terms are 6 months long, with the exception of Den Chiefs that have a 10-month term.
 
@@ -54,7 +54,7 @@ Patrol leaders plan and lead patrol meetings and activities. They represent thei
 </details>
 <hr>
 <h2>Boy Scouts of America Awards</h2>
-<h3><a href="https://www.scouting.org/programs/scouts-bsa/">Scouts BSA</a> program (March 2018-Present)</h3>
+<h3><a href="https://www.scouting.org/programs/scouts-bsa/">Scouts BSA</a> program (March 2018-April 2025)</h3>
 
 <ul>
 <li><a href="https://www.scouting.org/about/research/eagle-scouts/">Eagle Scout</a> and 4 Eagle Palms, July 2023 (Grade 11) </li>
