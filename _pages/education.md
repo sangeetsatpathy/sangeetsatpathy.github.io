@@ -80,8 +80,8 @@ Expand each year below to know more.</i></div>
 <details>
 <summary><b>Courses (2024-2025)</b></summary>
 <ul>
-<li>Multivariable Calculus Part 2 (Math 1D) - In Progress</li>
-<li>Linear Algebra (Math 2B) - Planned</li>
+<li>Multivariable Calculus Part 2 (Math 1D)</li>
+<li>Linear Algebra (Math 2B)</li>
 </ul>
 </details>
 
