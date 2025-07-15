@@ -8,9 +8,9 @@ author_profile: true
 
 
 <h3><a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   Aug 2021 – June 2025 <br>Palo Alto Unified School District (PAUSD) </h3>
-*Unweighted GPA: 4.0  \| Weighted GPA: 4.40*
+*Unweighted GPA: 4.0  \| Weighted GPA: 4.45*
 
-1.  Member of French National Honor Society (Société Honoraire de Français), Feb 2022 - Present 
+1.  Member of French National Honor Society (Société Honoraire de Français), Feb 2022 - Jun 2025 
 <br>
 2. Gunn High School Sports Team:  Track & Field (Spring 2023, Spring 2022)
 <br>
@@ -163,16 +163,28 @@ Expand each year below to know more.</i></div>
 
 <li>AP Exams </li>
 
-Received a score on 5/5 on all AP exams taken till date.
+Received a score on 5/5 on 10 AP exams.
 <br>
 <div><i>
 Expand each year below to know more.</i></div> 
+
+<details>
+<summary>May 2025</summary>
+<ul>
+<li>AP Physics C: E&M</li>
+<li>AP Physics C: Mechanics</li>
+<li>AP Macroeconomics</li>
+<li>AP Microeconomics</li>
+<li>AP Art History</li>
+</ul>
+</details>
+
 <details>
 <summary>May 2024</summary>
 <ul>
-<li>AP Chemistry: 5/5</li>
-<li>AP US History: 5/5</li>
-<li>AP Calculus BC: 5/5</li>
+<li>AP Chemistry</li>
+<li>AP US History</li>
+<li>AP Calculus BC</li>
 </ul>
 </details>
 
@@ -180,8 +192,8 @@ Expand each year below to know more.</i></div>
 
 <summary>May 2023 </summary>
 <ul>
-<li>AP Computer Science A: 5/5</li>
-<li>AP Statistics: 5/5</li>
+<li>AP Computer Science A</li>
+<li>AP Statistics</li>
 </ul>
 </details>
 
