@@ -1,103 +1,49 @@
 ---
-permalink: /scouting/
-title: "Scouting"
+layout: archive
+title: "Projects"
+permalink: /projects/
 author_profile: true
-redirect_from: 
-  - /md/
-  - /markdown.html
 ---
 
-<h2> <a href="https://www.youtube.com/watch?v=0TpKLfB5cvw">2024 Pacific Skyline Council Winner</a>, February 2024 </h2>
-<b> <a href="https://nesa.org/awards-and-recognition/service-project-of-the-year-award/">Glenn A. and Melinda W. Adams Eagle Scout Service Project of the Year Award</a> </b>
+<h2> TrashTron | <a href="https://www.reubotics.com/#/interns/">Reubotics</a> </h2>
 
+<h3> November 2023 - November 2024</h3>
 
+<div style="text-align:justify">Designed (using Onshape's CAD software), assembled, machined, and programmed a Robot (named <b>TrashTron</b>) with the guidance of the Robotics Subject Matter Expert, Dr. Reuben Brewer. 
+TrashTron is a mobile robot with a gripper-arm that autonomously detects, moves to, and picks up plastic trash bottles lying on the ground.</div> <br>
 <div style="width:560px; height:316px">
-<iframe width="178%" height="100%" src="https://www.youtube.com/embed/FjJ753XagDc?si=XTwcei6bJNMYlLPq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="178%" height="100%" src="https://www.youtube.com/embed/8wo4DTQ7WL4?si=zhz7DXyHIy3SCeGf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 <br>
-Each year, the Pacific Skyline Council selects 1 outstanding Eagle Scout Service Project of the Year, out of several Eagle Scout projects completed in the previous year. This award recognizes valuable service, of an exceptional nature by an Eagle Scout candidate, to the community through the completion of an Eagle Scout project.
-<hr>
-<h2>Boy Scouts of America Leadership (August 2018-April 2025)</h2>
-<a href="https://troop37losaltos.com">Troop 37</a> is one of the larger troops within the <a href="https://pacsky.org/">Pacific Skyline Council</a> and is completely Scout-run.
-I served continuously in various leadership roles within the troop; troop leadership positions had a lot of responsibilities and work associated with them due to the size of our troop. Troop 37 Leadership terms are 6 months long, with the exception of Den Chiefs that have a 10-month term.
-
-<div><i>
-Expand each role below to know more.</i></div> 
-<details>
-<summary><b>Den Chief</b> (3 terms, including current term)</summary>
-Den chiefs are Boy Scouts who assist a Cub Scout den leader. They help den meetings by leading activities, games, and ceremonies and are good role models for the Cub Scouts. In addition, Den Chiefs help Cub Scouts advance through their ranks and encourage them to join a Boy Scout Troop upon graduating from Cub Scouts. <br><br>
-</details>
-
-<details>
-<summary><b>Assistant Senior Patrol Leader (ASPL)</b></summary>
-The Assistant Senior Patrol Leader’s specific duties are providing training and guidance for the troop’s quartermaster, scribe, Order of the Arrow representative, historian, librarian, webmaster, and chaplain's aide. ASPLs also plan, organize, and run the Troop's weekly meetings. <br><br>
-</details>
-
-<details>
-<summary><b>Troop Guide</b> (3 terms)</summary>
-Troop Guides are usually experienced Boy Scouts who have strong teaching skills and possess the patience to work well with younger Scouts. As a mentor for the younger Scouts, a Troop Guide teaches them varied Scouting skills that can help them in rank advancement. They also introduce the younger Scouts to Troop operations, sets a good example, and counsels individual Scouts on Scouting challenges. <br><br>
-</details>
-
-<details>
-<summary><b>Quartermaster</b></summary>
-Scout Quartermasters serve as the troop's supply boss. They keep an inventory of troop equipment and see that the gear is in good condition. They issue equipment to different patrols and ensure that it is returned in good conditions. They also make suggestions for new or replacement items and work with the adult Quartermaster.<br><br>
-</details>
-
-<details>
-<summary><b>Troop Webmaster</b></summary>
-The Troop Webmaster is responsible for maintaining the troop's website, making sure the information posted on the website is correct and up-to-date, and that the privacy of youth and adult troop members is protected.<br><br>
-</details>
-
-<details>
-<summary><b>Patrol Leader</b> (3 terms)</summary>
-Patrol leaders plan and lead patrol meetings and activities. They represent their patrol at all patrol leaders' council meetings and at the annual program planning conference. They know the needs and capabilities of their patrol members and work to make them successful.<br><br>
-</details>
-<hr>
-<h2>Boy Scouts of America Awards</h2>
-<h3><a href="https://www.scouting.org/programs/scouts-bsa/">Scouts BSA</a> program (March 2018-April 2025)</h3>
-
 <ul>
-<li><a href="https://www.scouting.org/about/research/eagle-scouts/">Eagle Scout</a> and 4 Eagle Palms, July 2023 (Grade 11) </li>
-<li> <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/noa/">National Outdoor Achievement award for Camping</a>, August 2024  (Grade 12) </li>
-<li> <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/noa/">National Outdoor Achievement award for Conservation</a>, August 2024  (Grade 12) </li>
-<li> <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/noa/">National Outdoor Achievement award for Hiking</a>, February 2023  (Grade 10) </li>
-<li> <a href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/noa/">National Outdoor Achievement award for Aquatics</a>, February 2023 (Grade 10)</li>
-<br>
-<li> <a href="https://www.scouting.org/stem-nova-awards/awards/scouts-bsa-supernova-awards/">Dr. Bernard Harris Supernova award </a>, National BSA Award, May 2022 (Grade 9)</li>
-As a part of the Bernard Harris Supernova Award, Scouts must complete two "activity topics" of their choice.
-
-I chose to pursue activity topics in the fields of Science and Mathematics.
-
-<div style="text-align: justify;">
-<details>
-<summary><b><i>Plastic Recycling (Science Activity Topic)</i></b></summary>
-For my Science Activity topic, I focused on plastic recycling -- specifically, I looked into the recycling of tires and plastic toys. I learnt about the process and analyzed the impact of properly recycling these products. For the second part of the activity topic, I looked into the feasibility of recycling single-use plastics to be used as paper. Upon researching other solutions, I found an Indian-based company that had been working on fusing plastics with cotton fibers to form paper that absorbs ink. However, the problem with this is that there is no economic incentive to choose this kind of paper over tree-based paper. Since feasibility is established, further research into this kind of product is worthwhile.
-</details>
-
-<details>
-<summary><b><i>Data Inference for Old Faithful Eruptions (Math Activity Topic)</i></b></summary>
-For my Mathematics Activity Topic, I focused on analyzing data on past Old Faithful Geyser eruptions to perform data inference on the next eruption. Using graphing tools such as Desmos, I was able to generate a mathematical prediction of the eruption cycles.
-</details>
-</div>
-<br>
-
-<li> <a href="https://www.scouting.org/stem-nova-awards/awards/scouts-bsa/">Four STEM  Nova awards</a>: Designed to Crunch (June 2021), Hello World! (March 2021), Whoosh! (March 2021), Shoot! (Dec 2018)</li>
-<li> <a href="https://www.scouting.org/awards/awards-central/whitewater-rafting-bsa/">Whitewater Rafting BSA Award </a>, July 2022 (Grade 10)</li>
-<li> <a href="https://www.scouting.org/awards/awards-central/snorkeling/">Snorkeling BSA Award </a>, July 2022 (Grade 10)</li>
-<li> <a href="https://www.scouting.org/awards/awards-central/kayaking/">Kayaking BSA Award </a>, July 2022 (Grade 10)</li>
-<li> <a href="https://www.scouting.org/awards/awards-central/bsa-stand-up-paddleboarding/">Stand-Up Paddleboarding BSA Award </a>, October 2019 (Grade 7)</li>
-<li> <a href="https://www.scouting.org/awards/awards-central/scuba/">Scuba BSA </a>, August 2019 (Grade 7)</li>
-<li> <a href="https://www.scouting.org/awards/awards-central/mile-swim/">Mile Swim BSA Award </a>, July 2019 (Grade 7)</li>
-<li> <a href="https://www.scouting.org/awards/awards-central/den-chief/">Den Chief Service Award </a>, June 2019 (Grade 7)</li>
-<li>Edgar A. McDowell Award, given to BSA Troop 37’s most active and engaged first year Boy Scout exemplifying the Scout Oath & Law, June 2019 (Grade 7)</li>
+<li>Used Dynamixel AX-18A and XC-330 Motors for this project. Setup communication to motors through the Pyserial module, given the packet length, instruction packets, parity, etc.</li>
+<li>Parts used to make TrashTron included 8mm shafts, flanged ball bearings, clamping shaft collars, shims, and an assortment of socket head screws. Tools used included Allen wrenches, hand taps, reamers, and a hand drill. All main parts were 3-D printed on a Bambu Lab X1 Carbon printer.</li>
+<li>Stress-tested the design in the CAD software (Onshape) and calculated expected torque on the motor. This was used to make the gear ratios torque-oriented.</li>
+ <li>Cut, re-lengthened, and soldered wires in order to make the wires fit my design. Additionally, I tested the power distribution of my wiring using a multimeter.</li>
+<li>Wrote a program using Computer Vision concepts to train a custom Machine Learning Model (YOLOv5 Object Detection Model) to help TrashTron detect, move to, and pick up the plastic trash bottle.</li>
 </ul>
+<br>
+<b>Skills:</b> Mechanical Design, CAD (Computer-Aided Design), Kinematics, Trigonometry, Python, Computer Vision, Object Detection, PID Control, Electrical Wiring & Soldering
 
-<h3><a href="https://www.scouting.org/programs/cub-scouts/">Cub Scouts</a> program (August 2014-March 2018)</h3>
+<hr>
+
+
+<h2> Automated Detection of Vehicles for the Visually Impaired to Cross Roads	         				       </h2>
+<h3>August 2023 - June 2025</h3>
 <ul>
-<li>Spirit of Akela award, March 2017 (Grade 4), Issued by Stanford District of Pacific Skyline Council.</li>
- This is a Stanford district-wide award given to Cub Scouts who exemplify the Scout Oath & Law, by exhibiting attributes of being trustworthy, thrifty and helpful behavior.
-<br>
-<li>Recruiter Strip Award, September 2016 (Grade 4) - I recruited a lot of new students to our Cub Scout Pack. </li>
-<li>Cub Scout Patch contest, 1st prize  (Council award), Issued by Pacific Skyline Council, March 2016 (Grade 3) 
-I designed the patch for the summer Cub Scout camp (Camp Ta-Ki-Ma), representing a rocket ship circling around the globe, with a cub scout looking at it in awe. </li>
+<li>Recognizing the limitations of existing apps designed for crosswalks, this research focuses on developing an innovative solution—
+a mobile app that utilizes computer vision to detect moving cars on the road 
+and alerts users through vibrations about the safety of crossing. </li>
+<li>The ultimate goal of this project was to contribute valuable insights into the feasibility and benefits of such technology,
+ paving the way for future advancements in assisting visually impaired individuals in crossing residential roads safely. </li>
+<li>I built an app and tested the object detection model in different scenarios, analyzed successful detections and detection failures, and deployed on smart-hats.</li>
+<li>Accepted and Presented at the <a href="https://foothill.edu/rsl-symposium/2024-program.html">Foothill College Research & Service Leadership Symposium (RSLS) May 2024</a>: "Automated Detection of Cars for the Visually Impaired to Cross Roads"</li>
+<li>
+    Here is the <a href="https://aar.pausd.org/projects-2020/automated-detection-cars-visually-impaired-cross-roads">AAR Project Blurb</a> and the <a href="https://drive.google.com/file/d/1VltIeBdj0qVDzbGFKxElvcAwcsXBNloZ/view?usp=sharing">Poster</a> that was presented.</li>
 </ul>
+<b>Skills:</b> Computer Vision, Machine Learning, Deep Learning, Neural Networks, Python, Research, App Development (Swift)
+
+
+
+
+<hr>

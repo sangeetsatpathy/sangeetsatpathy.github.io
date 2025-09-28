@@ -6,6 +6,25 @@ author_profile: true
 ---
 <h3><a href="https://engineering.stanford.edu/">Stanford University</a> | BS, Electrical Engineering, Computer Science   |   Sep 2025 – June 2029</h3>
 
+<details> 
+<summary> <b>Relevant Courses, Fall 2025</b> </summary>
+<ul>
+  <li> Programming Abstractions (CS106B) </li>
+  <li> Enrichment Adventures in Programming Abstractions (CS106M) </li>
+  <li> Introduction to Automata and Complexity Theory (CS154)</li>
+  </ul>
+</details>
+
+<details> 
+<summary> <b>Planned Courses 2025-2026</b> </summary>
+<ul>
+  <li> Introduction to Probability for Computer Scientists (CS109)</li>
+  <li> Computer Systems from the Ground Up (CS107E) </li>
+  <li> Differential Equations (Math 53)</li>
+  <li> Machine Learning (CS229)</li>
+  <li> An Introduction to Making for Electrical Engineers (ENGR40M)</li>
+  </ul>
+</details>
 
 <h3><a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   Aug 2021 – June 2025 <br>Palo Alto Unified School District (PAUSD) </h3>
 *Unweighted GPA: 4.0  \| Weighted GPA: 4.45*
@@ -18,7 +37,7 @@ author_profile: true
 Expand each grade below to know more.</i></div> 
 <details> 
 
-<summary> <b>Relevant Courses (Grade 12)</b> </summary>
+<summary> <b>Courses (Grade 12)</b> </summary>
 <ul>
   <li> Engineering Technology (Gunn Robotics Team) </li>
   <li> AP Physics C: Mechanics (semester-long) </li>
@@ -31,7 +50,7 @@ Expand each grade below to know more.</i></div>
 
 <details>
 
-<summary><b> Relevant Courses (Grade 11) </b></summary>
+<summary><b> Courses (Grade 11) </b></summary>
 <ul>
   <li> Engineering Technology (Gunn Robotics Team) </li>
   <li> Digital Electronics PLTW</li>
@@ -45,7 +64,7 @@ Expand each grade below to know more.</i></div>
 </details>
 
 <details>
- <summary><b> Relevant Courses (Grade 10) </b></summary>
+ <summary><b> Courses (Grade 10) </b></summary>
  <ul>
   <li> Principles of Engineering and Robotics PLTW Honors </li>
   <li> AP Computer Science A </li>
@@ -59,7 +78,7 @@ Expand each grade below to know more.</i></div>
 </details>
 
 <details>
-<summary><b> Relevant Courses (Grade 9)  </b></summary>
+<summary><b> Courses (Grade 9)  </b></summary>
 <ul>
   <li> Introduction to Engineering and Design PLTW Honors </li>
   <li> Algebra 2/Trigonometry Honors </li>
