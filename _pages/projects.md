@@ -1,9 +1,48 @@
 ---
 layout: archive
-title: "Projects"
+title: "Personal Projects"
 permalink: /projects/
 author_profile: true
 ---
+
+<h2> Neural Network from Scratch</h2>
+<h3> Sep 2025 </h3>
+Programmed and trained a working fully-connected neural network from scratch (using no libraries to aid in the architecture of the neural network) that classifies handwritten digits with 83% accuracy. Ran tests on test accuracy and confidence across various activation functions and model architectures. The only libraries imported were used to load the training dataset or aid in exporting and reading weight files.
+
+<a href="https://github.com/sangeetsatpathy/NeuralNetworkFromScratch">Project Code</a>
+
+<hr>
+
+
+
+<h2> Reddit Political Classification Project</h2>
+<h3> Aug 2025 </h3>
+Built an end-to-end NLP classification pipeline that processed and cleaned Reddit text (tokenization, stop-word removal, n-gram features) to predict a person’s political orientation with high precision. Used the PRAW API to gather training data. Compared model performance on various classifiers (Logistic Regressor, KNN, Support Vector, Random Forest, and Multilayer Perceptron). 
+
+<a href="https://github.com/sangeetsatpathy/Reddit-Political-Classification">Project Code</a>
+
+<hr>
+
+
+<h2> Ames Housing Regression Project</h2>
+<h3> July 2025 </h3>
+
+Developed a predictive regression model for house sale prices (Ames dataset, 70+ features), performing advanced feature engineering, categorical encoding, and hyperparameter tuning to improve generalization.
+
+<a href="https://github.com/sangeetsatpathy/Ames-Housing-Project">Project Code</a>
+
+<hr>
+
+
+
+<h2> Exploratory Data Analysis (EDA) Project</h2>
+<h3> July 2025 </h3>
+
+Designed and implemented an end-to-end data analysis pipeline using Python (Pandas, NumPy, Matplotlib), performing data cleaning, exploratory data analysis, and visualization to extract actionable insights from large datasets. Analyzed correlations between various diets in India with health implications. Also analyzed world development statistics, such as GDP, carbon emissions, etc. 
+
+<a href="https://github.com/sangeetsatpathy/DataAnalysisProject">Project Code</a>
+
+<hr>
 
 <h2> TrashTron | <a href="https://www.reubotics.com/#/interns/">Reubotics</a> </h2>
 
