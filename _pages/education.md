@@ -4,7 +4,7 @@ title: "Education"
 permalink: /education/
 author_profile: true
 ---
-<h3><a href="https://engineering.stanford.edu/">Stanford University</a> | BS, Electrical Engineering, Computer Science   |   Sep 2025 – June 2029</h3>
+<h3><a href="https://engineering.stanford.edu/">Stanford University</a> | BS, Electrical Engineering, Computer Science   |   Expected Graduation June 2028</h3>
 
 <details> 
 <summary> <b>Relevant Courses, Fall 2025</b> </summary>
