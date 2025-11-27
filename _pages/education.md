@@ -7,22 +7,17 @@ author_profile: true
 <h3><a href="https://engineering.stanford.edu/">Stanford University</a> | BS, Electrical Engineering, Computer Science   |   Expected Graduation June 2028</h3>
 
 <details> 
-<summary> <b>Relevant Courses, Fall 2025</b> </summary>
+<summary> <b>Courses 2025-2026</b> </summary>
 <ul>
   <li> Programming Abstractions (<a href="https://web.stanford.edu/class/cs106b/">CS106B</a>) </li>
   <li> Enrichment Adventures in Programming Abstractions (<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=CS%20106M:%20Enrichment%20Adventures%20in%20Programming%20Abstractions&academicYear=20242025">CS106M</a>) </li>
   <li> Introduction to Automata and Complexity Theory (<a href="https://omereingold.wordpress.com/cs-154-introduction-to-automata-and-complexity-theory/">CS154</a>)</li>
   </ul>
-</details>
-
-<details> 
-<summary> <b>Planned Courses 2025-2026</b> </summary>
-<ul>
   <li> Introduction to Probability for Computer Scientists (<a href="https://web.stanford.edu/class/cs109/">CS109</a>)</li>
   <li> Computer Systems from the Ground Up (<a href="https://web.stanford.edu/class/cs107e/">CS107E</a>) </li>
-  <li> Differential Equations (<a href="https://web.stanford.edu/class/math53/index.html">Math 53</a>)</li>
+  <li> Operating Systems Principles (<a href="https://web.stanford.edu/class/cs111/">CS 111</a>)</li>
   <li> Machine Learning (<a href="https://cs229.stanford.edu/">CS229</a>)</li>
-  <li> An Introduction to Making for Electrical Engineers (<a href="https://web.stanford.edu/class/archive/engr/engr40m.1178/index.html">ENGR40M</a>)</li>
+  <li> Circuits I (<a href="https://explorecourses.stanford.edu/search?q=EE101A">EE101A</a>)</li>
   </ul>
 </details>
 
