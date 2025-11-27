@@ -12,13 +12,12 @@ author_profile: true
   <li> Programming Abstractions (<a href="https://web.stanford.edu/class/cs106b/">CS106B</a>) </li>
   <li> Enrichment Adventures in Programming Abstractions (<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=CS%20106M:%20Enrichment%20Adventures%20in%20Programming%20Abstractions&academicYear=20242025">CS106M</a>) </li>
   <li> Introduction to Automata and Complexity Theory (<a href="https://omereingold.wordpress.com/cs-154-introduction-to-automata-and-complexity-theory/">CS154</a>)</li>
-  </ul>
   <li> Introduction to Probability for Computer Scientists (<a href="https://web.stanford.edu/class/cs109/">CS109</a>)</li>
   <li> Computer Systems from the Ground Up (<a href="https://web.stanford.edu/class/cs107e/">CS107E</a>) </li>
   <li> Operating Systems Principles (<a href="https://web.stanford.edu/class/cs111/">CS 111</a>)</li>
   <li> Machine Learning (<a href="https://cs229.stanford.edu/">CS229</a>)</li>
   <li> Circuits I (<a href="https://explorecourses.stanford.edu/search?q=EE101A">EE101A</a>)</li>
-  </ul>
+</ul>
 </details>
 
 <h3><a href="https://gunn.pausd.org/">Henry M. Gunn High School</a>, Palo Alto, CA   |  High School Diploma   |   Aug 2021 – June 2025 <br>Palo Alto Unified School District (PAUSD) </h3>
