@@ -11,7 +11,7 @@ redirect_from:
 
 <h2> Sole Youth Executive Board Member | <a href="https://pacsky.org/">Pacific Skyline Council</a>, Foster City, CA		     </h2>
 
-<h3> February 2024 - Present </h3>
+<h3> February 2024 - Jan 2026 </h3>
 <ul>
 <li> The Pacific Skyline Council (PacSky), California is one of 272 councils of <a href="https://www.scouting.org">Boy Scouts of America </a> across the nation. 
 PacSky oversees Scouting programs on the San Francisco Peninsula and supports over 4,500 youth with the dedicated
