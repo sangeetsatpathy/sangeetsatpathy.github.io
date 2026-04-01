@@ -9,7 +9,7 @@ author_profile: true
 <details> 
 <summary> <b>Courses 2025-2026</b> </summary>
 <ul>
-  <li> Deep Learning for Computer Vision (<a href="https://cs231n.stanford.edu/">CS 231n</a>)</li>
+  <li> Quantum Computing (<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=CS%20259Q:%20Quantum%20Computing&academicYear=20122013">CS259Q</a>)</li>
   <li> Machine Learning (<a href="https://cs229.stanford.edu/">CS229</a>)</li>
   <li> Computer Systems from the Ground Up (<a href="https://web.stanford.edu/class/cs107e/">CS107E</a>) </li>
   <li> Circuits I (<a href="https://explorecourses.stanford.edu/search?q=EE101A">EE101A</a>)</li>

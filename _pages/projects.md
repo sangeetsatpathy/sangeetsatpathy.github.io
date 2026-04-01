@@ -4,6 +4,27 @@ title: "Personal Projects"
 permalink: /projects/
 author_profile: true
 ---
+<h2>Laser Tag Distributed System (Bare-Metal C, Raspberry Pi | CS107E)</h2>
+<h3>March 2025</h3>
+I built a real-time multiplayer laser tag system from scratch in bare-metal C, running directly on Raspberry Pi hardware without an operating system. The project focused on low-level systems programming, hardware interfacing, and distributed communication between multiple devices.
+
+Each player device consists of a Raspberry Pi connected to an IR emitter (for shooting), IR receiver (for hit detection), RF transceiver, and physical trigger. When a player fires, the system emits an IR signal and simultaneously sends a wireless packet indicating a “shot” event. If another device detects the IR signal, it generates a “hit” event and communicates it back to a central controller.
+
+At the core of the system is an event-driven architecture built using interrupts. Hardware interrupts are used to detect IR hits and incoming RF packets, enabling low-latency responses without relying on an operating system. Each device runs a main control loop that processes asynchronous events, manages communication, and updates local state.
+
+A central “manager” node aggregates events from all devices and determines valid hits by correlating “shot” and “hit” packets within a small time window. It maintains a live leaderboard using device IDs and timestamps, effectively acting as a lightweight distributed game server.
+
+Working at the bare-metal level required directly interfacing with GPIO, handling communication protocols, and writing modular drivers for peripherals such as RF modules and sensors. One of the main challenges was debugging unreliable wireless communication; I improved system robustness through better packet handling, testing strategies, and modular code design.
+
+This project gave me hands-on experience with:
+<ul>
+<li>Low-level systems programming in C (no OS, direct hardware control)</li>
+<li>Interrupts and event-driven design</li>
+<li>Distributed systems and real-time synchronization</li>
+<li>Hardware-software integration (GPIO, IR sensors, RF communication)</li>
+<li>Debugging complex, multi-device systems</li>
+</ul>
+
 
 <h2> Neural Network from Scratch</h2>
 <h3> Sep 2025 </h3>
