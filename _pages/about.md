@@ -7,10 +7,24 @@ redirect_from:
   - /about.html
 ---
 <div style="text-align:justify;">
+
+<!-->
 My name is Sangeet, which means music in Sanskrit. Sound waves, as they ebb and flow, vibrate in our eardrums, making mellifluous music. Looking back now, I discover that I resonate deeply with a myriad of waves. These harmonize my life, synthesizing a magnificent melody. 
 <br><br>
 Growing up, I found myself exploring sine waves in trigonometry, experimenting with light waves in chemistry, and learning about quantum mechanical waves in physics. Drawing confidence from this foundation, I have tackled multiple challenges in electronics, engineering, and robotics. Be it radio waves at Verizon, mechanical waves at Reubotics, or wave-like time series data at Google, I have built strong technical expertise across coursework, internships, projects, and research. At the same time, I have gained proficiency in various programming languages, earning 5 certifications at Foothill College. Leveraging these skills, I am eager to dive deeper during my future undergraduate studies. I aim to become a mechatronics engineer--whose practical actions and creative works make waves for generations to come. 
 <br><br>
-Other than abstract waves, I spend my free time in actual waves. I was a competitive swimmer from 2010 to 2020--at Bangalore's Nisha Millets Swim Academy, then at Palo Alto's PASA and Alto Swim Clubs. A day out on the water is always invigorating, be it when I am ocean kayaking, canoeing, whitewater rafting, small boat sailing, swimming, or diving (as someone PADI certified for Open Water Diving). At this point, I have visited nearly every beach along the California coast!
+Other than abstract waves, I spend my free time in actual waves. I was a competitive swimmer from 2010 to 2020--at Bangalore's Nisha Millets Swim Academy, then at Palo Alto's PASA and Alto Swim Clubs. A day out on the water is always invigorating, be it when I am ocean kayaking, canoeing, whitewater rafting, small boat sailing, swimming, or diving (as someone PADI certified for Open Water Diving). At this point, I have visited nearly every beach along the California coast! -->
+
+Hi! I'm Sangeet.
+
+I'm a student at Stanford University studying Computer Science and Electrical Engineering. I am particularly interested in researching and building systems that combine low-level performance with real-world impact. Essentially - how do we make something faster? More efficient? More cost effective? I am also very interested in improving algorithms for applied AI, particularly in med-tech and robotics.
+
+Through my coursework and projects, I have developed a strong foundation in both software engineering and systems-level programming -- be it developing distributed laser tag system in bare-metal C, training a neural network to recognize digits from scratch (just straight Python!), or developing an e-commerce website without any frameworks. Notice a pattern? I like to get my hands dirty to really understand what I'm working with before I let somebody else do it for me.
+
+I am drawn to opportunities where I can learn quickly (without sacrificing depth!) and contribute to impactful systems. But more than that, I yearn to innovate. To come up with something that hasn't been done before. As a result, I am especially drawn to complex technical problems, as this is where I seek to hone my problem-solving ability.
+
+If you'd like to chat, please reach out!
+sangeet1@stanford.edu
+sangeet.satpathy@gmail.com
 
 </div>
