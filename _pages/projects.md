@@ -27,7 +27,8 @@ This project gave me hands-on experience with:
 <li>Debugging complex, multi-device systems</li>
 </ul>
 </details>
-
+<b>Skills:</b> C, RF Protocols, System Design, Interrupts, SPI, I2C
+<hr>
 
 <h2> Neural Network from Scratch</h2>
 <h3> Sep 2025 </h3>
@@ -41,6 +42,8 @@ For example, to solve the vanishing gradient problem inherent in sigmoid activat
 
 <a href="https://github.com/sangeetsatpathy/NeuralNetworkFromScratch">Project Code</a>
 </details>
+
+<b>Skills:</b> Neural Nets, Machine Learning
 <hr>
 
 
@@ -58,6 +61,8 @@ Compared model performance on several classifiers: Logistic Regressor, K-Nearest
 
 <a href="https://github.com/sangeetsatpathy/Reddit-Political-Classification">Project Code</a>
 </details>
+
+<b>Skills:</b> NLP, Tokenization, ML Algorithms, Scikit-Learn
 <hr>
 
 
@@ -76,6 +81,8 @@ This work demonstrates skills relevant to roles in data science, machine learnin
 
 <a href="https://github.com/sangeetsatpathy/Ames-Housing-Project">Project Code</a>
 
+<b>Skills:</b> Pandas, Numpy, Matplotlib, Scikit-Learn, Validation, Data Analysis
+
 <hr>
 
 
@@ -83,9 +90,11 @@ This work demonstrates skills relevant to roles in data science, machine learnin
 <h2> Exploratory Data Analysis (EDA) Project</h2>
 <h3> July 2025 </h3>
 
-Designed and implemented an end-to-end data analysis pipeline using Python (Pandas, NumPy, Matplotlib), performing data cleaning, exploratory data analysis, and visualization to extract actionable insights from large datasets. Analyzed correlations between various diets in India with health implications. Also analyzed world development statistics, such as GDP, carbon emissions, etc. 
+Designed and implemented an end-to-end data analysis pipeline using Python (Pandas, NumPy, Matplotlib), performing data cleaning, exploratory data analysis, and visualization to extract actionable insights from large datasets. Analyzed correlations between various diets in India with health implications. Also analyzed world development statistics, such as GDP, carbon emissions, etc.
 
 <a href="https://github.com/sangeetsatpathy/DataAnalysisProject">Project Code</a>
+
+<b>Skills:</b> Pandas, Numpy, Matplotlib
 
 <hr>
 
@@ -111,22 +120,22 @@ TrashTron is a mobile robot with a gripper-arm that autonomously detects, moves 
 
 <a href="https://github.com/sangeetsatpathy/TrashTron-Code">Project Code</a>
 
-<br>
-<b>Skills:</b> Mechanical Design, CAD (Computer-Aided Design), Kinematics, Trigonometry, Python, Computer Vision, Object Detection, PID Control, Electrical Wiring & Soldering
 </details>
+<b>Skills:</b> Mechanical Design, CAD (Computer-Aided Design), Kinematics, Trigonometry, Python, Computer Vision, Object Detection, PID Control, Electrical Wiring & Soldering
 <hr>
 
 
 <h2> Automated Detection of Vehicles for the Visually Impaired to Cross Roads	         				       </h2>
 <h3>August 2023 - June 2025</h3>
 
-<ul>
-<li>Recognizing the limitations of existing apps designed for crosswalks, this research focuses on developing an innovative solution—
+
+Recognizing the limitations of existing apps designed for crosswalks, this research focuses on developing an innovative solution—
 a mobile app that utilizes computer vision to detect moving cars on the road 
-and alerts users through vibrations about the safety of crossing. </li>
+and alerts users through vibrations about the safety of crossing.
 
 <details>
 <summary>Learn more</summary>
+<ul>
 <li>The ultimate goal of this project was to contribute valuable insights into the feasibility and benefits of such technology,
  paving the way for future advancements in assisting visually impaired individuals in crossing residential roads safely. </li>
 <li>I built an app and tested the object detection model in different scenarios, and analyzed successful detections and detection failures.</li>
