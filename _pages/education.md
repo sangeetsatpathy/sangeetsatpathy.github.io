@@ -6,29 +6,29 @@ author_profile: true
 ---
 <h2>Skills, Languages, Tools</h2>
 <details>
-<summary><b>Machine Learning & AI:</b></summary>
+<summary><b>Machine Learning & AI</b></summary>
 Computer Vision (Object Detection, Object Tracking, YOLO), Deep Learning (Neural Networks), Natural Language Processing, Tokenization,  Supervised Learning (Regression, Classification), Machine Learning Algorithms, ML Lifecycle (Data Processing, Feature Engineering, Hyperparameter Tuning, Model Evaluation), Statistical Analysis, Probability,  scikit-learn, Pandas, NumPy, OpenCV, Matplotlib
 
 </details>
 
 <details>
-<summary><b>Robotics:</b></summary>
+<summary><b>Robotics</b></summary>
 CAD (Computer-Aided Design), Mechanical Design, PID Control, Electrical Wiring & Soldering, Kinematics, Machining (Lathe, Mill)
 
 </details>
 
 <details>
-<summary><b>Programming Languages, Web, Databases:</b></summary>
+<summary><b>Programming Languages, Web, Databases</b></summary>
 Python, C++, Java, C, JavaScript, HTML, CSS,, SQL, MongoDB
 </details>
 
 <details>
-<summary><b>Software Engineering:</b></summary>
+<summary><b>Software Engineering</b></summary>
 Algorithms, Data Structures, API Development (REST, Postman), Full-Stack Development, Object-Oriented Design, Debugging, Testing, Node.js, Git, AWS EC2
 </details>
 
 <details>
-<summary><b>Systems & Low-Level:</b></summary>
+<summary><b>Systems & Low-Level</b></summary>
 Embedded Systems, Bare-Metal Programming, Interrupts, Event-Driven Systems, Computer Architecture, Distributed Systems, IoT, RF Protocols, Serial Communication (SPI, I2C, UART)
 </details>
 
