@@ -5,6 +5,7 @@ permalink: /education/
 author_profile: true
 ---
 <h3><a href="https://engineering.stanford.edu/">Stanford University</a> | BS, Electrical Engineering, Computer Science   |   Expected Graduation June 2028</h3>
+GPA: 3.922/4.0
 
 <details> 
 <summary> <b>Courses 2025-2026</b> </summary>
