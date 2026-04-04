@@ -4,7 +4,7 @@ title: "Education"
 permalink: /education/
 author_profile: true
 ---
-<h3>Skills, Languages, Tools</h3>
+<h2>Skills, Languages, Tools</h2>
 <details>
 <summary><b>Machine Learning & AI:</b></summary>
 Computer Vision (Object Detection, Object Tracking, YOLO), Deep Learning (Neural Networks), Natural Language Processing, Tokenization,  Supervised Learning (Regression, Classification), Machine Learning Algorithms, ML Lifecycle (Data Processing, Feature Engineering, Hyperparameter Tuning, Model Evaluation), Statistical Analysis, Probability,  scikit-learn, Pandas, NumPy, OpenCV, Matplotlib
@@ -34,7 +34,7 @@ Embedded Systems, Bare-Metal Programming, Interrupts, Event-Driven Systems, Comp
 
 <hr>
 
-
+<h2>Coursework and Societies</h2>
 <h3><a href="https://engineering.stanford.edu/">Stanford University</a> | BS, Electrical Engineering, Computer Science   |   Expected Graduation June 2028</h3>
 GPA: 3.922/4.0
 
@@ -198,7 +198,7 @@ Expand each year below to know more.</i></div>
 
 <hr>
 
-**Test Scores**
+<h2>Test Scores</h2>
 
 <ul>
 
