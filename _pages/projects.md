@@ -27,7 +27,6 @@ This project gave me hands-on experience with:
 <li>Debugging complex, multi-device systems</li>
 </ul>
 </details>
-<b>Skills:</b> C, RF Protocols, System Design, Interrupts, SPI, I2C
 <hr>
 
 <h2> Neural Network from Scratch</h2>
@@ -43,7 +42,6 @@ For example, to solve the vanishing gradient problem inherent in sigmoid activat
 <a href="https://github.com/sangeetsatpathy/NeuralNetworkFromScratch">Project Code</a>
 </details>
 
-<b>Skills:</b> Neural Nets, Machine Learning
 <hr>
 
 
@@ -62,7 +60,6 @@ Compared model performance on several classifiers: Logistic Regressor, K-Nearest
 <a href="https://github.com/sangeetsatpathy/Reddit-Political-Classification">Project Code</a>
 </details>
 
-<b>Skills:</b> NLP, Tokenization, ML Algorithms, Scikit-Learn
 <hr>
 
 
@@ -81,8 +78,6 @@ This work demonstrates skills relevant to roles in data science, machine learnin
 
 <a href="https://github.com/sangeetsatpathy/Ames-Housing-Project">Project Code</a>
 
-<b>Skills:</b> Pandas, Numpy, Matplotlib, Scikit-Learn, Validation, Data Analysis
-
 <hr>
 
 
@@ -93,8 +88,6 @@ This work demonstrates skills relevant to roles in data science, machine learnin
 Designed and implemented an end-to-end data analysis pipeline using Python (Pandas, NumPy, Matplotlib), performing data cleaning, exploratory data analysis, and visualization to extract actionable insights from large datasets. Analyzed correlations between various diets in India with health implications. Also analyzed world development statistics, such as GDP, carbon emissions, etc.
 
 <a href="https://github.com/sangeetsatpathy/DataAnalysisProject">Project Code</a>
-
-<b>Skills:</b> Pandas, Numpy, Matplotlib
 
 <hr>
 
@@ -121,7 +114,6 @@ TrashTron is a mobile robot with a gripper-arm that autonomously detects, moves 
 <a href="https://github.com/sangeetsatpathy/TrashTron-Code">Project Code</a>
 
 </details>
-<b>Skills:</b> Mechanical Design, CAD (Computer-Aided Design), Kinematics, Trigonometry, Python, Computer Vision, Object Detection, PID Control, Electrical Wiring & Soldering
 <hr>
 
 
@@ -146,10 +138,6 @@ and alerts users through vibrations about the safety of crossing.
 
 <a href="https://github.com/sangeetsatpathy/AutomatedDetectionOfVehicles_ForVisuallyImpaired">Project Code</a>
 </details>
-
-
-<b>Skills:</b> Computer Vision, Machine Learning, Deep Learning, Neural Networks, Python, Research, App Development (Swift)
-
 
 
 
