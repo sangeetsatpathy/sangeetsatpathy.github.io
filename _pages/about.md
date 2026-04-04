@@ -9,7 +9,6 @@ redirect_from:
 <div style="text-align:justify;">
 
 
-Hi! I'm Sangeet.
 <br><br>
 I'm a student at Stanford University studying Computer Science and Electrical Engineering. I am particularly interested in researching and building systems that combine low-level performance with real-world impact. Essentially - how do we make something faster? More efficient? More cost effective? I am also very interested in improving algorithms for applied AI, particularly in med-tech and robotics.
 <br><br>
