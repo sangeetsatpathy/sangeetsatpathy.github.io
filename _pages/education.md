@@ -41,15 +41,15 @@ GPA: 3.922/4.0
 <details> 
 <summary> <b>Courses 2025-2026</b> </summary>
 <ul>
-  <li> Quantum Computing (<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=CS%20259Q:%20Quantum%20Computing&academicYear=20122013">CS259Q</a>)</li>
+  <li> Quantum Computing (<a href="https://bulletin.stanford.edu/courses/2136071">CS259Q</a>)</li>
   <li> Machine Learning (<a href="https://cs229.stanford.edu/">CS229</a>)</li>
   <li> Computer Systems from the Ground Up (<a href="https://web.stanford.edu/class/cs107e/">CS107E</a>) </li>
-  <li> Circuits I (<a href="https://explorecourses.stanford.edu/search?q=EE101A">EE101A</a>)</li>
+  <li> Circuits I (<a href="https://bulletin.stanford.edu/courses/2031031">EE101A</a>)</li>
    <li> Introduction to Automata and Complexity Theory (<a href="https://omereingold.wordpress.com/cs-154-introduction-to-automata-and-complexity-theory/">CS154</a>)</li>
   <li> Probability for Computer Scientists (<a href="https://web.stanford.edu/class/cs109/">CS109</a>)</li>
   <li> Programming Abstractions (<a href="https://web.stanford.edu/class/cs106b/">CS106B</a>) </li>
-  <li> Enrichment Adventures in Programming Abstractions (<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=CS%20106M:%20Enrichment%20Adventures%20in%20Programming%20Abstractions&academicYear=20242025">CS106M</a>) </li>
-  <li> Differential Equations with Linear Algebra, Fourier Methods, and Modern Applications (<a href="https://explorecourses.stanford.edu/search?q=MATH+53%3a+Ordinary+Differential+Equations+with+Linear+Algebra&view=catalog&filter-coursestatus-Active=on&academicYear=20252026"> Math 53</a>)</li>
+  <li> Enrichment Adventures in Programming Abstractions (<a href="https://web.stanford.edu/class/cs106m/">CS106M</a>) </li>
+  <li> Differential Equations with Linear Algebra, Fourier Methods, and Modern Applications (<a href="https://web.stanford.edu/class/math53/"> Math 53</a>)</li>
   
 </ul>
 </details>
