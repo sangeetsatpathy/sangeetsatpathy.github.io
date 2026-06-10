@@ -14,9 +14,83 @@ author_profile: true
 <h2>Undergraduate Researcher  | <a href="https://charm.stanford.edu/">Stanford CHARM Lab</a>     
     <h3>Jan 2026 – Present</h3>
     <ul>
-       <li>Investigating optimal robotic-surgery movement patterns through quantitative analysis to support improved surgeon training.</li>
-       </ul>
-    
+        <li>Designed and built surgical training taskpad from scratch, including conductive-paint peg detection, LED feedback circuitry, and Arduino firmware to emit lift/place signals for downstream analysis</li>
+      <li>Helped develop metrics pipeline for a DVRK teleoperation study analyzing optimal movement patterns between expert and novice robotic surgeons, integrating Arduino peg-detection signals with real-time performance feedback</li>
+<li>Trained and deployed a YOLO object detection model to identify surgical cylinders and pegs; implemented HSV color segmentation on cropped detections to assess correct cylinder placement orientation</li>
+<li>Engineered a drop-detection system using bounding-box velocity analysis and prototyped an XGBoost classifier to distinguish "held" vs. "dropped" cylinder states with low latency</li>
+<li>Worked under PhD Student, Mary Kate Gale, and visiting Master's student, Shujiro Shobayashi in the lab of Dr. Allison Okamura.</li>       
+</ul>
+    <details>
+        <summary>Expand to see Videos and Images</summary>
+        <br>
+        <i>Surgical Training Taskpad:</i><br>
+        <img src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/charm_vids/charm_taskpad.png" width="640">
+        <br><br>
+
+        <i>YOLO Object Detection:</i><br>
+        <div style="display: table-cell">
+        <video id="charm-obj-vid" width="320" height="240" autoplay muted>
+            <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/charm_vids/object_detection.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div style="display: flex; justify-content: center;">
+            <button onclick="charmPlayPause('charm-obj-vid')">Play/Pause</button>
+            <button onclick="charmReset('charm-obj-vid')">Reset</button>
+        </div>
+        </div>
+        <br>
+
+        <i>HSV Color Segmentation:</i><br>
+        <div style="display: table-cell">
+        <video id="charm-hsv-vid" width="320" height="240" autoplay muted>
+            <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/charm_vids/hsv.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div style="display: flex; justify-content: center;">
+            <button onclick="charmPlayPause('charm-hsv-vid')">Play/Pause</button>
+            <button onclick="charmReset('charm-hsv-vid')">Reset</button>
+        </div>
+        </div>
+        <br>
+
+        <i>Drop Detection:</i><br>
+        <div style="display: table-cell">
+        <video id="charm-drop-vid" width="320" height="240" autoplay muted>
+            <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/charm_vids/drop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div style="display: flex; justify-content: center;">
+            <button onclick="charmPlayPause('charm-drop-vid')">Play/Pause</button>
+            <button onclick="charmReset('charm-drop-vid')">Reset</button>
+        </div>
+        </div>
+        <br>
+
+        <i>Orientation Check:</i><br>
+        <div style="display: table-cell">
+        <video id="charm-orient-vid" width="320" height="240" autoplay muted>
+            <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/charm_vids/orientation_check.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div style="display: flex; justify-content: center;">
+            <button onclick="charmPlayPause('charm-orient-vid')">Play/Pause</button>
+            <button onclick="charmReset('charm-orient-vid')">Reset</button>
+        </div>
+        </div>
+
+        <script>
+        function charmPlayPause(id) {
+            var vid = document.getElementById(id);
+            if (vid.paused) vid.play();
+            else vid.pause();
+        }
+        function charmReset(id) {
+            var vid = document.getElementById(id);
+            vid.currentTime = 0;
+            vid.play();
+        }
+        </script>
+    </details>
     
     <hr>
 

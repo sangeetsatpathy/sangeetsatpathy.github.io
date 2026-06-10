@@ -4,6 +4,27 @@ title: "Personal Projects"
 permalink: /projects/
 author_profile: true
 ---
+<h2>Task-Agnostic MACPro: Detecting Behavioral Changes in Opponents</h2>
+<i>Stanford CS229 Final Project</i>
+Multi-agent reinforcement learning systems that cooperate toward a shared goal face a core challenge in real-world deployment: opponents and environments shift unpredictably, and no one tells you when. Existing continual MARL algorithms like MACPro handle this by maintaining multiple strategy "heads" — but they assume you know when the task has changed during training. This project asked: can we remove that assumption? I proposed a CUSUM-based online drift detector as a drop-in replacement for MACPro's known boundary signal, monitoring episode reward, TD error, and trajectory embedding distance to trigger boundary declarations without pre-labeled task boundaries. The results were surprising — and revealed something more fundamental than a detection problem.
+<details>
+<summary>Experiments and Findings</summary>
+I ran three experiments on the StarCraft Multi-Agent Challenge (SMAC-Hard) environment, 2s3z map, with opponents alternating between "attack nearest" and "attack weakest" scripts across 10,000 episodes. Experiment 1 tested for catastrophic forgetting in QMIX — surprisingly, training on one opponent script improved performance against the other, suggesting the two strategies may not be distinct enough to stress-test a continual learning system. Experiment 2 evaluated the CUSUM detector across a broad hyperparameter sweep; the signals were extremely noisy around the true boundary, with the FPR/FNR tradeoff proving unavoidable across all settings. Experiment 3 revealed the deeper reason: MACPro's global trajectory encoder produces unstable µ embeddings even with known boundaries, a fundamental architectural limitation independent of the detection problem. Together, these findings suggest robust task-agnostic MARL requires either more structurally distinct task definitions, a trajectory encoder decoupled from policy training, or change-point detectors that don't rely on the encoder being informative prior to detection.
+
+<a href="https://github.com/sangeetsatpathy/cs229-project">Code for Experiments</a>
+</details>
+
+<details>
+<summary>Project Paper</summary>
+<embed src="https://drive.google.com/file/d/1-4N-MtEv2wlXsY7S0dTmOkaQc-izXYUb/view?usp=sharing" width="400" height="300" type="application/pdf">
+</details>
+
+
+<details>
+<summary>Project Poster</summary>
+<embed src="https://drive.google.com/file/d/1XtNs_I9FLK5rydONnIuN9P4efvKu80bT/view?usp=sharing" width="400" height="300" type="application/pdf">
+</details>
+
 <h2>Laser Tag Distributed System (Bare-Metal C, Raspberry Pi | <a href="https://cs107e.github.io/">CS107E</a>)</h2>
 <h3>March 2026</h3>
 I built a real-time multiplayer laser tag system from scratch in bare-metal C, running directly on Raspberry Pi hardware without an operating system. The project focused on low-level systems programming, hardware interfacing, and distributed communication between multiple devices.
@@ -26,7 +47,47 @@ This project gave me hands-on experience with:
 <li>Hardware-software integration (GPIO, IR sensors, RF communication)</li>
 <li>Debugging complex, multi-device systems</li>
 </ul>
+<br>
+<i>Demo Video 1:</i><br>
+<div style="display: table-cell">
+<video id="cs107e-vid1" width="320" height="240" autoplay muted>
+    <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/cs107e_vids/IMG_5173.MOV" type="video/quicktime">
+    Your browser does not support the video tag.
+</video>
+<div style="display: flex; justify-content: center;">
+    <button onclick="cs107ePlayPause('cs107e-vid1')">Play/Pause</button>
+    <button onclick="cs107eReset('cs107e-vid1')">Reset</button>
+</div>
+</div>
+<br>
+
+<i>Demo Video 2:</i><br>
+<div style="display: table-cell">
+<video id="cs107e-vid2" width="320" height="240" autoplay muted>
+    <source src="https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master/cs107e_vids/IMG_5176.MOV" type="video/quicktime">
+    Your browser does not support the video tag.
+</video>
+<div style="display: flex; justify-content: center;">
+    <button onclick="cs107ePlayPause('cs107e-vid2')">Play/Pause</button>
+    <button onclick="cs107eReset('cs107e-vid2')">Reset</button>
+</div>
+</div>
+
+<script>
+function cs107ePlayPause(id) {
+    var vid = document.getElementById(id);
+    if (vid.paused) vid.play();
+    else vid.pause();
+}
+function cs107eReset(id) {
+    var vid = document.getElementById(id);
+    vid.currentTime = 0;
+    vid.play();
+}
+</script>
 </details>
+
+<a href="https://github.com/sangeetsatpathy/laser-tag-distributed-system">Project Code</a>
 <hr>
 
 <h2> Neural Network from Scratch</h2>
