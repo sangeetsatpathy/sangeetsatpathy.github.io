@@ -16,13 +16,13 @@ I ran three experiments on the StarCraft Multi-Agent Challenge (SMAC-Hard) envir
 
 <details>
 <summary>Project Paper</summary>
-<embed src="https://drive.google.com/file/d/1-4N-MtEv2wlXsY7S0dTmOkaQc-izXYUb/view?usp=sharing" width="400" height="300" type="application/pdf">
+<iframe src="https://drive.google.com/file/d/1-4N-MtEv2wlXsY7S0dTmOkaQc-izXYUb/preview" width="640" height="480" allow="autoplay"></iframe>
 </details>
 
 
 <details>
 <summary>Project Poster</summary>
-<embed src="https://drive.google.com/file/d/1XtNs_I9FLK5rydONnIuN9P4efvKu80bT/view?usp=sharing" width="400" height="300" type="application/pdf">
+<iframe src="https://drive.google.com/file/d/1XtNs_I9FLK5rydONnIuN9P4efvKu80bT/preview" width="640" height="480" allow="autoplay"></iframe>
 </details>
 
 <h2>Laser Tag Distributed System (Bare-Metal C, Raspberry Pi | <a href="https://cs107e.github.io/">CS107E</a>)</h2>
