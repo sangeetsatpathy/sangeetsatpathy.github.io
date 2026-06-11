@@ -312,7 +312,10 @@ export default function Experience() {
         <DialogContent
           className="max-w-3xl w-full bg-background border-border/40 max-h-[85vh] overflow-y-auto"
           onInteractOutside={(e) => {
-            if (e.target?.closest?.("[data-lightbox]")) e.preventDefault();
+            // Radix passes a CustomEvent; the real click target is on the
+            // original native event, not e.target (which is the dialog element).
+            const realTarget = e.detail?.originalEvent?.target;
+            if (realTarget?.closest?.("[data-lightbox]")) e.preventDefault();
           }}
         >
           {selected && (

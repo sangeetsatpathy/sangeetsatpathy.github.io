@@ -1,31 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Play, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, Play } from "lucide-react";
 
 // Each item: { type: "image" | "video", src: "...", alt: "...", poster: "..." }
 export default function MediaGallery({ media }) {
-  const [lightboxIndex, setLightboxIndex] = useState(null);
+  const [lightboxSrc, setLightboxSrc] = useState(null);
 
-  const open = (i) => setLightboxIndex(i);
-  const close = () => setLightboxIndex(null);
-  const prev = () => setLightboxIndex((i) => (i - 1 + media.length) % media.length);
-  const next = () => setLightboxIndex((i) => (i + 1) % media.length);
+  const close = () => setLightboxSrc(null);
 
   useEffect(() => {
-    if (lightboxIndex === null) return;
-    const handler = (e) => {
-      if (e.key === "Escape") close();
-      if (e.key === "ArrowLeft") prev();
-      if (e.key === "ArrowRight") next();
-    };
+    if (!lightboxSrc) return;
+    const handler = (e) => { if (e.key === "Escape") close(); };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [lightboxIndex, media?.length]);
+  }, [lightboxSrc]);
 
   if (!media || media.length === 0) return null;
-
-  const active = lightboxIndex !== null ? media[lightboxIndex] : null;
 
   return (
     <>
@@ -38,7 +29,7 @@ export default function MediaGallery({ media }) {
           {media.map((item, i) => (
             <button
               key={i}
-              onClick={() => open(i)}
+              onClick={() => setLightboxSrc(item)}
               className="relative flex-none w-44 h-28 overflow-hidden border border-border/30 hover:border-primary/60 transition-colors duration-300 group"
             >
               {item.type === "video" ? (
@@ -63,14 +54,17 @@ export default function MediaGallery({ media }) {
       </div>
 
       {/*
-        Portal to document.body — keeps position:fixed relative to the viewport
-        (not Radix Dialog's CSS-transform ancestor).
-        DialogContent in Experience.jsx uses onInteractOutside to ignore clicks
-        on [data-lightbox] so the dialog doesn't close behind the lightbox.
+        Portal to document.body so position:fixed is relative to the viewport,
+        not a CSS-transform ancestor (Radix Dialog animates with transforms).
+
+        data-lightbox lets DialogContent's onInteractOutside identify these
+        clicks and call e.preventDefault() to keep the dialog open.
+        NOTE: Radix passes a CustomEvent; the real click target is at
+        e.detail.originalEvent.target, not e.target.
       */}
       {createPortal(
         <AnimatePresence>
-          {active && (
+          {lightboxSrc && (
             <motion.div
               data-lightbox="true"
               key="lightbox"
@@ -78,83 +72,36 @@ export default function MediaGallery({ media }) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.18 }}
-              style={{ zIndex: 99999 }}
-              className="fixed inset-0 bg-black/92 flex flex-col items-center justify-center"
-              // Close when clicking the black area (not a child element)
+              style={{ zIndex: 99999, position: "fixed", inset: 0 }}
+              className="bg-black/92 flex items-center justify-center"
               onClick={(e) => { if (e.target === e.currentTarget) close(); }}
             >
-              {/* Close button — top-right of viewport */}
+              {/* X — top-right */}
               <button
                 onClick={close}
-                style={{ zIndex: 1 }}
                 className="absolute top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
+                style={{ zIndex: 1 }}
                 aria-label="Close"
               >
                 <X size={22} strokeWidth={2.5} />
               </button>
 
-              {/*
-                Flex row: [prev] [media] [next]
-                Buttons are flex siblings so there are no z-index ordering
-                issues — they never overlap the media div.
-              */}
-              <div className="flex items-center gap-3 w-full max-w-5xl px-4">
-                {/* Prev */}
-                {media.length > 1 ? (
-                  <button
-                    onClick={prev}
-                    className="flex-none w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
-                    aria-label="Previous"
-                  >
-                    <ChevronLeft size={26} strokeWidth={2.5} />
-                  </button>
+              {/* Media */}
+              <div className="flex flex-col items-center max-w-5xl w-full px-8">
+                {lightboxSrc.type === "video" ? (
+                  <video
+                    key={lightboxSrc.src}
+                    src={lightboxSrc.src}
+                    controls
+                    autoPlay
+                    className="max-w-full max-h-[82vh] rounded outline-none"
+                  />
                 ) : (
-                  <div className="flex-none w-12" />
-                )}
-
-                {/* Media + counter */}
-                <div className="flex-1 flex flex-col items-center min-w-0">
-                  <motion.div
-                    key={lightboxIndex}
-                    initial={{ opacity: 0, scale: 0.97 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.15 }}
-                    className="w-full flex items-center justify-center"
-                  >
-                    {active.type === "video" ? (
-                      <video
-                        key={active.src}
-                        src={active.src}
-                        controls
-                        autoPlay
-                        className="max-w-full max-h-[80vh] rounded outline-none"
-                      />
-                    ) : (
-                      <img
-                        src={active.src}
-                        alt={active.alt || ""}
-                        className="max-w-full max-h-[80vh] object-contain rounded"
-                      />
-                    )}
-                  </motion.div>
-                  {media.length > 1 && (
-                    <p className="mt-3 font-mono text-[10px] tracking-[0.25em] text-white/40">
-                      {lightboxIndex + 1} / {media.length}
-                    </p>
-                  )}
-                </div>
-
-                {/* Next */}
-                {media.length > 1 ? (
-                  <button
-                    onClick={next}
-                    className="flex-none w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
-                    aria-label="Next"
-                  >
-                    <ChevronRight size={26} strokeWidth={2.5} />
-                  </button>
-                ) : (
-                  <div className="flex-none w-12" />
+                  <img
+                    src={lightboxSrc.src}
+                    alt={lightboxSrc.alt || ""}
+                    className="max-w-full max-h-[82vh] object-contain rounded"
+                  />
                 )}
               </div>
             </motion.div>
