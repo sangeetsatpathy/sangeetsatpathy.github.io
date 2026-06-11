@@ -1,31 +1,59 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
+  {% include seo.html %}
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
-    {{ content }}
+  <link rel="stylesheet" href="{{ '/assets/css/tech.css' | relative_url }}">
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+  <link rel="shortcut icon" href="{{ '/images/favicon.ico' | relative_url }}">
+
+  {% feed_meta %}
+</head>
+<body class="tech{% if page.url == "/" %} home{% endif %}">
+
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+      <a href="{{ '/' | relative_url }}" class="nav-brand">
+        <span class="brand-box">SS</span>
+        <span class="brand-text">Sangeet Satpathy</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list" id="nav-list">
+        {% for link in site.data.navigation.main %}
+        <li>
+          <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} class="active"{% endif %}>{{ link.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
+  </nav>
 
-    {% include scripts.html %}
+  {{ content }}
 
-  </body>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">Sangeet Satpathy &mdash; Stanford University</span>
+      <div class="footer-links">
+        <a href="mailto:sangeet1@stanford.edu">Email</a>
+        <a href="https://github.com/sangeetsatpathy" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/sangeet-satpathy/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/tech.js' | relative_url }}"></script>
+
+</body>
 </html>
