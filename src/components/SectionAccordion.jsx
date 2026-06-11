@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import MediaGallery from "./MediaGallery";
 
-// A single collapsible section.
-// props: title (string), content (string, optional), pdf (URL string, optional)
-function AccordionItem({ title, content, pdf }) {
+// Each section: { title, content?, pdf?, media? }
+function AccordionItem({ title, content, pdf, media }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -55,6 +55,9 @@ function AccordionItem({ title, content, pdf }) {
                   />
                 </div>
               )}
+              {media && media.length > 0 && (
+                <MediaGallery media={media} />
+              )}
             </div>
           </motion.div>
         )}
@@ -63,8 +66,6 @@ function AccordionItem({ title, content, pdf }) {
   );
 }
 
-// Renders a list of sections. Pass the `sections` array from projectsData.
-// Each section: { title, content?, pdf? }
 export default function SectionAccordion({ sections }) {
   if (!sections || sections.length === 0) return null;
 
@@ -80,6 +81,7 @@ export default function SectionAccordion({ sections }) {
             title={section.title}
             content={section.content}
             pdf={section.pdf}
+            media={section.media}
           />
         ))}
         <div className="border-t border-border/30" />
