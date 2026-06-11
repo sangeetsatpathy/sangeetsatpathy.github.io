@@ -312,7 +312,15 @@ export default function Experience() {
 
       {/* Detail modal */}
       <Dialog open={!!selected} onOpenChange={(open) => !open && setSelected(null)}>
-        <DialogContent className="max-w-3xl w-full bg-background border-border/40 max-h-[85vh] overflow-y-auto">
+        <DialogContent
+          className="max-w-3xl w-full bg-background border-border/40 max-h-[85vh] overflow-y-auto"
+          onInteractOutside={(e) => {
+            // When the lightbox is open, block Radix from closing the dialog.
+            // Radix fires this on pointerdown (before click reaches our button),
+            // so without this guard the dialog closes before the lightbox X fires.
+            if (lightboxItem) e.preventDefault();
+          }}
+        >
           {selected && (
             <>
               <DialogHeader className="mb-6">

@@ -6,6 +6,7 @@ import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import ScrollToTop from './components/ScrollToTop';
+import EmberParticles from './components/EmberParticles';
 // Add page imports here
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -60,6 +61,7 @@ function App() {
       <QueryClientProvider client={queryClientInstance}>
         <Router>
           <ScrollToTop />
+          <EmberParticles />
           <AuthenticatedApp />
         </Router>
         <Toaster />
