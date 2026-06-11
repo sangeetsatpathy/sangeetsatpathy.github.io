@@ -26,13 +26,6 @@ export default function CornerNav() {
         >
           Home
         </Link>
-        {/* Top-right: Projects */}
-        <Link
-          to="/projects"
-          className="pointer-events-auto absolute top-8 right-8 font-mono text-sm tracking-[0.3em] uppercase text-primary/70 hover:text-primary transition-colors duration-500 focus:outline-none focus:ring-2 focus:ring-primary"
-        >
-          Projects
-        </Link>
         {/* Bottom-left: Contact */}
         <a
           href="mailto:sangeet1@stanford.edu"
@@ -42,7 +35,7 @@ export default function CornerNav() {
         </a>
         {/* Bottom-right vertical links */}
         <div className="pointer-events-auto absolute bottom-8 right-8 flex flex-col items-end gap-3 bg-background/90 backdrop-blur-sm px-4 py-3 rounded-sm">
-          {navLinks.slice(2).map((link) => {
+          {navLinks.slice(1).map((link) => {
             const isActive = location.pathname === link.path;
             return (
               <Link
