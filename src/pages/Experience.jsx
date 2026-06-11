@@ -1,13 +1,12 @@
 // @ts-nocheck
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import CornerNav from "../components/CornerNav";
 import FilmGrain from "../components/FilmGrain";
 import PageTransition from "../components/PageTransition";
 import GraceGlow from "../components/GraceGlow";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../components/ui/dialog";
-import { Plus } from "lucide-react";
+import { Plus, X } from "lucide-react";
 import MediaGallery, { Lightbox } from "../components/MediaGallery";
 import SectionAccordion from "../components/SectionAccordion";
 
@@ -51,25 +50,9 @@ Engineered a drop-detection system using bounding-box velocity analysis, and pro
     sections: [],
   },
   {
-    title: "Software Developer",
-    org: "Nandighosh",
-    logo: null,
-    period: "December 2025 – Present",
-    description: "Developing a full-stack e-commerce web application for a small business selling Odia tapestries, featuring user authentication, product ordering, order tracking, and admin dashboard.",
-    details: `Developing a full-stack e-commerce web application for a small business selling Odia tapestries — handwoven textiles with deep cultural roots in Odisha, India.
-
-Built entirely without frontend frameworks, demonstrating deep understanding of vanilla JavaScript, DOM manipulation, and server-side architecture.
-
-Features include user authentication and session management, product catalog with search and filtering, shopping cart and checkout flow, order history and tracking, and a comprehensive admin dashboard for inventory and catalog management.
-
-The backend is built on Node.js with MongoDB, exposing a REST API consumed by the frontend. The project is currently in active development.`,
-    media: [],
-    sections: [],
-  },
-  {
     title: "Software Engineer",
     org: "Stanford Student Space Initiative",
-    logo: "/images/stanford.png",
+    logo: "/images/ssi.png",
     period: "September 2025 – Present",
     description: "Developing flight software for SAMWISE, an imaging CubeSat demonstrating next-generation small-satellite capabilities including deployable solar power, precision attitude sensing, and high-rate communications.",
     details: `Developing flight software for SAMWISE, an imaging CubeSat built to demonstrate next-generation small-satellite capabilities. The mission integrates deployable solar power, precision attitude sensing, and high-rate communications into a compact platform. My work contributes to the core software that coordinates and manages these systems.
@@ -185,18 +168,6 @@ Applied knowledge of LTE-MBB and LTE-MTC cellular technologies to inform API des
     sections: [],
   },
   {
-    title: "High School Apprentice",
-    org: "Google",
-    logo: "/images/google.png",
-    period: "July 2023",
-    description: "Two-week apprenticeship exploring multiple fields within technology at Google.",
-    details: `Learned about several fields in technology: Product Management, User Experience, Generative AI, Machine Learning, Finance, and Software Development.
-
-2 weeks, 10 hours per week.`,
-    media: [],
-    sections: [],
-  },
-  {
     title: "Computer Science Tutor",
     org: "theCoderSchool Palo Alto",
     logo: null,
@@ -209,51 +180,25 @@ Developed and modified curriculum as per each individual student's knowledge lev
 3 hours per week.`,
     media: [],
     sections: [],
-  },
-  {
-    title: "Scientific Researcher & Journalist",
-    org: "Advanced Science Exploratory Program",
-    logo: null,
-    period: "September 2021 – August 2022",
-    description: "Wrote and published scientific articles on neuroscience topics in C&C Editorials, developing skills in scientific interpretation and communication.",
-    details: `Wrote scientific articles by researching several topics related to neuroscience. These articles were published in ASciencePro's journal, C&C Editorials:
-
-"The Effects of the Coronavirus on the Brain" — Issue 1
-"Addiction: A Summary" — Issue 2
-"Effect of Nature on Urban Health" — Issue 3
-
-Through this experience, developed rigorous skills in the interpretation of scientific research, the dissemination of scientific material to a non-scientific audience, the utilization of written, video-based, and podcast formats to summarize key findings, and the interrogation of a study's methodological rigor and articulation of methods and findings.`,
-    media: [],
-    sections: [],
-  },
-  {
-    title: "Mathematics Tutor",
-    org: "Self-Employed",
-    logo: null,
-    period: "June 2021 – May 2023",
-    description: "Tutored two middle school students on Algebra 1 and Geometry Honors, teaching concepts in advance and assigning challenging problems.",
-    details: `Tutored 2 middle school students on Algebra 1 and Geometry Honors concepts.
-
-Taught concepts in advance of their coursework and gave them difficult problems to solve, pushing them beyond the standard curriculum.`,
-    media: [],
-    sections: [],
-  },
+  }
 ];
 
 export default function Experience() {
   const [selected, setSelected] = useState(null);
   const [lightboxItem, setLightboxItem] = useState(null);
-  const lightboxOpenRef = useRef(false);
 
-  const openLightbox = useCallback((item) => {
-    lightboxOpenRef.current = true;
-    setLightboxItem(item);
-  }, []);
+  // Escape closes panel (when lightbox isn't open)
+  useEffect(() => {
+    const handler = (e) => { if (e.key === "Escape" && !lightboxItem) setSelected(null); };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [lightboxItem]);
 
-  const closeLightbox = useCallback(() => {
-    lightboxOpenRef.current = false;
-    setLightboxItem(null);
-  }, []);
+  // Lock body scroll while panel is open
+  useEffect(() => {
+    document.body.style.overflow = selected ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [selected]);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -321,48 +266,68 @@ export default function Experience() {
         </div>
       </div>
 
-      {/* Detail modal */}
-      <Dialog open={!!selected} onOpenChange={(open) => { if (!open) setSelected(null); }}>
-        <DialogContent
-          className="max-w-3xl w-full bg-background border-border/40 max-h-[85vh] overflow-y-auto"
-          onPointerDownOutside={(e) => { if (lightboxOpenRef.current) e.preventDefault(); }}
-        >
+      {/* Experience panel — plain portal, no Radix, no DismissableLayer interference */}
+      {createPortal(
+        <AnimatePresence>
           {selected && (
-            <>
-              <DialogHeader className="mb-6">
-                {selected.logo && (
-                  <img
-                    src={selected.logo}
-                    alt={selected.org}
-                    className="h-8 w-auto mb-4 object-contain opacity-80"
-                  />
-                )}
-                <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-primary mb-2">
-                  {selected.period} · {selected.org}
-                </p>
-                <DialogTitle className="font-display text-xl md:text-2xl tracking-[0.05em] uppercase text-foreground">
-                  {selected.title}
-                </DialogTitle>
-              </DialogHeader>
-              <div className="space-y-4">
-                {selected.details.split("\n\n").map((para, i) => (
-                  <p key={i} className="font-body text-base text-foreground/70" style={{ lineHeight: 1.7 }}>
-                    {para}
-                  </p>
-                ))}
-              </div>
-              <MediaGallery media={selected.media} onOpenLightbox={openLightbox} />
-              <SectionAccordion sections={selected.sections} onOpenLightbox={openLightbox} />
-            </>
-          )}
-        </DialogContent>
-      </Dialog>
+            <motion.div
+              key="exp-backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.18 }}
+              style={{ position: "fixed", inset: 0, zIndex: 50 }}
+              className="bg-black/80 flex items-center justify-center p-4 md:p-8"
+              onClick={() => setSelected(null)}
+            >
+              <motion.div
+                initial={{ opacity: 0, scale: 0.97 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.97 }}
+                transition={{ duration: 0.18 }}
+                className="relative w-full max-w-3xl bg-background border border-border/40 rounded-lg max-h-[85vh] overflow-y-auto p-6"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <button
+                  onClick={() => setSelected(null)}
+                  className="absolute right-4 top-4 rounded-sm opacity-70 hover:opacity-100 transition-opacity focus:outline-none"
+                  aria-label="Close"
+                >
+                  <X className="h-4 w-4" />
+                </button>
 
-      {/* Lightbox rendered outside the Dialog so Radix never sees the clicks */}
+                <div className="mb-6">
+                  {selected.logo && (
+                    <img src={selected.logo} alt={selected.org} className="h-8 w-auto mb-4 object-contain opacity-80" />
+                  )}
+                  <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-primary mb-2">
+                    {selected.period} · {selected.org}
+                  </p>
+                  <h2 className="font-display text-xl md:text-2xl tracking-[0.05em] uppercase text-foreground">
+                    {selected.title}
+                  </h2>
+                </div>
+                <div className="space-y-4">
+                  {selected.details.split("\n\n").map((para, i) => (
+                    <p key={i} className="font-body text-base text-foreground/70" style={{ lineHeight: 1.7 }}>
+                      {para}
+                    </p>
+                  ))}
+                </div>
+                <MediaGallery media={selected.media} onOpenLightbox={setLightboxItem} />
+                <SectionAccordion sections={selected.sections} onOpenLightbox={setLightboxItem} />
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
+
+      {/* Lightbox — sibling portal at higher z-index, completely independent */}
       {createPortal(
         <AnimatePresence>
           {lightboxItem && (
-            <Lightbox item={lightboxItem} onClose={closeLightbox} />
+            <Lightbox item={lightboxItem} onClose={() => setLightboxItem(null)} />
           )}
         </AnimatePresence>,
         document.body
