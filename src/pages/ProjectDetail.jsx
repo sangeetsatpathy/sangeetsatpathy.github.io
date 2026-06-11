@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import MediaGallery from "../components/MediaGallery";
+import SectionAccordion from "../components/SectionAccordion";
 import CornerNav from "../components/CornerNav";
 import FilmGrain from "../components/FilmGrain";
 import PageTransition from "../components/PageTransition";
@@ -155,6 +156,8 @@ export default function ProjectDetail() {
                   </div>
                 </div>
               )}
+
+              <SectionAccordion sections={project.sections} />
 
               <MediaGallery media={project.media} />
 

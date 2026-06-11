@@ -11,15 +11,15 @@ export const projects = [
     summary: "Detecting behavioral changes in opponents without pre-labeled task boundaries in multi-agent reinforcement learning.",
     description: `Multi-agent reinforcement learning systems that cooperate toward a shared goal face a core challenge in real-world deployment: opponents and environments shift unpredictably, and no one tells you when. Existing continual MARL algorithms like MACPro handle this by maintaining multiple strategy "heads" — but they assume you know when the task has changed during training.
 
-This project proposed a CUSUM-based online drift detector as a drop-in replacement for MACPro's known boundary signal, monitoring episode reward, TD error, and trajectory embedding distance to trigger boundary declarations without pre-labeled task boundaries.
-
-Three experiments were run on the StarCraft Multi-Agent Challenge (SMAC-Hard) environment, 2s3z map, with opponents alternating between "attack nearest" and "attack weakest" scripts across 10,000 episodes.
-
-Key findings revealed that MACPro's global trajectory encoder produces unstable embeddings even with known boundaries — a fundamental architectural limitation independent of the detection problem. This suggests robust task-agnostic MARL requires either more structurally distinct task definitions, a trajectory encoder decoupled from policy training, or change-point detectors that don't rely on the encoder being informative prior to detection.`,
+This project proposed a CUSUM-based online drift detector as a drop-in replacement for MACPro's known boundary signal, monitoring episode reward, TD error, and trajectory embedding distance to trigger boundary declarations without pre-labeled task boundaries.`,
+sections:[{title:`Experiments and Findings`,
+content: `I ran three experiments on the StarCraft Multi-Agent Challenge (SMAC-Hard) environment, 2s3z map, with opponents alternating between "attack nearest" and "attack weakest" scripts across 10,000 episodes. Experiment 1 tested for catastrophic forgetting in QMIX — surprisingly, training on one opponent script improved performance against the other, suggesting the two strategies may not be distinct enough to stress-test a continual learning system. Experiment 2 evaluated the CUSUM detector across a broad hyperparameter sweep; the signals were extremely noisy around the true boundary, with the FPR/FNR tradeoff proving unavoidable across all settings. Experiment 3 revealed the deeper reason: MACPro's global trajectory encoder produces unstable µ embeddings even with known boundaries, a fundamental architectural limitation independent of the detection problem. Together, these findings suggest robust task-agnostic MARL requires either more structurally distinct task definitions, a trajectory encoder decoupled from policy training, or change-point detectors that don't rely on the encoder being informative prior to detection.`
+  }],
     links: [
       { label: "Code", url: "https://github.com/sangeetsatpathy/cs229-project" },
     ],
     media: [],
+    sections: [],
   },
   {
     slug: "charm-lab",
@@ -44,6 +44,7 @@ Worked under PhD Student Mary Kate Gale and visiting Master's student Shujiro Sh
       { label: "CHARM Lab", url: "https://charm.stanford.edu/" },
     ],
     media: [],
+    sections: [],
   },
   {
     slug: "samwise",
@@ -66,6 +67,7 @@ SAMWISE serves as a technology demonstrator showing how small satellites can exe
       { label: "Stanford SSI", url: "https://www.stanfordssi.org/" },
     ],
     media: [],
+    sections: [],
   },
   {
     slug: "cs107e-laser-tag",
@@ -84,6 +86,7 @@ The system features IR-based hit detection, RF communication between units for r
 No operating system, no frameworks, no libraries — just direct hardware register manipulation, custom drivers, and pure C. The project demonstrates deep understanding of computer architecture, serial communication protocols (SPI, I2C, UART), interrupts, and event-driven systems design.`,
     links: [],
     media: [],
+    sections: [],
   },
   {
     slug: "nandighosh",
@@ -102,6 +105,7 @@ The application is built without any frontend frameworks — demonstrating deep 
 Features include user authentication and session management, product catalog with search and filtering, shopping cart and checkout flow, order history and tracking, and a comprehensive admin dashboard for inventory management.`,
     links: [],
     media: [],
+    sections: [],
   },
   {
     slug: "vehicle-detection",
@@ -124,6 +128,7 @@ Presented findings at the 2024 Foothill College Research & Service Leadership Sy
       { label: "Research Poster", url: "https://drive.google.com/file/d/1VltIeBdj0qVDzbGFKxElvcAwcsXBNloZ/view" },
     ],
     media: [],
+    sections: [],
   },
   {
     slug: "grt-dissonance",
@@ -144,6 +149,7 @@ These efforts culminated in a first-place victory at the March 2024 FIRST Roboti
       { label: "Event Results", url: "https://frc-events.firstinspires.org/2024/IDBO/awards" },
     ],
     media: [],
+    sections: [],
   },
 ];
 
