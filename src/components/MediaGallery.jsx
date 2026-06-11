@@ -87,66 +87,70 @@ export default function MediaGallery({ media }) {
               onClick={close}
               className="fixed inset-0 z-[200] bg-black/92 flex items-center justify-center p-4 md:p-10"
             >
-              {/* Close */}
-              <button
-                onClick={close}
-                className="absolute top-5 right-5 text-white/50 hover:text-white transition-colors duration-200"
-              >
-                <X size={22} />
-              </button>
+              {/* Layout: arrows + media box */}
+              <div className="flex items-center gap-3 max-w-5xl w-full" onClick={(e) => e.stopPropagation()}>
+                {/* Prev arrow */}
+                {media.length > 1 ? (
+                  <button
+                    onClick={prev}
+                    className="flex-none w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors duration-200"
+                  >
+                    <ChevronLeft size={22} />
+                  </button>
+                ) : <div className="flex-none w-10" />}
 
-              {/* Prev */}
-              {media.length > 1 && (
-                <button
-                  onClick={prev}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors duration-200 p-2"
-                >
-                  <ChevronLeft size={28} />
-                </button>
-              )}
+                {/* Media + close + counter */}
+                <div className="relative flex-1 flex flex-col items-center">
+                  {/* Close — top-right corner of the media */}
+                  <button
+                    onClick={close}
+                    className="absolute -top-3 -right-3 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white/15 hover:bg-white/30 text-white transition-colors duration-200"
+                  >
+                    <X size={16} />
+                  </button>
 
-              {/* Media */}
-              <motion.div
-                key={lightboxIndex}
-                initial={{ scale: 0.96, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.18 }}
-                onClick={(e) => e.stopPropagation()}
-                className="max-w-5xl max-h-[88vh] w-full flex items-center justify-center"
-              >
-                {active.type === "video" ? (
-                  <video
-                    key={active.src}
-                    src={active.src}
-                    controls
-                    autoPlay
-                    className="max-w-full max-h-[88vh] outline-none"
-                  />
-                ) : (
-                  <img
-                    src={active.src}
-                    alt={active.alt || ""}
-                    className="max-w-full max-h-[88vh] object-contain"
-                  />
-                )}
-              </motion.div>
+                  <motion.div
+                    key={lightboxIndex}
+                    initial={{ scale: 0.96, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.18 }}
+                    className="w-full flex items-center justify-center"
+                  >
+                    {active.type === "video" ? (
+                      <video
+                        key={active.src}
+                        src={active.src}
+                        controls
+                        autoPlay
+                        className="max-w-full max-h-[80vh] outline-none rounded"
+                      />
+                    ) : (
+                      <img
+                        src={active.src}
+                        alt={active.alt || ""}
+                        className="max-w-full max-h-[80vh] object-contain rounded"
+                      />
+                    )}
+                  </motion.div>
 
-              {/* Next */}
-              {media.length > 1 && (
-                <button
-                  onClick={next}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors duration-200 p-2"
-                >
-                  <ChevronRight size={28} />
-                </button>
-              )}
+                  {/* Counter below media */}
+                  {media.length > 1 && (
+                    <p className="mt-3 font-mono text-[10px] tracking-[0.2em] text-white/40">
+                      {lightboxIndex + 1} / {media.length}
+                    </p>
+                  )}
+                </div>
 
-              {/* Counter */}
-              {media.length > 1 && (
-                <p className="absolute bottom-5 left-1/2 -translate-x-1/2 font-mono text-[10px] tracking-[0.2em] text-white/40">
-                  {lightboxIndex + 1} / {media.length}
-                </p>
-              )}
+                {/* Next arrow */}
+                {media.length > 1 ? (
+                  <button
+                    onClick={next}
+                    className="flex-none w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors duration-200"
+                  >
+                    <ChevronRight size={22} />
+                  </button>
+                ) : <div className="flex-none w-10" />}
+              </div>
             </motion.div>
           )}
         </AnimatePresence>,
