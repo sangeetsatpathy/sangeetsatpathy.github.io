@@ -121,51 +121,6 @@ Compared model performance across several classifiers: Logistic Regressor, K-Nea
     ],
   },
   {
-    slug: "ames-housing-regression",
-    title: "Ames Housing Regression",
-    category: "Personal · Data Science · Machine Learning",
-    year: "2025",
-    role: "Sole Developer",
-    tech: ["Python", "Pandas", "scikit-learn", "Regression", "Feature Engineering"],
-    image: "",
-    imageAlt: "Housing regression project",
-    summary: "A regression model predicting house sale prices using the Ames Housing dataset (70+ features), with a full data science pipeline.",
-    description: `Developed a robust regression model to predict house sale prices using the rich Ames Housing dataset with over 70 features.
-
-Applied a complete data science pipeline — from raw data exploration and cleaning to model selection, tuning, and evaluation. The goal: build a model that generalizes well and extract actionable insights about what drives housing values.`,
-    links: [
-      { label: "Code", url: "https://github.com/sangeetsatpathy/Ames-Housing-Project" },
-    ],
-    media: [],
-    sections: [
-      {
-        title: "Approach",
-        content: `This work demonstrates skills relevant to data science, machine learning engineering, and analytics — including feature engineering, model validation, and interpretability.
-
-Key steps included handling missing data, encoding categorical variables, engineering interaction features, cross-validated model selection, and hyperparameter tuning to minimize generalization error.`,
-      },
-    ],
-  },
-  {
-    slug: "eda-project",
-    title: "Exploratory Data Analysis Project",
-    category: "Personal · Data Science · Python",
-    year: "2025",
-    role: "Sole Developer",
-    tech: ["Python", "Pandas", "NumPy", "Matplotlib"],
-    image: "",
-    imageAlt: "Data analysis and visualization project",
-    summary: "End-to-end data analysis pipeline analyzing diet-health correlations in India and world development statistics including GDP and carbon emissions.",
-    description: `Designed and implemented an end-to-end data analysis pipeline using Python (Pandas, NumPy, Matplotlib), performing data cleaning, exploratory data analysis, and visualization to extract actionable insights from large datasets.
-
-Analyzed correlations between various diets in India with health implications. Also analyzed world development statistics, such as GDP, carbon emissions, and other indicators across countries.`,
-    links: [
-      { label: "Code", url: "https://github.com/sangeetsatpathy/DataAnalysisProject" },
-    ],
-    media: [],
-    sections: [],
-  },
-  {
     slug: "trashtron",
     title: "TrashTron",
     category: "Reubotics · Robotics · Computer Vision",

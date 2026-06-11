@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Experience", path: "/experience" },
   { label: "Education", path: "/education" },
   { label: "Publications", path: "/publications" },
-  { label: "Community", path: "/community" },
+  { label: "Beyond Engineering", path: "/community" },
 ];
 
 export default function CornerNav() {

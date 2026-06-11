@@ -34,6 +34,13 @@ const entries = [
       "Selected as student voice on two PAUSD (Palo Alto Unified School District) committees: the AI & Technology Committee (2023–24), developing district guidelines on technology ethics and academic integrity; and the Dual Enrollment Committee (2023), as the sole representative from both district high schools, shaping policy on college access for students.",
   },
   {
+    title: "National Outdoor Achievement Awards (×4)",
+    org: "Boy Scouts of America",
+    period: "2023 – 2024",
+    description:
+      "Four National Outdoor Achievement Awards across distinct disciplines: Camping (August 2024) — recognizing sustained high-mileage camping experience; Conservation (August 2024) — recognizing environmental stewardship and conservation projects; Hiking (February 2023) — recognizing long-distance trail completion; Aquatics (February 2023) — recognizing proficiency across open-water swimming, kayaking, snorkeling, scuba, and paddleboarding.",
+  },
+  {
     title: "Eagle Scout & 4 Eagle Palms",
     org: "Boy Scouts of America — Troop 37",
     period: "July 2023",
@@ -76,10 +83,10 @@ export default function Community() {
               The Citizen
             </p>
             <h1 className="font-display text-4xl md:text-6xl tracking-[0.1em] uppercase text-foreground mb-6">
-              Community
+              Beyond Engineering
             </h1>
             <p className="font-body text-lg text-foreground/50 max-w-2xl mb-20" style={{ lineHeight: 1.6 }}>
-              Service, leadership, and community-building beyond the lab.
+              Service, leadership, and community — the work that happens outside the lab.
             </p>
           </PageTransition>
 

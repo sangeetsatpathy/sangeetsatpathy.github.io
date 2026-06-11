@@ -18,7 +18,7 @@ function Expandable({ title, children, defaultOpen = false }) {
         ) : (
           <ChevronRight size={14} className="text-muted-foreground flex-shrink-0" />
         )}
-        <span className="font-mono text-sm text-foreground/70 group-hover:text-foreground transition-colors">
+        <span className="font-mono text-sm text-foreground/80 group-hover:text-foreground transition-colors">
           {title}
         </span>
       </button>
@@ -31,7 +31,7 @@ function CourseList({ courses }) {
   return (
     <ul className="space-y-1.5">
       {courses.map((c, i) => (
-        <li key={i} className="font-body text-sm text-foreground/50" style={{ lineHeight: 1.6 }}>
+        <li key={i} className="font-body text-sm text-foreground/75" style={{ lineHeight: 1.6 }}>
           {c}
         </li>
       ))}
@@ -40,11 +40,26 @@ function CourseList({ courses }) {
 }
 
 const skills = [
-  { category: "Machine Learning & AI", items: "Computer Vision, Deep Learning, NLP, YOLO, scikit-learn, Pandas, NumPy, OpenCV" },
-  { category: "Robotics", items: "CAD, Mechanical Design, PID Control, Electrical Wiring, Kinematics, Machining" },
-  { category: "Languages", items: "Python, C++, Java, C, JavaScript, HTML/CSS, SQL" },
-  { category: "Software Engineering", items: "Algorithms, Data Structures, REST APIs, Full-Stack, Node.js, Git, AWS EC2" },
-  { category: "Systems", items: "Embedded Systems, Bare-Metal, Interrupts, Computer Architecture, IoT, SPI/I2C/UART" },
+  {
+    category: "Machine Learning & AI",
+    items: "Computer Vision (Object Detection, Object Tracking, YOLO), Reinforcement Learning (Continual RL, MARL), Deep Learning (Neural Networks), Natural Language Processing, Tokenization, Supervised Learning (Regression, Classification), Machine Learning Algorithms, ML Lifecycle (Data Processing, Feature Engineering, Hyperparameter Tuning, Model Evaluation), Statistical Analysis, Probability — scikit-learn, Pandas, NumPy, OpenCV, Matplotlib",
+  },
+  {
+    category: "Robotics",
+    items: "CAD (Computer-Aided Design), Mechanical Design, PID Control, Electrical Wiring & Soldering, Kinematics, Machining (Lathe, Mill)",
+  },
+  {
+    category: "Programming Languages, Web & Databases",
+    items: "Python, C++, Java, C, JavaScript, HTML, CSS, SQL, MongoDB",
+  },
+  {
+    category: "Software Engineering",
+    items: "Algorithms, Data Structures, API Development (REST, Postman), Full-Stack Development, Object-Oriented Design, Debugging, Testing, Node.js, Git, AWS EC2",
+  },
+  {
+    category: "Systems & Low-Level",
+    items: "Embedded Systems, Bare-Metal Programming, Interrupts, Event-Driven Systems, Computer Architecture, Distributed Systems, IoT, RF Protocols, Serial Communication (SPI, I2C, UART)",
+  },
 ];
 
 const certificates = [
@@ -88,7 +103,7 @@ export default function Education() {
                     <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-primary mb-2">
                       {s.category}
                     </p>
-                    <p className="font-body text-sm text-foreground/60" style={{ lineHeight: 1.6 }}>
+                    <p className="font-body text-base text-foreground/80" style={{ lineHeight: 1.7 }}>
                       {s.items}
                     </p>
                   </div>
@@ -105,7 +120,7 @@ export default function Education() {
                   Expected June 2028
                 </p>
                 <p className="font-mono text-sm text-primary">Stanford University</p>
-                <p className="font-mono text-xs text-foreground/40 mt-1">GPA: 3.922 / 4.0</p>
+                <p className="font-mono text-xs text-foreground/65 mt-1">GPA: 3.922 / 4.0</p>
               </div>
               <div className="md:col-span-8">
                 <h3 className="font-display text-xl tracking-[0.05em] uppercase text-foreground mb-2">
@@ -136,40 +151,15 @@ export default function Education() {
                   Aug 2021 – June 2025
                 </p>
                 <p className="font-mono text-sm text-primary">Henry M. Gunn High School</p>
-                <p className="font-mono text-xs text-foreground/40 mt-1">GPA: 4.0 UW / 4.45 W</p>
+                <p className="font-mono text-xs text-foreground/65 mt-1">GPA: 4.0 UW / 4.45 W</p>
               </div>
               <div className="md:col-span-8">
                 <h3 className="font-display text-xl tracking-[0.05em] uppercase text-foreground mb-2">
                   High School Diploma
                 </h3>
-                <p className="font-body text-sm text-foreground/50 mb-4" style={{ lineHeight: 1.6 }}>
+                <p className="font-body text-base text-foreground/75 mb-4" style={{ lineHeight: 1.6 }}>
                   French National Honor Society · Track & Field (2022, 2023)
                 </p>
-                <Expandable title="Grade 12 Courses">
-                  <CourseList courses={[
-                    "Engineering Technology (GRT)", "AP Physics C: Mechanics", "AP Physics C: E&M",
-                    "AP Art History", "AP English Literature", "AP Economics (Macro & Micro)",
-                  ]} />
-                </Expandable>
-                <Expandable title="Grade 11 Courses">
-                  <CourseList courses={[
-                    "Engineering Technology (GRT)", "Digital Electronics PLTW", "AP Calculus BC",
-                    "AP Chemistry", "AP US History", "AAR-D (Dual Enrollment)",
-                    "World Classics Honors", "Analytical College Writing",
-                  ]} />
-                </Expandable>
-                <Expandable title="Grade 10 Courses">
-                  <CourseList courses={[
-                    "Principles of Engineering PLTW Honors", "AP Computer Science A", "Math Analysis Honors",
-                    "Chemistry Honors", "French 3", "US Government", "Contemporary World History", "English 10A",
-                  ]} />
-                </Expandable>
-                <Expandable title="Grade 9 Courses">
-                  <CourseList courses={[
-                    "Introduction to Engineering PLTW Honors", "Algebra 2/Trig Honors", "Biology Honors",
-                    "French 2", "World History", "Communications A", "Western Culture A",
-                  ]} />
-                </Expandable>
               </div>
             </div>
           </div>
@@ -182,7 +172,7 @@ export default function Education() {
                   Aug 2021 – May 2025
                 </p>
                 <p className="font-mono text-sm text-primary">De Anza & Foothill College</p>
-                <p className="font-mono text-xs text-foreground/40 mt-1">GPA: 4.0 · Dean's List</p>
+                <p className="font-mono text-xs text-foreground/65 mt-1">GPA: 4.0 · Dean's List</p>
               </div>
               <div className="md:col-span-8">
                 <h3 className="font-display text-xl tracking-[0.05em] uppercase text-foreground mb-2">
@@ -221,30 +211,6 @@ export default function Education() {
             </div>
           </div>
 
-          {/* Test Scores */}
-          <div className="border-t border-border/30 py-12">
-            <h2 className="font-display text-lg tracking-[0.15em] uppercase text-foreground mb-8">
-              Test Scores
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="border border-border/30 p-6">
-                <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">SAT</p>
-                <p className="font-display text-3xl text-primary">1560</p>
-                <p className="font-mono text-xs text-foreground/40">/ 1600</p>
-              </div>
-              <div className="border border-border/30 p-6">
-                <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">PSAT</p>
-                <p className="font-display text-3xl text-primary">1500</p>
-                <p className="font-mono text-xs text-foreground/40">/ 1520</p>
-              </div>
-              <div className="border border-border/30 p-6">
-                <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">AP Exams</p>
-                <p className="font-display text-3xl text-primary">10</p>
-                <p className="font-mono text-xs text-foreground/40">Scores of 5/5</p>
-              </div>
-            </div>
-          </div>
-
           {/* Certificates */}
           <div className="border-t border-border/30 py-12">
             <h2 className="font-display text-lg tracking-[0.15em] uppercase text-foreground mb-8">
@@ -252,7 +218,7 @@ export default function Education() {
             </h2>
             <ul className="space-y-3">
               {certificates.map((cert, i) => (
-                <li key={i} className="font-body text-sm text-foreground/60 pl-4 border-l-2 border-primary/20" style={{ lineHeight: 1.6 }}>
+                <li key={i} className="font-body text-base text-foreground/80 pl-4 border-l-2 border-primary/30" style={{ lineHeight: 1.6 }}>
                   {cert}
                 </li>
               ))}
