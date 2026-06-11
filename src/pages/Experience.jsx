@@ -1,5 +1,5 @@
 // @ts-nocheck
-import React, { useState } from "react";
+import React, { useState, useRef, useCallback } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence } from "framer-motion";
 import CornerNav from "../components/CornerNav";
@@ -243,6 +243,17 @@ Taught concepts in advance of their coursework and gave them difficult problems 
 export default function Experience() {
   const [selected, setSelected] = useState(null);
   const [lightboxItem, setLightboxItem] = useState(null);
+  const lightboxOpenRef = useRef(false);
+
+  const openLightbox = useCallback((item) => {
+    lightboxOpenRef.current = true;
+    setLightboxItem(item);
+  }, []);
+
+  const closeLightbox = useCallback(() => {
+    lightboxOpenRef.current = false;
+    setLightboxItem(null);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -311,8 +322,11 @@ export default function Experience() {
       </div>
 
       {/* Detail modal */}
-      <Dialog open={!!selected} onOpenChange={(open) => { if (!open && lightboxItem) return; if (!open) setSelected(null); }}>
-        <DialogContent className="max-w-3xl w-full bg-background border-border/40 max-h-[85vh] overflow-y-auto">
+      <Dialog open={!!selected} onOpenChange={(open) => { if (!open) setSelected(null); }}>
+        <DialogContent
+          className="max-w-3xl w-full bg-background border-border/40 max-h-[85vh] overflow-y-auto"
+          onPointerDownOutside={(e) => { if (lightboxOpenRef.current) e.preventDefault(); }}
+        >
           {selected && (
             <>
               <DialogHeader className="mb-6">
@@ -337,8 +351,8 @@ export default function Experience() {
                   </p>
                 ))}
               </div>
-              <MediaGallery media={selected.media} onOpenLightbox={setLightboxItem} />
-              <SectionAccordion sections={selected.sections} onOpenLightbox={setLightboxItem} />
+              <MediaGallery media={selected.media} onOpenLightbox={openLightbox} />
+              <SectionAccordion sections={selected.sections} onOpenLightbox={openLightbox} />
             </>
           )}
         </DialogContent>
@@ -348,7 +362,7 @@ export default function Experience() {
       {createPortal(
         <AnimatePresence>
           {lightboxItem && (
-            <Lightbox item={lightboxItem} onClose={() => setLightboxItem(null)} />
+            <Lightbox item={lightboxItem} onClose={closeLightbox} />
           )}
         </AnimatePresence>,
         document.body

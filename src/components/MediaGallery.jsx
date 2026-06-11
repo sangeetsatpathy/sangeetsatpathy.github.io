@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Play } from "lucide-react";
+import { Play } from "lucide-react";
 
 // Each item: { type: "image" | "video", src, alt?, poster? }
 //
@@ -91,21 +91,14 @@ export function Lightbox({ item, onClose }) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.18 }}
       style={{ zIndex: 99999, position: "fixed", inset: 0 }}
-      className="bg-black/92 flex items-center justify-center"
-      onPointerDown={(e) => e.stopPropagation()}
+      className="bg-black/92 flex items-center justify-center cursor-pointer"
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
     >
-      <button
-        onClick={onClose}
-        className="absolute top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
-        style={{ zIndex: 1 }}
-        aria-label="Close"
+      {/* Clicks inside the media area don't bubble to the backdrop */}
+      <div
+        className="flex flex-col items-center max-w-5xl w-full px-8 cursor-default"
+        onClick={(e) => e.stopPropagation()}
       >
-        <X size={22} strokeWidth={2.5} />
-      </button>
-
-      {/* Stop clicks on the media from bubbling up to the backdrop close handler */}
-      <div className="flex flex-col items-center max-w-5xl w-full px-8" onClick={(e) => e.stopPropagation()}>
         {item.type === "video" ? (
           <video
             key={item.src}
