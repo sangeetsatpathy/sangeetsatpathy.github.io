@@ -43,7 +43,10 @@ export default function Home() {
           style={{ opacity: titleOpacity }}
         >
           <PageTransition>
-            <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[0.05em] uppercase text-foreground/20 leading-none">
+            <h1
+              className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[0.05em] uppercase text-foreground/90 leading-none"
+              style={{ textShadow: "0 0 25px rgba(255,210,110,0.75), 0 0 60px rgba(255,180,70,0.45), 0 0 120px rgba(255,150,50,0.25), 0 0 220px rgba(255,120,30,0.12)" }}
+            >
               Sangeet
               <br />
               Satpathy
@@ -108,40 +111,9 @@ export default function Home() {
         </PageTransition>
       </section>
 
-      <SectionDivider />1
+      <SectionDivider />
       {/* Quick links */}
-      <section className="max-w-4xl mx-auto px-6 md:px-16 pb-32 md:pb-48">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
-          <Link to="/experience" className="group">
-            <p className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">01</p>
-            <h3 className="font-display text-lg tracking-[0.1em] uppercase text-foreground group-hover:text-primary transition-colors duration-500">
-              Experience
-            </h3>
-            <p className="mt-2 font-body text-sm text-foreground/50" style={{ lineHeight: 1.6 }}>
-              Apple, Stanford CHARM Lab, SSI Satellites, Verizon, GRT
-            </p>
-          </Link>
-          <Link to="/education" className="group">
-            <p className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">02</p>
-            <h3 className="font-display text-lg tracking-[0.1em] uppercase text-foreground group-hover:text-primary transition-colors duration-500">
-              Education
-            </h3>
-            <p className="mt-2 font-body text-sm text-foreground/50" style={{ lineHeight: 1.6 }}>
-              Stanford University · BS, EE & CS
-            </p>
-          </Link>
-          <Link to="/publications" className="group">
-            <p className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">03</p>
-            <h3 className="font-display text-lg tracking-[0.1em] uppercase text-foreground group-hover:text-primary transition-colors duration-500">
-              Publications
-            </h3>
-            <p className="mt-2 font-body text-sm text-foreground/50" style={{ lineHeight: 1.6 }}>
-              Research papers, literature reviews, and symposium presentations
-            </p>
-          </Link>
-        </div>
-      </section>
-
+      
       {/* Footer */}
       <footer className="border-t border-border/30 px-6 md:px-16 py-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
