@@ -54,7 +54,7 @@ export default function Home() {
               <br />
               Satpathy
             </h1>
-            <p className="mt-6 font-mono text-xs md:text-sm tracking-[0.2em] uppercase text-primary">
+            <p className="mt-6 font-mono text-xl md:text-2xl tracking-[0.2em] uppercase text-primary">
               Engineer · Researcher · Builder
             </p>
           </PageTransition>
