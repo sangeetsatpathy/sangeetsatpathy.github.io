@@ -9,7 +9,7 @@ import ProjectCard from "../components/ProjectCard";
 import { projects } from "../lib/projectsData";
 import { ArrowDown } from "lucide-react";
 
-const HERO_IMG = "https://media.db.com/images/public/6a2a04b74f12fd3acc3ff5ed/160db65b6_generated_2f4a7381.png";
+const HERO_IMG = "/images/stanford-img.png";
 
 export default function Home() {
   const { scrollY } = useScroll();
@@ -108,32 +108,7 @@ export default function Home() {
         </PageTransition>
       </section>
 
-      <SectionDivider />
-
-      {/* Featured Projects */}
-      <section className="px-6 md:px-16 pb-24 md:pb-40">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-end justify-between mb-16">
-            <h2 className="font-display text-2xl md:text-3xl tracking-[0.15em] uppercase text-foreground">
-              Selected Works
-            </h2>
-            <Link
-              to="/projects"
-              className="font-mono text-xs tracking-[0.2em] uppercase text-primary hover:text-foreground transition-colors duration-500"
-            >
-              View All →
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-primary/10">
-            {featuredProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-
+      <SectionDivider />1
       {/* Quick links */}
       <section className="max-w-4xl mx-auto px-6 md:px-16 pb-32 md:pb-48">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">

@@ -16,7 +16,7 @@ const experiences = [
   {
     title: "Software Engineering Intern",
     org: "Apple",
-    logo: "/images/apple.png",
+    logo: "/images/apple.jpg",
     period: "June 2026 – September 2026",
     description: "Working in the Apple Ads team. Developing high throughput, low latency internal dashboard system for analyzing ingested data.",
     details: `Working within Apple's Ads infrastructure team, contributing to a high-throughput, low-latency internal dashboard system used to analyze large volumes of ingested advertising data.
@@ -28,7 +28,7 @@ The system is designed for performance at scale — processing real-time data st
   {
     title: "Undergraduate Researcher",
     org: "Stanford CHARM Lab",
-    logo: "/images/stanford.png",
+    logo: "/images/charm.jpg",
     period: "January 2026 – Present",
     description: "Designed surgical training taskpads, trained YOLO object detection models for surgical cylinder identification, engineered drop-detection systems, and developed metrics pipelines for teleoperation analysis under Dr. Allison Okamura.",
     details: `Working under PhD Student Mary Kate Gale and visiting Master's student Shujiro Shobayashi in the lab of Dr. Allison Okamura at Stanford's CHARM Lab.
@@ -66,7 +66,7 @@ Working across the flight-software stack, including power management, subsystem 
   {
     title: "Engineering Intern — 5G Network Analysis",
     org: "Verizon",
-    logo: "/images/verizon.png",
+    logo: "/images/verizon.jpg",
     period: "June 2024 – July 2024",
     description: "Analyzed large-scale performance datasets for Verizon's C-band 5G FWA network, performing data-driven root-cause analysis on site-level issues and contributing to cell-site planning and optimization.",
     details: `Analyzed large-scale performance datasets for Verizon's C-band 5G Fixed Wireless Access (FWA) network across multiple Northern California counties, identifying patterns related to throughput degradation, drop-rate anomalies, and RF interference to improve 5G Home Internet reliability.
@@ -84,7 +84,7 @@ Sole intern from PAUSD. 6 weeks, 32 hours per week. Through the NAF Academy of E
   {
     title: "Machinist, CAD Designer, Curriculum Lead, Publicity Lead",
     org: "Gunn Robotics Team (FRC 192)",
-    logo: "/images/grt.png",
+    logo: "/images/grt.jpeg",
     period: "August 2023 – June 2025",
     description: "Led strategy, prototyping, CAD modeling, and precision machining for competition robots. Efforts culminated in a first-place victory at the 2024 FIRST Idaho Regional.",
     details: `The Gunn Robotics Team (FRC 192) is a completely student-run team that participates in the annual FIRST Robotics Competition. I served in multiple leadership and technical roles over two competitive seasons.`,
@@ -152,7 +152,7 @@ My shop project robot used a funnel to intake game pieces and used pneumatics to
   {
     title: "Engineering Intern — ThingSpace IoT",
     org: "Verizon",
-    logo: "/images/verizon.png",
+    logo: "/images/verizon.jpg",
     period: "June 2023 – July 2023",
     description: "Developed backend services for Verizon's ThingSpace IoT management platform, enhancing Connectivity Management APIs for enterprise device provisioning and monitoring.",
     details: `Developed backend services for Verizon's ThingSpace IoT management platform, enhancing the Connectivity Management APIs that allow enterprise customers to provision devices, manage network access, query device status, and monitor usage at scale.
@@ -170,7 +170,7 @@ Applied knowledge of LTE-MBB and LTE-MTC cellular technologies to inform API des
   {
     title: "Computer Science Tutor",
     org: "theCoderSchool Palo Alto",
-    logo: null,
+    logo: "/images/coderschool.jpeg",
     period: "February 2023 – March 2025",
     description: "Taught Python and Java to elementary and middle school students on a 1:1 basis, developing and adapting curriculum to each student's level.",
     details: `Taught Python and Java to elementary and middle school students on a 1:1 basis.

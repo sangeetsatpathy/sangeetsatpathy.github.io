@@ -6,7 +6,7 @@ export const projects = [
     year: "2025",
     role: "Sole Researcher",
     tech: ["Python", "PyTorch", "QMIX", "SMAC", "CUSUM"],
-    image: "https://media.db.com/images/public/6a2a04b74f12fd3acc3ff5ed/4b9a3ba9b_generated_272fa24c.png",
+    image: "/images/macpro.jpeg",
     imageAlt: "Abstract neural network visualization representing multi-agent reinforcement learning research",
     summary: "Detecting behavioral changes in opponents without pre-labeled task boundaries in multi-agent reinforcement learning.",
     description: `Multi-agent reinforcement learning systems that cooperate toward a shared goal face a core challenge in real-world deployment: opponents and environments shift unpredictably, and no one tells you when. Existing continual MARL algorithms like MACPro handle this by maintaining multiple strategy "heads" — but they assume you know when the task has changed during training.
@@ -38,7 +38,7 @@ This project proposed a CUSUM-based online drift detector as a drop-in replaceme
     year: "2025",
     role: "Lead Developer",
     tech: ["C", "Bare-Metal", "MangoPi", "IR", "RF", "SPI", "Interrupts"],
-    image: "https://media.db.com/images/public/6a2a04b74f12fd3acc3ff5ed/eade4edf0_generated_1fca43ba.png",
+    image: "/images/107e.png",
     imageAlt: "Glowing lines of code on dark surface representing bare-metal programming",
     summary: "A fully distributed laser tag system built from scratch in bare-metal C on MangoPi hardware.",
     description: `Built a real-time multiplayer laser tag system from scratch in bare-metal C, running directly on Raspberry Pi hardware without an operating system. The project focused on low-level systems programming, hardware interfacing, and distributed communication between multiple devices.
@@ -71,7 +71,7 @@ Skills demonstrated: low-level systems programming in C (no OS, direct hardware 
     year: "2025",
     role: "Sole Developer",
     tech: ["Python", "NumPy", "MNIST", "Batch Normalization", "Xavier Init"],
-    image: "",
+    image: "/images/nn_from_scratch.jpeg",
     imageAlt: "Neural network diagram",
     summary: "A fully-connected neural network built from scratch — no ML libraries — that classifies handwritten digits with 83% accuracy.",
     description: `Programmed and trained a working fully-connected neural network from scratch using no libraries to aid in the architecture, achieving 83% accuracy on handwritten digit classification. Ran tests on test accuracy and confidence across various activation functions and model architectures.
@@ -101,7 +101,7 @@ In debugging why test accuracies were decreasing across epochs, I decreased the 
     year: "2025",
     role: "Sole Developer",
     tech: ["Python", "NLP", "scikit-learn", "Logistic Regression", "SVM", "Random Forest", "MLP"],
-    image: "",
+    image: "/images/reddit_classification.jpeg",
     imageAlt: "Political classification NLP project",
     summary: "Classifies political orientation as Liberal or Conservative from text, trained on Reddit posts from r/Conservative and r/Liberal.",
     description: `Classifies political orientation as either Liberal or Conservative based on a message. Trained on Reddit messages sent in r/Conservative and r/Liberal. Automated political stance classification using natural language processing and machine learning.
@@ -127,7 +127,7 @@ Compared model performance across several classifiers: Logistic Regressor, K-Nea
     year: "2023–2024",
     role: "Designer & Developer",
     tech: ["Python", "YOLOv5", "CAD", "Onshape", "Dynamixel Motors", "3D Printing"],
-    image: "",
+    image: "/images/trashtron.png",
     imageAlt: "TrashTron autonomous trash-collecting robot",
     summary: "An autonomous robot that detects, moves to, and picks up plastic trash bottles — designed, machined, and programmed from scratch.",
     description: `Designed (using Onshape CAD software), assembled, machined, and programmed a robot named TrashTron with the guidance of Robotics Subject Matter Expert Dr. Reuben Brewer at Reubotics.
@@ -161,7 +161,7 @@ Wrote a program using computer vision concepts to train a custom YOLOv5 object d
     year: "2023–2025",
     role: "Lead Researcher",
     tech: ["Python", "OpenCV", "Object Detection", "Mobile Development"],
-    image: "https://media.db.com/images/public/6a2a04b74f12fd3acc3ff5ed/996effab1_generated_15965d6d.png",
+    image: "/images/aar.png",
     imageAlt: "Brass telescope on ancient parapet representing computer vision and detection research",
     summary: "A mobile app using computer vision to detect moving cars and alert visually impaired users about crossing safety.",
     description: `Recognizing the limitations of existing apps designed for crosswalks, this research focused on developing an innovative solution — a mobile app that utilizes computer vision to detect moving cars on the road and alerts users through vibrations about the safety of crossing.
