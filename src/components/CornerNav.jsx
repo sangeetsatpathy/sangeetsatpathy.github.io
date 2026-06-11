@@ -22,14 +22,14 @@ export default function CornerNav() {
         {/* Top-left: Home */}
         <Link
           to="/"
-          className="pointer-events-auto absolute top-8 left-8 font-mono font-semibold text-sm tracking-[0.3em] uppercase text-[#ffaa32]/65 hover:text-[#ffaa32] transition-colors duration-500 focus:outline-none focus:ring-2 focus:ring-primary"
+          className="pointer-events-auto absolute top-8 left-8 font-mono font-semibold text-sm tracking-[0.3em] uppercase text-[#ffd060] hover:text-white transition-colors duration-500 focus:outline-none focus:ring-2 focus:ring-primary"
         >
           Home
         </Link>
         {/* Bottom-left: Contact */}
         <a
           href="mailto:sangeet1@stanford.edu"
-          className="pointer-events-auto absolute bottom-8 left-8 font-mono font-semibold text-sm tracking-[0.3em] uppercase text-[#ffaa32]/65 hover:text-[#ffaa32] transition-colors duration-500 focus:outline-none focus:ring-2 focus:ring-primary"
+          className="pointer-events-auto absolute bottom-8 left-8 font-mono font-semibold text-sm tracking-[0.3em] uppercase text-[#ffd060] hover:text-white transition-colors duration-500 focus:outline-none focus:ring-2 focus:ring-primary"
         >
           Contact
         </a>
@@ -42,7 +42,7 @@ export default function CornerNav() {
                 key={link.path}
                 to={link.path}
                 className={`font-mono font-semibold text-sm tracking-[0.3em] uppercase transition-colors duration-500 focus:outline-none focus:ring-2 focus:ring-primary ${
-                  isActive ? "text-[#ffaa32]" : "text-[#ffaa32]/65 hover:text-[#ffaa32]"
+                  isActive ? "text-white" : "text-[#ffd060] hover:text-white"
                 }`}
               >
                 {link.label}
