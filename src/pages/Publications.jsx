@@ -12,7 +12,7 @@ function PdfAccordion({ label, src }) {
     <div className="mt-4 border-t border-border/20 pt-3">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 font-mono text-[10px] tracking-[0.25em] uppercase text-primary/60 hover:text-primary transition-colors duration-300 group"
+        className="flex items-center gap-2 font-mono text-xs font-semibold tracking-[0.25em] uppercase text-primary/70 hover:text-primary transition-colors duration-300 group"
       >
         <motion.span animate={{ rotate: open ? 180 : 0 }} transition={{ duration: 0.22 }}>
           <ChevronDown size={12} />
@@ -123,16 +123,16 @@ function PubCard({ pub }) {
       <div className="border-t border-border/30 py-12 md:py-16 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
         <div className="md:col-span-4">
           <div className="flex items-center gap-2 mb-2">
-            <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-primary">
+            <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-primary">
               {pub.type}
             </p>
             {pub.status && (
-              <span className="font-mono text-[9px] tracking-[0.2em] uppercase px-2 py-0.5 border border-primary/30 text-primary/60">
+              <span className="font-mono text-xs font-semibold tracking-[0.2em] uppercase px-2 py-0.5 border border-primary/30 text-primary/70">
                 {pub.status}
               </span>
             )}
           </div>
-          <p className="font-mono text-xs text-foreground/40" style={{ lineHeight: 1.6 }}>
+          <p className="font-mono text-sm text-foreground/60" style={{ lineHeight: 1.6 }}>
             {pub.venue}
           </p>
         </div>
@@ -177,7 +177,7 @@ export default function Publications() {
       <div className="pt-24 md:pt-32 px-6 md:px-16 pb-32">
         <div className="max-w-5xl mx-auto">
           <PageTransition>
-            <p className="font-mono text-xs tracking-[0.3em] uppercase text-primary mb-4">
+            <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-primary mb-4">
               The Scrolls
             </p>
             <h1 className="font-display text-4xl md:text-6xl tracking-[0.1em] uppercase text-foreground mb-6">
@@ -191,7 +191,7 @@ export default function Publications() {
 
           {/* Research Papers */}
           <div className="mb-16">
-            <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-1">
+            <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-1">
               Section I
             </p>
             <h2 className="font-display text-2xl md:text-3xl tracking-[0.08em] uppercase text-foreground mb-2">
@@ -207,7 +207,7 @@ export default function Publications() {
 
           {/* High School Works */}
           <div>
-            <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-1">
+            <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-1">
               Section II
             </p>
             <h2 className="font-display text-2xl md:text-3xl tracking-[0.08em] uppercase text-foreground mb-2">

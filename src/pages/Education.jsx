@@ -83,7 +83,7 @@ export default function Education() {
       <div className="pt-24 md:pt-32 px-6 md:px-16 pb-32">
         <div className="max-w-5xl mx-auto">
           <PageTransition>
-            <p className="font-mono text-xs tracking-[0.3em] uppercase text-primary mb-4">
+            <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-primary mb-4">
               The Archive of Knowledge
             </p>
             <h1 className="font-display text-4xl md:text-6xl tracking-[0.1em] uppercase text-foreground mb-20">
@@ -100,7 +100,7 @@ export default function Education() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {skills.map((s) => (
                   <div key={s.category}>
-                    <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-primary mb-2">
+                    <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-primary mb-2">
                       {s.category}
                     </p>
                     <p className="font-body text-base text-foreground/80" style={{ lineHeight: 1.7 }}>
@@ -116,10 +116,10 @@ export default function Education() {
           <div className="border-t border-border/30 py-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
               <div className="md:col-span-4">
-                <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
+                <p className="font-mono text-xs font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
                   Expected June 2028
                 </p>
-                <p className="font-mono text-sm text-primary">Stanford University</p>
+                <p className="font-mono text-sm font-semibold text-primary">Stanford University</p>
                 <p className="font-mono text-xs text-foreground/65 mt-1">GPA: 3.922 / 4.0</p>
               </div>
               <div className="md:col-span-8">
@@ -147,10 +147,10 @@ export default function Education() {
           <div className="border-t border-border/30 py-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
               <div className="md:col-span-4">
-                <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
+                <p className="font-mono text-xs font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
                   Aug 2021 – June 2025
                 </p>
-                <p className="font-mono text-sm text-primary">Henry M. Gunn High School</p>
+                <p className="font-mono text-sm font-semibold text-primary">Henry M. Gunn High School</p>
                 <p className="font-mono text-xs text-foreground/65 mt-1">GPA: 4.0 UW / 4.45 W</p>
               </div>
               <div className="md:col-span-8">
@@ -168,10 +168,10 @@ export default function Education() {
           <div className="border-t border-border/30 py-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
               <div className="md:col-span-4">
-                <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
+                <p className="font-mono text-xs font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
                   Aug 2021 – May 2025
                 </p>
-                <p className="font-mono text-sm text-primary">De Anza & Foothill College</p>
+                <p className="font-mono text-sm font-semibold text-primary">De Anza & Foothill College</p>
                 <p className="font-mono text-xs text-foreground/65 mt-1">GPA: 4.0 · Dean's List</p>
               </div>
               <div className="md:col-span-8">

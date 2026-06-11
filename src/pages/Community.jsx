@@ -99,7 +99,7 @@ export default function Community() {
       <div className="pt-24 md:pt-32 px-6 md:px-16 pb-32">
         <div className="max-w-5xl mx-auto">
           <PageTransition>
-            <p className="font-mono text-xs tracking-[0.3em] uppercase text-primary mb-4">
+            <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-primary mb-4">
               The Citizen
             </p>
             <h1 className="font-display text-4xl md:text-6xl tracking-[0.1em] uppercase text-foreground mb-6">
@@ -114,7 +114,7 @@ export default function Community() {
             {categories.map((cat, ci) => (
               <div key={ci}>
                 <div className="border-t border-border/30 pt-10 pb-2">
-                  <p className="font-mono text-xs tracking-[0.4em] uppercase text-primary/50">
+                  <p className="font-mono text-sm font-semibold tracking-[0.4em] uppercase text-primary/80">
                     {cat.name}
                   </p>
                 </div>
@@ -122,10 +122,10 @@ export default function Community() {
                   <GraceGlow key={i}>
                     <div className="border-t border-border/20 py-10 md:py-14 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-12">
                       <div className="md:col-span-3">
-                        <p className="font-mono text-xs tracking-[0.3em] uppercase text-muted-foreground mb-1">
+                        <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-1">
                           {entry.period}
                         </p>
-                        <p className="font-mono text-xs tracking-[0.2em] uppercase text-primary/70">
+                        <p className="font-mono text-sm font-semibold tracking-[0.2em] uppercase text-primary/85">
                           {entry.org}
                         </p>
                       </div>
