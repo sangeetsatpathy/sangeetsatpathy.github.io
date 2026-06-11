@@ -5,6 +5,7 @@ import PageTransition from "../components/PageTransition";
 import GraceGlow from "../components/GraceGlow";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../components/ui/dialog";
 import { Plus } from "lucide-react";
+import MediaGallery from "../components/MediaGallery";
 
 const experiences = [
   {
@@ -15,6 +16,7 @@ const experiences = [
     details: `Working within Apple's Ads infrastructure team, contributing to a high-throughput, low-latency internal dashboard system used to analyze large volumes of ingested advertising data.
 
 The system is designed for performance at scale — processing real-time data streams and surfacing insights to internal teams. Work involves backend development with a focus on efficiency, reliability, and minimal latency under high load.`,
+    media: [],
   },
   {
     title: "Undergraduate Researcher",
@@ -30,6 +32,7 @@ Helped develop a metrics pipeline for a DVRK teleoperation study comparing exper
 Trained and deployed a YOLO object detection model to identify surgical cylinders and pegs, and implemented HSV color segmentation on cropped detections to assess correct cylinder placement orientation.
 
 Engineered a drop-detection system using bounding-box velocity analysis, and prototyped an XGBoost classifier to distinguish "held" vs. "dropped" cylinder states with low latency.`,
+    media: [],
   },
   {
     title: "Software Developer",
@@ -43,6 +46,7 @@ Built entirely without frontend frameworks, demonstrating deep understanding of 
 Features include user authentication and session management, product catalog with search and filtering, shopping cart and checkout flow, order history and tracking, and a comprehensive admin dashboard for inventory and catalog management.
 
 The backend is built on Node.js with MongoDB, exposing a REST API consumed by the frontend. The project is currently in active development.`,
+    media: [],
   },
   {
     title: "Software Engineer",
@@ -56,6 +60,7 @@ Contributions include adding a lightweight heartbeat-check mechanism for the Pay
 Working across the flight-software stack, including power management, subsystem coordination, and command-handling logic. The system is designed for autonomous operation, with safeguards to ensure stable imaging and communication throughout the mission.
 
 SAMWISE serves as a technology demonstrator showing how small satellites can execute sophisticated, multi-subsystem missions in low-Earth orbit.`,
+    media: [],
   },
   {
     title: "Engineering Intern — 5G Network Analysis",
@@ -67,6 +72,7 @@ SAMWISE serves as a technology demonstrator showing how small satellites can exe
 Analyzed site-level performance datasets to identify patterns indicative of degraded service, performing data-driven root-cause analysis on underperforming cell sites.
 
 Contributed to cell-site planning and optimization workflows, helping prioritize remediation efforts based on quantitative performance metrics. Work spanned data analysis, visualization, and presenting findings to engineering stakeholders.`,
+    media: [],
   },
   {
     title: "Machinist, CAD Designer, Curriculum Lead, Publicity Lead",
@@ -80,6 +86,7 @@ As Machinist and CAD Designer, responsibilities included strategizing and brains
 As Curriculum Lead, developed and delivered technical training content for new team members across mechanical, electrical, and software disciplines.
 
 The 2024 robot, "Dissonance," featured a roller-intake system, 2-stage elevator, winch-powered climb mechanism, and a double-roller shooter with adjustable launch angle. These efforts culminated in a first-place victory at the 2024 FIRST Idaho Regional, securing a spot at the 2024 World Championship.`,
+    media: [],
   },
   {
     title: "Engineering Intern — ThingSpace IoT",
@@ -91,6 +98,7 @@ The 2024 robot, "Dissonance," featured a roller-intake system, 2-stage elevator,
 Developed and enhanced backend services supporting the Connectivity Management API, which enables enterprise customers to provision, activate, and monitor IoT devices at scale.
 
 Work involved understanding existing API architecture, implementing enhancements to device provisioning and monitoring endpoints, and contributing to internal documentation and testing.`,
+    media: [],
   },
 ];
 
@@ -176,6 +184,7 @@ export default function Experience() {
                   </p>
                 ))}
               </div>
+              <MediaGallery media={selected.media} />
             </>
           )}
         </DialogContent>

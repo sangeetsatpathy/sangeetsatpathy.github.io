@@ -19,6 +19,7 @@ Key findings revealed that MACPro's global trajectory encoder produces unstable 
     links: [
       { label: "Code", url: "https://github.com/sangeetsatpathy/cs229-project" },
     ],
+    media: [],
   },
   {
     slug: "charm-lab",
@@ -42,6 +43,7 @@ Worked under PhD Student Mary Kate Gale and visiting Master's student Shujiro Sh
     links: [
       { label: "CHARM Lab", url: "https://charm.stanford.edu/" },
     ],
+    media: [],
   },
   {
     slug: "samwise",
@@ -63,6 +65,7 @@ SAMWISE serves as a technology demonstrator showing how small satellites can exe
     links: [
       { label: "Stanford SSI", url: "https://www.stanfordssi.org/" },
     ],
+    media: [],
   },
   {
     slug: "cs107e-laser-tag",
@@ -80,6 +83,7 @@ The system features IR-based hit detection, RF communication between units for r
 
 No operating system, no frameworks, no libraries — just direct hardware register manipulation, custom drivers, and pure C. The project demonstrates deep understanding of computer architecture, serial communication protocols (SPI, I2C, UART), interrupts, and event-driven systems design.`,
     links: [],
+    media: [],
   },
   {
     slug: "nandighosh",
@@ -97,6 +101,7 @@ The application is built without any frontend frameworks — demonstrating deep 
 
 Features include user authentication and session management, product catalog with search and filtering, shopping cart and checkout flow, order history and tracking, and a comprehensive admin dashboard for inventory management.`,
     links: [],
+    media: [],
   },
   {
     slug: "vehicle-detection",
@@ -118,6 +123,7 @@ Presented findings at the 2024 Foothill College Research & Service Leadership Sy
     links: [
       { label: "Research Poster", url: "https://drive.google.com/file/d/1VltIeBdj0qVDzbGFKxElvcAwcsXBNloZ/view" },
     ],
+    media: [],
   },
   {
     slug: "grt-dissonance",
@@ -137,6 +143,7 @@ These efforts culminated in a first-place victory at the March 2024 FIRST Roboti
     links: [
       { label: "Event Results", url: "https://frc-events.firstinspires.org/2024/IDBO/awards" },
     ],
+    media: [],
   },
 ];
 

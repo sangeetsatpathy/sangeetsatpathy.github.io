@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
+import MediaGallery from "../components/MediaGallery";
 import CornerNav from "../components/CornerNav";
 import FilmGrain from "../components/FilmGrain";
 import PageTransition from "../components/PageTransition";
@@ -154,6 +155,8 @@ export default function ProjectDetail() {
                   </div>
                 </div>
               )}
+
+              <MediaGallery media={project.media} />
 
               {/* Next project suggestion */}
               <div className="mt-20 pt-8 border-t border-border/30">
