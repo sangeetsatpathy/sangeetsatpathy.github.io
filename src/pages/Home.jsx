@@ -72,7 +72,7 @@ export default function Home() {
               Satpathy
             </h1>
             {currentRoles.length > 0 && (
-              <div className="mt-4 h-6">
+              <div className="mt-5">
                 <AnimatePresence mode="wait">
                   <motion.p
                     key={roleIdx}
@@ -80,9 +80,12 @@ export default function Home() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="font-mono text-sm md:text-base tracking-[0.15em] uppercase text-primary/60"
+                    className="font-mono font-semibold text-base md:text-lg tracking-[0.15em] uppercase flex items-center gap-3"
+                    style={{ color: "#ffd060" }}
                   >
+                    <span style={{ opacity: 0.5, fontSize: "0.6em" }}>✦</span>
                     {currentRoles[roleIdx]}
+                    <span style={{ opacity: 0.5, fontSize: "0.6em" }}>✦</span>
                   </motion.p>
                 </AnimatePresence>
               </div>
@@ -99,7 +102,10 @@ export default function Home() {
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ArrowDown size={20} className="text-primary/40" />
+          <ArrowDown
+            size={36}
+            style={{ color: "#ffd060", filter: "drop-shadow(0 0 10px rgba(255,208,96,0.85))" }}
+          />
         </motion.div>
       </section>
 

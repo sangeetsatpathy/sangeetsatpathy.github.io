@@ -26,13 +26,6 @@ export default function CornerNav() {
         >
           Home
         </Link>
-        {/* Bottom-left: Contact */}
-        <a
-          href="mailto:sangeet1@stanford.edu"
-          className="pointer-events-auto absolute bottom-8 left-8 font-mono font-semibold text-sm tracking-[0.3em] uppercase text-[#ffd060] hover:text-white transition-colors duration-500 focus:outline-none focus:ring-2 focus:ring-primary"
-        >
-          Contact
-        </a>
         {/* Bottom-right vertical links */}
         <div className="pointer-events-auto absolute bottom-8 right-8 flex flex-col items-end gap-3 bg-background/90 backdrop-blur-sm px-4 py-3 rounded-sm">
           {navLinks.slice(1).map((link) => {
@@ -84,12 +77,6 @@ export default function CornerNav() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="mailto:sangeet1@stanford.edu"
-            className="font-display text-2xl tracking-[0.2em] uppercase text-foreground/60 hover:text-primary transition-colors duration-500"
-          >
-            Contact
-          </a>
         </div>
       )}
     </>
