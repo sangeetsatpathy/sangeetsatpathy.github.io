@@ -84,31 +84,31 @@ export default function MediaGallery({ media }) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              onClick={close}
+              onClick={(e) => { if (e.target === e.currentTarget) close(); }}
               className="fixed inset-0 z-[200] bg-black/92 flex items-center justify-center p-4 md:p-10"
             >
+              {/* Close — fixed to viewport top-right */}
+              <button
+                onClick={close}
+                className="fixed top-4 right-4 z-[201] w-11 h-11 flex items-center justify-center rounded-full bg-white/15 hover:bg-white/30 text-white transition-colors duration-200"
+              >
+                <X size={20} />
+              </button>
+
               {/* Layout: arrows + media box */}
-              <div className="flex items-center gap-3 max-w-5xl w-full" onClick={(e) => e.stopPropagation()}>
+              <div className="flex items-center gap-4 max-w-5xl w-full">
                 {/* Prev arrow */}
                 {media.length > 1 ? (
                   <button
                     onClick={prev}
-                    className="flex-none w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors duration-200"
+                    className="flex-none w-12 h-12 flex items-center justify-center rounded-full bg-white/15 hover:bg-white/30 text-white transition-colors duration-200"
                   >
-                    <ChevronLeft size={22} />
+                    <ChevronLeft size={24} />
                   </button>
-                ) : <div className="flex-none w-10" />}
+                ) : <div className="flex-none w-12" />}
 
-                {/* Media + close + counter */}
-                <div className="relative flex-1 flex flex-col items-center">
-                  {/* Close — top-right corner of the media */}
-                  <button
-                    onClick={close}
-                    className="absolute -top-3 -right-3 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white/15 hover:bg-white/30 text-white transition-colors duration-200"
-                  >
-                    <X size={16} />
-                  </button>
-
+                {/* Media + counter */}
+                <div className="flex-1 flex flex-col items-center">
                   <motion.div
                     key={lightboxIndex}
                     initial={{ scale: 0.96, opacity: 0 }}
@@ -133,7 +133,6 @@ export default function MediaGallery({ media }) {
                     )}
                   </motion.div>
 
-                  {/* Counter below media */}
                   {media.length > 1 && (
                     <p className="mt-3 font-mono text-[10px] tracking-[0.2em] text-white/40">
                       {lightboxIndex + 1} / {media.length}
@@ -145,11 +144,11 @@ export default function MediaGallery({ media }) {
                 {media.length > 1 ? (
                   <button
                     onClick={next}
-                    className="flex-none w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors duration-200"
+                    className="flex-none w-12 h-12 flex items-center justify-center rounded-full bg-white/15 hover:bg-white/30 text-white transition-colors duration-200"
                   >
-                    <ChevronRight size={22} />
+                    <ChevronRight size={24} />
                   </button>
-                ) : <div className="flex-none w-10" />}
+                ) : <div className="flex-none w-12" />}
               </div>
             </motion.div>
           )}
