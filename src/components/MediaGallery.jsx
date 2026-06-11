@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Play, ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -62,94 +63,102 @@ export default function MediaGallery({ media }) {
       </div>
 
       {/*
-        Lightbox — rendered inline (NOT via createPortal) so it stays inside
-        the Radix Dialog DOM subtree. Radix's DismissableLayer uses document-level
-        capture-phase listeners; portalling to body puts this outside the dialog
-        node so every click looks like "outside". Inline + position:fixed avoids
-        that entirely — fixed still covers the viewport, and z-[9999] floats it
-        above everything.
+        Portal to document.body so position:fixed works relative to the
+        viewport (not the Radix Dialog's CSS-transform ancestor).
+        The `data-lightbox` attribute lets DialogContent's onInteractOutside
+        check whether a click was inside the lightbox and skip closing.
       */}
-      <AnimatePresence>
-        {active && (
-          <motion.div
-            key="lightbox"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.18 }}
-            className="fixed inset-0 z-[9999] bg-black/92 flex items-center justify-center"
-          >
-            {/* Backdrop click closes lightbox */}
-            <div
-              className="absolute inset-0"
-              onClick={close}
-            />
-
-            {/* Close */}
-            <button
-              onClick={close}
-              className="absolute top-4 right-4 z-10 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
-              aria-label="Close"
+      {createPortal(
+        <AnimatePresence>
+          {active && (
+            <motion.div
+              data-lightbox="true"
+              key="lightbox"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.18 }}
+              className="fixed inset-0 bg-black/92 flex items-center justify-center"
+              style={{ zIndex: 99999 }}
+              onClick={(e) => { if (e.target === e.currentTarget) close(); }}
             >
-              <X size={22} strokeWidth={2.5} />
-            </button>
-
-            {/* Prev */}
-            {media.length > 1 && (
+              {/* Close */}
               <button
-                onClick={prev}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
-                aria-label="Previous"
+                onClick={close}
+                className="absolute top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
+                style={{ zIndex: 2 }}
+                aria-label="Close"
               >
-                <ChevronLeft size={26} strokeWidth={2.5} />
+                <X size={22} strokeWidth={2.5} />
               </button>
-            )}
 
-            {/* Media — sits above the backdrop div via z-10 */}
-            <div className="relative z-10 flex flex-col items-center max-w-5xl w-full px-20">
-              <motion.div
-                key={lightboxIndex}
-                initial={{ opacity: 0, scale: 0.97 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.15 }}
-                className="flex items-center justify-center w-full"
+              {/* Media — rendered first so arrows sit on top of it */}
+              <div
+                className="flex items-center justify-center w-full h-full px-20"
+                style={{ zIndex: 1 }}
+                onClick={(e) => { if (e.target === e.currentTarget) close(); }}
               >
-                {active.type === "video" ? (
-                  <video
-                    key={active.src}
-                    src={active.src}
-                    controls
-                    autoPlay
-                    className="max-w-full max-h-[82vh] rounded outline-none"
-                  />
-                ) : (
-                  <img
-                    src={active.src}
-                    alt={active.alt || ""}
-                    className="max-w-full max-h-[82vh] object-contain rounded"
-                  />
-                )}
-              </motion.div>
+                <div className="flex flex-col items-center">
+                  <motion.div
+                    key={lightboxIndex}
+                    initial={{ opacity: 0, scale: 0.97 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.15 }}
+                  >
+                    {active.type === "video" ? (
+                      <video
+                        key={active.src}
+                        src={active.src}
+                        controls
+                        autoPlay
+                        className="max-w-full max-h-[82vh] rounded outline-none"
+                        style={{ maxWidth: "calc(100vw - 160px)" }}
+                      />
+                    ) : (
+                      <img
+                        src={active.src}
+                        alt={active.alt || ""}
+                        className="max-w-full max-h-[82vh] object-contain rounded"
+                        style={{ maxWidth: "calc(100vw - 160px)" }}
+                      />
+                    )}
+                  </motion.div>
+                  {media.length > 1 && (
+                    <p className="mt-3 font-mono text-[10px] tracking-[0.25em] text-white/40">
+                      {lightboxIndex + 1} / {media.length}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* Prev — rendered after media div so it paints on top */}
               {media.length > 1 && (
-                <p className="mt-3 font-mono text-[10px] tracking-[0.25em] text-white/40">
-                  {lightboxIndex + 1} / {media.length}
-                </p>
+                <button
+                  onClick={prev}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
+                  style={{ zIndex: 2 }}
+                  aria-label="Previous"
+                >
+                  <ChevronLeft size={26} strokeWidth={2.5} />
+                </button>
               )}
-            </div>
 
-            {/* Next */}
-            {media.length > 1 && (
-              <button
-                onClick={next}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
-                aria-label="Next"
-              >
-                <ChevronRight size={26} strokeWidth={2.5} />
-              </button>
-            )}
-          </motion.div>
-        )}
-      </AnimatePresence>
+              {/* Next — rendered after media div so it paints on top */}
+              {media.length > 1 && (
+                <button
+                  onClick={next}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
+                  style={{ zIndex: 2 }}
+                  aria-label="Next"
+                >
+                  <ChevronRight size={26} strokeWidth={2.5} />
+                </button>
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </>
   );
 }
