@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Play } from "lucide-react";
@@ -77,14 +77,33 @@ export default function MediaGallery({ media, onOpenLightbox }) {
 }
 
 export function Lightbox({ item, onClose }) {
+  const rootRef = useRef(null);
+
   useEffect(() => {
     const handler = (e) => { if (e.key === "Escape") onClose(); };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, [onClose]);
 
+  // Stop pointerdown from bubbling to document in native DOM (bubble phase).
+  // Radix Dialog's DismissableLayer listens at document bubble-phase;
+  // without this, every click in the lightbox closes the dialog behind it.
+  // React synthetic events can't reliably intercept this; native listener can.
+  useEffect(() => {
+    const el = rootRef.current;
+    if (!el) return;
+    const stop = (e) => e.stopPropagation();
+    el.addEventListener("pointerdown", stop);
+    el.addEventListener("mousedown", stop);
+    return () => {
+      el.removeEventListener("pointerdown", stop);
+      el.removeEventListener("mousedown", stop);
+    };
+  }, []);
+
   return (
     <motion.div
+      ref={rootRef}
       key="lightbox"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
