@@ -232,7 +232,7 @@ export default function Experience() {
                       <img
                         src={exp.logo}
                         alt={exp.org}
-                        className="h-10 w-auto mb-3 object-contain opacity-90"
+                        className="h-20 w-auto mb-3 object-contain opacity-90"
                       />
                     )}
                     <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
