@@ -77,33 +77,14 @@ export default function MediaGallery({ media, onOpenLightbox }) {
 }
 
 export function Lightbox({ item, onClose }) {
-  const rootRef = useRef(null);
-
   useEffect(() => {
     const handler = (e) => { if (e.key === "Escape") onClose(); };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, [onClose]);
 
-  // Stop pointerdown from bubbling to document in native DOM (bubble phase).
-  // Radix Dialog's DismissableLayer listens at document bubble-phase;
-  // without this, every click in the lightbox closes the dialog behind it.
-  // React synthetic events can't reliably intercept this; native listener can.
-  useEffect(() => {
-    const el = rootRef.current;
-    if (!el) return;
-    const stop = (e) => e.stopPropagation();
-    el.addEventListener("pointerdown", stop);
-    el.addEventListener("mousedown", stop);
-    return () => {
-      el.removeEventListener("pointerdown", stop);
-      el.removeEventListener("mousedown", stop);
-    };
-  }, []);
-
   return (
     <motion.div
-      ref={rootRef}
       key="lightbox"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -111,7 +92,11 @@ export function Lightbox({ item, onClose }) {
       transition={{ duration: 0.18 }}
       style={{ zIndex: 99999, position: "fixed", inset: 0 }}
       className="bg-black/92 flex items-center justify-center"
-      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+      onClick={(e) => {
+        const t = e.target;
+        if (t === e.currentTarget) onClose();
+        // Don't close when clicking inside the media area (video controls, image)
+      }}
     >
       <button
         onClick={onClose}
@@ -122,7 +107,8 @@ export function Lightbox({ item, onClose }) {
         <X size={22} strokeWidth={2.5} />
       </button>
 
-      <div className="flex flex-col items-center max-w-5xl w-full px-8">
+      {/* Stop clicks on the media from bubbling up to the backdrop close handler */}
+      <div className="flex flex-col items-center max-w-5xl w-full px-8" onClick={(e) => e.stopPropagation()}>
         {item.type === "video" ? (
           <video
             key={item.src}
