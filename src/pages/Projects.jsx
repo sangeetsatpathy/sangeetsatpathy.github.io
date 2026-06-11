@@ -21,8 +21,7 @@ export default function Projects() {
               Projects
             </h1>
             <p className="font-body text-lg text-foreground/50 max-w-2xl mb-20" style={{ lineHeight: 1.6 }}>
-              A collection of works spanning machine learning research, surgical robotics,
-              satellite flight software, bare-metal systems, and competition robotics.
+              A collection of works spanning machine learning research, bare-metal systems, and robots.
             </p>
           </PageTransition>
 

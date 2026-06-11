@@ -41,7 +41,7 @@ export default function CornerNav() {
           Contact
         </a>
         {/* Bottom-right vertical links */}
-        <div className="pointer-events-auto absolute bottom-8 right-8 flex flex-col items-end gap-3">
+        <div className="pointer-events-auto absolute bottom-8 right-8 flex flex-col items-end gap-3 bg-background/90 backdrop-blur-sm px-4 py-3 rounded-sm">
           {navLinks.slice(2).map((link) => {
             const isActive = location.pathname === link.path;
             return (

@@ -124,7 +124,7 @@ export default function Home() {
       
       {/* Footer */}
       <footer className="border-t border-border/30 px-6 md:px-16 py-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
           <p className="font-mono text-xs tracking-[0.15em] uppercase text-muted-foreground">
             Sangeet Satpathy · {new Date().getFullYear()}
           </p>

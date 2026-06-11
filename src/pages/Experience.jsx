@@ -215,7 +215,7 @@ export default function Experience() {
               Experience
             </h1>
             <p className="font-body text-lg text-foreground/50 max-w-2xl mb-20" style={{ lineHeight: 1.6 }}>
-              A record of positions held, systems built, and problems solved.
+              A record of positions held, systems built, and problems solved. Click on each role below to learn more.
             </p>
           </PageTransition>
 
