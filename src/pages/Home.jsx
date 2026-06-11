@@ -1,21 +1,33 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import CornerNav from "../components/CornerNav";
 import FilmGrain from "../components/FilmGrain";
 import PageTransition from "../components/PageTransition";
 import SectionDivider from "../components/SectionDivider";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../lib/projectsData";
+import { experiences, isCurrentRole } from "../lib/experienceData";
 import { ArrowDown } from "lucide-react";
 
 const HERO_IMG = "/images/stanford-img.png";
+
+const currentRoles = experiences
+  .filter(e => isCurrentRole(e.period))
+  .map(e => `${e.title} @ ${e.org}`);
 
 export default function Home() {
   const { scrollY } = useScroll();
   const heroScale = useTransform(scrollY, [0, 800], [1, 1.15]);
   const heroOpacity = useTransform(scrollY, [0, 500], [1, 0]);
   const titleOpacity = useTransform(scrollY, [0, 400], [1, 0]);
+  const [roleIdx, setRoleIdx] = useState(0);
+
+  useEffect(() => {
+    if (currentRoles.length <= 1) return;
+    const t = setInterval(() => setRoleIdx(i => (i + 1) % currentRoles.length), 3500);
+    return () => clearInterval(t);
+  }, []);
 
   const featuredProjects = projects.slice(0, 6);
 
@@ -59,6 +71,22 @@ export default function Home() {
               <br />
               Satpathy
             </h1>
+            {currentRoles.length > 0 && (
+              <div className="mt-4 h-6">
+                <AnimatePresence mode="wait">
+                  <motion.p
+                    key={roleIdx}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="font-mono text-sm md:text-base tracking-[0.15em] uppercase text-primary/60"
+                  >
+                    {currentRoles[roleIdx]}
+                  </motion.p>
+                </AnimatePresence>
+              </div>
+            )}
             <p className="mt-6 font-mono text-xl md:text-2xl tracking-[0.2em] uppercase text-primary">
               Engineer · Researcher · Builder
             </p>
