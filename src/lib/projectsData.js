@@ -12,14 +12,16 @@ export const projects = [
     description: `Multi-agent reinforcement learning systems that cooperate toward a shared goal face a core challenge in real-world deployment: opponents and environments shift unpredictably, and no one tells you when. Existing continual MARL algorithms like MACPro handle this by maintaining multiple strategy "heads" — but they assume you know when the task has changed during training.
 
 This project proposed a CUSUM-based online drift detector as a drop-in replacement for MACPro's known boundary signal, monitoring episode reward, TD error, and trajectory embedding distance to trigger boundary declarations without pre-labeled task boundaries.`,
-sections:[{title:`Experiments and Findings`,
-content: `I ran three experiments on the StarCraft Multi-Agent Challenge (SMAC-Hard) environment, 2s3z map, with opponents alternating between "attack nearest" and "attack weakest" scripts across 10,000 episodes. Experiment 1 tested for catastrophic forgetting in QMIX — surprisingly, training on one opponent script improved performance against the other, suggesting the two strategies may not be distinct enough to stress-test a continual learning system. Experiment 2 evaluated the CUSUM detector across a broad hyperparameter sweep; the signals were extremely noisy around the true boundary, with the FPR/FNR tradeoff proving unavoidable across all settings. Experiment 3 revealed the deeper reason: MACPro's global trajectory encoder produces unstable µ embeddings even with known boundaries, a fundamental architectural limitation independent of the detection problem. Together, these findings suggest robust task-agnostic MARL requires either more structurally distinct task definitions, a trajectory encoder decoupled from policy training, or change-point detectors that don't rely on the encoder being informative prior to detection.`
-  }],
     links: [
       { label: "Code", url: "https://github.com/sangeetsatpathy/cs229-project" },
     ],
     media: [],
-    sections: [],
+    sections: [
+      {
+        title: "Experiments and Findings",
+        content: `I ran three experiments on the StarCraft Multi-Agent Challenge (SMAC-Hard) environment, 2s3z map, with opponents alternating between "attack nearest" and "attack weakest" scripts across 10,000 episodes. Experiment 1 tested for catastrophic forgetting in QMIX — surprisingly, training on one opponent script improved performance against the other, suggesting the two strategies may not be distinct enough to stress-test a continual learning system. Experiment 2 evaluated the CUSUM detector across a broad hyperparameter sweep; the signals were extremely noisy around the true boundary, with the FPR/FNR tradeoff proving unavoidable across all settings. Experiment 3 revealed the deeper reason: MACPro's global trajectory encoder produces unstable µ embeddings even with known boundaries, a fundamental architectural limitation independent of the detection problem. Together, these findings suggest robust task-agnostic MARL requires either more structurally distinct task definitions, a trajectory encoder decoupled from policy training, or change-point detectors that don't rely on the encoder being informative prior to detection.`,
+      },
+    ],
   },
   {
     slug: "charm-lab",
