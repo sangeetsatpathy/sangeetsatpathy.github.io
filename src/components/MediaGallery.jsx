@@ -3,25 +3,35 @@ import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Play } from "lucide-react";
 
-// Each item: { type: "image" | "video", src: "...", alt: "...", poster: "..." }
-export default function MediaGallery({ media }) {
-  const [lightboxSrc, setLightboxSrc] = useState(null);
+// Each item: { type: "image" | "video", src, alt?, poster? }
+//
+// onOpenLightbox — optional. When provided (e.g. inside a Radix Dialog),
+// the parent renders the lightbox itself at a level outside the dialog so
+// Radix never intercepts the click. When omitted the lightbox is rendered
+// here via a portal (fine for non-dialog contexts like ProjectDetail).
+export default function MediaGallery({ media, onOpenLightbox }) {
+  const [localItem, setLocalItem] = useState(null);
 
-  const close = () => setLightboxSrc(null);
+  const handleOpen = (item) => {
+    if (onOpenLightbox) onOpenLightbox(item);
+    else setLocalItem(item);
+  };
+
+  const close = () => setLocalItem(null);
 
   useEffect(() => {
-    if (!lightboxSrc) return;
+    if (!localItem) return;
     const handler = (e) => { if (e.key === "Escape") close(); };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [lightboxSrc]);
+  }, [localItem]);
 
   if (!media || media.length === 0) return null;
 
   return (
     <>
-      {/* Thumbnail strip */}
-      <div className="mt-8 pt-8 border-t border-border/30">
+      {/* Thumbnail strip — overflow-hidden on wrapper prevents dialog horizontal scroll */}
+      <div className="mt-8 pt-8 border-t border-border/30 overflow-hidden">
         <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-4">
           Media
         </p>
@@ -29,7 +39,7 @@ export default function MediaGallery({ media }) {
           {media.map((item, i) => (
             <button
               key={i}
-              onClick={() => setLightboxSrc(item)}
+              onClick={() => handleOpen(item)}
               className="relative flex-none w-44 h-28 overflow-hidden border border-border/30 hover:border-primary/60 transition-colors duration-300 group"
             >
               {item.type === "video" ? (
@@ -53,62 +63,63 @@ export default function MediaGallery({ media }) {
         </div>
       </div>
 
-      {/*
-        Portal to document.body so position:fixed is relative to the viewport,
-        not a CSS-transform ancestor (Radix Dialog animates with transforms).
-
-        data-lightbox lets DialogContent's onInteractOutside identify these
-        clicks and call e.preventDefault() to keep the dialog open.
-        NOTE: Radix passes a CustomEvent; the real click target is at
-        e.detail.originalEvent.target, not e.target.
-      */}
-      {createPortal(
+      {/* Local lightbox — only used when NOT inside a Radix Dialog */}
+      {!onOpenLightbox && createPortal(
         <AnimatePresence>
-          {lightboxSrc && (
-            <motion.div
-              data-lightbox="true"
-              key="lightbox"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.18 }}
-              style={{ zIndex: 99999, position: "fixed", inset: 0 }}
-              className="bg-black/92 flex items-center justify-center"
-              onClick={(e) => { if (e.target === e.currentTarget) close(); }}
-            >
-              {/* X — top-right */}
-              <button
-                onClick={close}
-                className="absolute top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
-                style={{ zIndex: 1 }}
-                aria-label="Close"
-              >
-                <X size={22} strokeWidth={2.5} />
-              </button>
-
-              {/* Media */}
-              <div className="flex flex-col items-center max-w-5xl w-full px-8">
-                {lightboxSrc.type === "video" ? (
-                  <video
-                    key={lightboxSrc.src}
-                    src={lightboxSrc.src}
-                    controls
-                    autoPlay
-                    className="max-w-full max-h-[82vh] rounded outline-none"
-                  />
-                ) : (
-                  <img
-                    src={lightboxSrc.src}
-                    alt={lightboxSrc.alt || ""}
-                    className="max-w-full max-h-[82vh] object-contain rounded"
-                  />
-                )}
-              </div>
-            </motion.div>
+          {localItem && (
+            <Lightbox item={localItem} onClose={close} />
           )}
         </AnimatePresence>,
         document.body
       )}
     </>
+  );
+}
+
+export function Lightbox({ item, onClose }) {
+  useEffect(() => {
+    const handler = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [onClose]);
+
+  return (
+    <motion.div
+      key="lightbox"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.18 }}
+      style={{ zIndex: 99999, position: "fixed", inset: 0 }}
+      className="bg-black/92 flex items-center justify-center"
+      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+    >
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
+        style={{ zIndex: 1 }}
+        aria-label="Close"
+      >
+        <X size={22} strokeWidth={2.5} />
+      </button>
+
+      <div className="flex flex-col items-center max-w-5xl w-full px-8">
+        {item.type === "video" ? (
+          <video
+            key={item.src}
+            src={item.src}
+            controls
+            autoPlay
+            className="max-w-full max-h-[82vh] rounded outline-none"
+          />
+        ) : (
+          <img
+            src={item.src}
+            alt={item.alt || ""}
+            className="max-w-full max-h-[82vh] object-contain rounded"
+          />
+        )}
+      </div>
+    </motion.div>
   );
 }

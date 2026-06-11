@@ -3,8 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import MediaGallery from "./MediaGallery";
 
-// Each section: { title, content?, pdf?, media? }
-function AccordionItem({ title, content, pdf, media }) {
+function AccordionItem({ title, content, pdf, media, onOpenLightbox }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -56,7 +55,7 @@ function AccordionItem({ title, content, pdf, media }) {
                 </div>
               )}
               {media && media.length > 0 && (
-                <MediaGallery media={media} />
+                <MediaGallery media={media} onOpenLightbox={onOpenLightbox} />
               )}
             </div>
           </motion.div>
@@ -66,7 +65,7 @@ function AccordionItem({ title, content, pdf, media }) {
   );
 }
 
-export default function SectionAccordion({ sections }) {
+export default function SectionAccordion({ sections, onOpenLightbox }) {
   if (!sections || sections.length === 0) return null;
 
   return (
@@ -82,6 +81,7 @@ export default function SectionAccordion({ sections }) {
             content={section.content}
             pdf={section.pdf}
             media={section.media}
+            onOpenLightbox={onOpenLightbox}
           />
         ))}
         <div className="border-t border-border/30" />

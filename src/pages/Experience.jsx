@@ -1,12 +1,14 @@
 // @ts-nocheck
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
+import { AnimatePresence } from "framer-motion";
 import CornerNav from "../components/CornerNav";
 import FilmGrain from "../components/FilmGrain";
 import PageTransition from "../components/PageTransition";
 import GraceGlow from "../components/GraceGlow";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../components/ui/dialog";
 import { Plus } from "lucide-react";
-import MediaGallery from "../components/MediaGallery";
+import MediaGallery, { Lightbox } from "../components/MediaGallery";
 import SectionAccordion from "../components/SectionAccordion";
 
 const GH = "https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/raw/refs/heads/master";
@@ -240,6 +242,7 @@ Taught concepts in advance of their coursework and gave them difficult problems 
 
 export default function Experience() {
   const [selected, setSelected] = useState(null);
+  const [lightboxItem, setLightboxItem] = useState(null);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -309,15 +312,7 @@ export default function Experience() {
 
       {/* Detail modal */}
       <Dialog open={!!selected} onOpenChange={(open) => !open && setSelected(null)}>
-        <DialogContent
-          className="max-w-3xl w-full bg-background border-border/40 max-h-[85vh] overflow-y-auto"
-          onInteractOutside={(e) => {
-            // Radix passes a CustomEvent; the real click target is on the
-            // original native event, not e.target (which is the dialog element).
-            const realTarget = e.detail?.originalEvent?.target;
-            if (realTarget?.closest?.("[data-lightbox]")) e.preventDefault();
-          }}
-        >
+        <DialogContent className="max-w-3xl w-full bg-background border-border/40 max-h-[85vh] overflow-y-auto">
           {selected && (
             <>
               <DialogHeader className="mb-6">
@@ -342,12 +337,22 @@ export default function Experience() {
                   </p>
                 ))}
               </div>
-              <MediaGallery media={selected.media} />
-              <SectionAccordion sections={selected.sections} />
+              <MediaGallery media={selected.media} onOpenLightbox={setLightboxItem} />
+              <SectionAccordion sections={selected.sections} onOpenLightbox={setLightboxItem} />
             </>
           )}
         </DialogContent>
       </Dialog>
+
+      {/* Lightbox rendered outside the Dialog so Radix never sees the clicks */}
+      {createPortal(
+        <AnimatePresence>
+          {lightboxItem && (
+            <Lightbox item={lightboxItem} onClose={() => setLightboxItem(null)} />
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
 
       <footer className="border-t border-border/30 px-6 md:px-16 py-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
