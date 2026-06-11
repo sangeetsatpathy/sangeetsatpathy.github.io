@@ -15,6 +15,7 @@ import Experience from './pages/Experience';
 import Education from './pages/Education';
 import Publications from './pages/Publications';
 import Awards from './pages/Awards';
+import Community from './pages/Community';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -49,6 +50,7 @@ const AuthenticatedApp = () => {
       <Route path="/education" element={<Education />} />
       <Route path="/publications" element={<Publications />} />
       <Route path="/awards" element={<Awards />} />
+      <Route path="/community" element={<Community />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

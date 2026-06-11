@@ -92,11 +92,8 @@ export function Lightbox({ item, onClose }) {
       transition={{ duration: 0.18 }}
       style={{ zIndex: 99999, position: "fixed", inset: 0 }}
       className="bg-black/92 flex items-center justify-center"
-      onClick={(e) => {
-        const t = e.target;
-        if (t === e.currentTarget) onClose();
-        // Don't close when clicking inside the media area (video controls, image)
-      }}
+      onPointerDown={(e) => e.stopPropagation()}
+      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
     >
       <button
         onClick={onClose}

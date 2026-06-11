@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Education", path: "/education" },
   { label: "Publications", path: "/publications" },
   { label: "Awards", path: "/awards" },
+  { label: "Community", path: "/community" },
 ];
 
 export default function CornerNav() {
