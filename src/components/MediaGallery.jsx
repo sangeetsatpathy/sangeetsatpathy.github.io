@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Play } from "lucide-react";
+import { Play, X } from "lucide-react";
 
 // Each item: { type: "image" | "video", src, alt?, poster? }
 //
@@ -92,11 +92,20 @@ export function Lightbox({ item, onClose }) {
       transition={{ duration: 0.18 }}
       style={{ zIndex: 99999, position: "fixed", inset: 0 }}
       className="bg-black/92 flex items-center justify-center cursor-pointer"
-      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+      onClick={onClose}
     >
-      {/* Clicks inside the media area don't bubble to the backdrop */}
+      {/* X button */}
+      <button
+        onClick={(e) => { e.stopPropagation(); onClose(); }}
+        className="absolute top-5 right-5 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white/70 hover:text-white transition-all duration-200"
+        aria-label="Close"
+      >
+        <X size={20} />
+      </button>
+
+      {/* Only the media element itself stops propagation — everything else closes */}
       <div
-        className="flex flex-col items-center max-w-5xl w-full px-8 cursor-default"
+        className="flex flex-col items-center cursor-default"
         onClick={(e) => e.stopPropagation()}
       >
         {item.type === "video" ? (
@@ -105,13 +114,13 @@ export function Lightbox({ item, onClose }) {
             src={item.src}
             controls
             autoPlay
-            className="max-w-full max-h-[82vh] rounded outline-none"
+            className="max-w-[90vw] max-h-[82vh] rounded outline-none"
           />
         ) : (
           <img
             src={item.src}
             alt={item.alt || ""}
-            className="max-w-full max-h-[82vh] object-contain rounded"
+            className="max-w-[90vw] max-h-[82vh] object-contain rounded"
           />
         )}
       </div>
