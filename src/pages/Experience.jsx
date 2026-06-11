@@ -232,7 +232,7 @@ export default function Experience() {
                       <img
                         src={exp.logo}
                         alt={exp.org}
-                        className="h-7 w-auto mb-3 object-contain grayscale opacity-50 group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-500"
+                        className="h-10 w-auto mb-3 object-contain opacity-90"
                       />
                     )}
                     <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
