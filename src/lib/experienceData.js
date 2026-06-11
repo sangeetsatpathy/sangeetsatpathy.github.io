@@ -2,7 +2,7 @@ export const GH = "https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/
 
 export const experiences = [
   {
-    title: "Software Engineering Intern",
+    title: "Software Engineering Intern (Summer 2026)",
     org: "Apple",
     logo: "/images/apple.jpg",
     period: "June 2026 – September 2026",
