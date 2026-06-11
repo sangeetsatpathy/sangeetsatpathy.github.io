@@ -63,10 +63,10 @@ export default function MediaGallery({ media }) {
       </div>
 
       {/*
-        Portal to document.body so position:fixed works relative to the
-        viewport (not the Radix Dialog's CSS-transform ancestor).
-        The `data-lightbox` attribute lets DialogContent's onInteractOutside
-        check whether a click was inside the lightbox and skip closing.
+        Portal to document.body — keeps position:fixed relative to the viewport
+        (not Radix Dialog's CSS-transform ancestor).
+        DialogContent in Experience.jsx uses onInteractOutside to ignore clicks
+        on [data-lightbox] so the dialog doesn't close behind the lightbox.
       */}
       {createPortal(
         <AnimatePresence>
@@ -78,32 +78,48 @@ export default function MediaGallery({ media }) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.18 }}
-              className="fixed inset-0 bg-black/92 flex items-center justify-center"
               style={{ zIndex: 99999 }}
+              className="fixed inset-0 bg-black/92 flex flex-col items-center justify-center"
+              // Close when clicking the black area (not a child element)
               onClick={(e) => { if (e.target === e.currentTarget) close(); }}
             >
-              {/* Close */}
+              {/* Close button — top-right of viewport */}
               <button
                 onClick={close}
+                style={{ zIndex: 1 }}
                 className="absolute top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
-                style={{ zIndex: 2 }}
                 aria-label="Close"
               >
                 <X size={22} strokeWidth={2.5} />
               </button>
 
-              {/* Media — rendered first so arrows sit on top of it */}
-              <div
-                className="flex items-center justify-center w-full h-full px-20"
-                style={{ zIndex: 1 }}
-                onClick={(e) => { if (e.target === e.currentTarget) close(); }}
-              >
-                <div className="flex flex-col items-center">
+              {/*
+                Flex row: [prev] [media] [next]
+                Buttons are flex siblings so there are no z-index ordering
+                issues — they never overlap the media div.
+              */}
+              <div className="flex items-center gap-3 w-full max-w-5xl px-4">
+                {/* Prev */}
+                {media.length > 1 ? (
+                  <button
+                    onClick={prev}
+                    className="flex-none w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
+                    aria-label="Previous"
+                  >
+                    <ChevronLeft size={26} strokeWidth={2.5} />
+                  </button>
+                ) : (
+                  <div className="flex-none w-12" />
+                )}
+
+                {/* Media + counter */}
+                <div className="flex-1 flex flex-col items-center min-w-0">
                   <motion.div
                     key={lightboxIndex}
                     initial={{ opacity: 0, scale: 0.97 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.15 }}
+                    className="w-full flex items-center justify-center"
                   >
                     {active.type === "video" ? (
                       <video
@@ -111,15 +127,13 @@ export default function MediaGallery({ media }) {
                         src={active.src}
                         controls
                         autoPlay
-                        className="max-w-full max-h-[82vh] rounded outline-none"
-                        style={{ maxWidth: "calc(100vw - 160px)" }}
+                        className="max-w-full max-h-[80vh] rounded outline-none"
                       />
                     ) : (
                       <img
                         src={active.src}
                         alt={active.alt || ""}
-                        className="max-w-full max-h-[82vh] object-contain rounded"
-                        style={{ maxWidth: "calc(100vw - 160px)" }}
+                        className="max-w-full max-h-[80vh] object-contain rounded"
                       />
                     )}
                   </motion.div>
@@ -129,31 +143,20 @@ export default function MediaGallery({ media }) {
                     </p>
                   )}
                 </div>
+
+                {/* Next */}
+                {media.length > 1 ? (
+                  <button
+                    onClick={next}
+                    className="flex-none w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
+                    aria-label="Next"
+                  >
+                    <ChevronRight size={26} strokeWidth={2.5} />
+                  </button>
+                ) : (
+                  <div className="flex-none w-12" />
+                )}
               </div>
-
-              {/* Prev — rendered after media div so it paints on top */}
-              {media.length > 1 && (
-                <button
-                  onClick={prev}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
-                  style={{ zIndex: 2 }}
-                  aria-label="Previous"
-                >
-                  <ChevronLeft size={26} strokeWidth={2.5} />
-                </button>
-              )}
-
-              {/* Next — rendered after media div so it paints on top */}
-              {media.length > 1 && (
-                <button
-                  onClick={next}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/35 text-white transition-colors duration-150"
-                  style={{ zIndex: 2 }}
-                  aria-label="Next"
-                >
-                  <ChevronRight size={26} strokeWidth={2.5} />
-                </button>
-              )}
             </motion.div>
           )}
         </AnimatePresence>,

@@ -310,7 +310,7 @@ export default function Experience() {
       {/* Detail modal */}
       <Dialog open={!!selected} onOpenChange={(open) => !open && setSelected(null)}>
         <DialogContent
-          className="max-w-2xl bg-background border-border/40 max-h-[80vh] overflow-y-auto"
+          className="max-w-3xl w-full bg-background border-border/40 max-h-[85vh] overflow-y-auto"
           onInteractOutside={(e) => {
             if (e.target?.closest?.("[data-lightbox]")) e.preventDefault();
           }}
