@@ -47,8 +47,13 @@ export default function Home() {
         >
           <PageTransition>
             <h1
-              className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[0.05em] uppercase text-foreground/90 leading-none"
-              style={{ textShadow: "0 0 25px rgba(255,210,110,0.75), 0 0 60px rgba(255,180,70,0.45), 0 0 120px rgba(255,150,50,0.25), 0 0 220px rgba(255,120,30,0.12)" }}
+              className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[0.05em] uppercase leading-none"
+              style={{
+                backgroundImage: "linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,228,140,0.92) 55%, rgba(255,170,50,0.88) 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
             >
               Sangeet
               <br />
