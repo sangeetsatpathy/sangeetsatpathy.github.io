@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from "react";
 import CornerNav from "../components/CornerNav";
 import FilmGrain from "../components/FilmGrain";
@@ -11,6 +12,7 @@ const experiences = [
   {
     title: "Software Engineering Intern",
     org: "Apple",
+    logo: "/images/apple.png",
     period: "June 2026 – September 2026",
     description: "Working in the Apple Ads team. Developing high throughput, low latency internal dashboard system for analyzing ingested data.",
     details: `Working within Apple's Ads infrastructure team, contributing to a high-throughput, low-latency internal dashboard system used to analyze large volumes of ingested advertising data.
@@ -21,6 +23,7 @@ The system is designed for performance at scale — processing real-time data st
   {
     title: "Undergraduate Researcher",
     org: "Stanford CHARM Lab",
+    logo: "/images/stanford.png",
     period: "January 2026 – Present",
     description: "Designed surgical training taskpads, trained YOLO object detection models for surgical cylinder identification, engineered drop-detection systems, and developed metrics pipelines for teleoperation analysis under Dr. Allison Okamura.",
     details: `Working under PhD Student Mary Kate Gale and visiting Master's student Shujiro Shobayashi in the lab of Dr. Allison Okamura at Stanford's CHARM Lab.
@@ -37,6 +40,7 @@ Engineered a drop-detection system using bounding-box velocity analysis, and pro
   {
     title: "Software Developer",
     org: "Nandighosh",
+    logo: null,
     period: "December 2025 – Present",
     description: "Developing a full-stack e-commerce web application for a small business selling Odia tapestries, featuring user authentication, product ordering, order tracking, and admin dashboard.",
     details: `Developing a full-stack e-commerce web application for a small business selling Odia tapestries — handwoven textiles with deep cultural roots in Odisha, India.
@@ -51,6 +55,7 @@ The backend is built on Node.js with MongoDB, exposing a REST API consumed by th
   {
     title: "Software Engineer",
     org: "Stanford Student Space Initiative",
+    logo: "/images/stanford.png",
     period: "September 2025 – Present",
     description: "Developing flight software for SAMWISE, an imaging CubeSat demonstrating next-generation small-satellite capabilities including deployable solar power, precision attitude sensing, and high-rate communications.",
     details: `Developing flight software for SAMWISE, an imaging CubeSat built by Stanford SSI to demonstrate next-generation small-satellite capabilities. The mission integrates deployable solar power, precision attitude sensing, and high-rate communications into a compact platform.
@@ -65,6 +70,7 @@ SAMWISE serves as a technology demonstrator showing how small satellites can exe
   {
     title: "Engineering Intern — 5G Network Analysis",
     org: "Verizon",
+    logo: "/images/verizon.png",
     period: "June 2024 – July 2024",
     description: "Analyzed large-scale performance datasets for Verizon's C-band 5G FWA network, performing data-driven root-cause analysis on site-level issues and contributing to cell-site planning and optimization.",
     details: `Worked within Verizon's network engineering team on large-scale performance analysis for the C-band 5G Fixed Wireless Access (FWA) network.
@@ -77,6 +83,7 @@ Contributed to cell-site planning and optimization workflows, helping prioritize
   {
     title: "Machinist, CAD Designer, Curriculum Lead, Publicity Lead",
     org: "Gunn Robotics Team (FRC 192)",
+    logo: "/images/grt.png",
     period: "August 2023 – June 2025",
     description: "Led strategy, prototyping, CAD modeling, and precision machining for competition robots. Efforts culminated in a first-place victory at the 2024 FIRST Idaho Regional.",
     details: `Served in multiple leadership and technical roles on Gunn Robotics Team (GRT), FRC Team 192, over two competitive seasons.
@@ -91,6 +98,7 @@ The 2024 robot, "Dissonance," featured a roller-intake system, 2-stage elevator,
   {
     title: "Engineering Intern — ThingSpace IoT",
     org: "Verizon",
+    logo: "/images/verizon.png",
     period: "June 2023 – July 2023",
     description: "Developed backend services for Verizon's ThingSpace IoT management platform, enhancing Connectivity Management APIs for enterprise device provisioning and monitoring.",
     details: `Worked on Verizon's ThingSpace IoT platform, an enterprise-grade system for managing large fleets of connected devices across industries including logistics, healthcare, and utilities.
@@ -131,8 +139,15 @@ export default function Experience() {
                   onClick={() => setSelected(exp)}
                   className="w-full text-left border-t border-border/30 py-12 md:py-16 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 group cursor-pointer"
                 >
-                  {/* Left: metadata */}
+                  {/* Left: logo + metadata */}
                   <div className="md:col-span-4">
+                    {exp.logo && (
+                      <img
+                        src={exp.logo}
+                        alt={exp.org}
+                        className="h-7 w-auto mb-3 object-contain grayscale opacity-50 group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-500"
+                      />
+                    )}
                     <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
                       {exp.period}
                     </p>
@@ -170,6 +185,13 @@ export default function Experience() {
           {selected && (
             <>
               <DialogHeader className="mb-6">
+                {selected.logo && (
+                  <img
+                    src={selected.logo}
+                    alt={selected.org}
+                    className="h-8 w-auto mb-4 object-contain opacity-80"
+                  />
+                )}
                 <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-primary mb-2">
                   {selected.period} · {selected.org}
                 </p>
