@@ -6,8 +6,10 @@ export const experiences = [
     org: "Apple",
     logo: "/images/apple.jpg",
     period: "June 2026 – September 2026",
-    description: "Working in the Apple Ads team. Developing high throughput, low latency internal dashboard system for analyzing ingested data.",
-    details: `Working within Apple's Ads infrastructure team, contributing to a high-throughput, low-latency internal dashboard system used to analyze large volumes of ingested advertising data.
+    description: "Working in the Apple Ads team. Developing high throughput, low latency internal sales analytics system.",
+    details: `Working within Apple's Ads reporting services team, contributing to a high-throughput, low-latency internal sales analytics system used to analyze large volumes of ingested advertising data.
+    The product will enable the Apple Sales team to examine, visualize, and share performance metrics of Appstore advertiser campaigns.
+
 
 The system is designed for performance at scale — processing real-time data streams and surfacing insights to internal teams. Work involves backend development with a focus on efficiency, reliability, and minimal latency under high load.`,
     media: [],
