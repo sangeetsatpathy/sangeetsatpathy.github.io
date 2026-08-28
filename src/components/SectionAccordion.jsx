@@ -70,7 +70,7 @@ export default function SectionAccordion({ sections, onOpenLightbox }) {
 
   return (
     <div className="mt-12">
-      <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
+      <p className="font-mono text-sm tracking-[0.3em] uppercase text-muted-foreground mb-2">
         Details
       </p>
       <div>

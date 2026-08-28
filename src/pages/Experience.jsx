@@ -36,14 +36,17 @@ export default function Experience() {
       <div className="pt-24 md:pt-32 px-6 md:px-16 pb-32">
         <div className="max-w-5xl mx-auto">
           <PageTransition>
-            <p className="font-mono text-xs tracking-[0.3em] uppercase text-primary mb-4">
+            <p className="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4">
               The Chronicle
             </p>
             <h1 className="font-display text-4xl md:text-6xl tracking-[0.1em] uppercase text-foreground mb-6">
               Experience
             </h1>
-            <p className="font-body text-lg text-foreground/50 max-w-2xl mb-20" style={{ lineHeight: 1.6 }}>
-              A record of positions held, systems built, and problems solved. Click on each role below to learn more.
+            <p className="font-body text-lg text-foreground/50 max-w-2xl mb-4" style={{ lineHeight: 1.6 }}>
+              A record of positions held, systems built, and problems solved.
+            </p>
+            <p className="font-mono text-sm md:text-base font-semibold tracking-[0.1em] uppercase text-primary mb-20">
+              Click on each role below to learn more →
             </p>
           </PageTransition>
 
@@ -52,7 +55,7 @@ export default function Experience() {
               <GraceGlow key={i}>
                 <button
                   onClick={() => setSelected(exp)}
-                  className="w-full text-left border-t border-border/30 py-12 md:py-16 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 group cursor-pointer"
+                  className="w-full text-left border-t border-border/30 py-12 md:py-16 px-4 -mx-4 md:px-6 md:-mx-6 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 group cursor-pointer transition-colors duration-300 hover:bg-primary/5 rounded-lg"
                 >
                   {/* Left: logo + metadata */}
                   <div className="md:col-span-4">
@@ -63,7 +66,7 @@ export default function Experience() {
                         className="h-20 w-auto mb-3 object-contain opacity-90"
                       />
                     )}
-                    <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
+                    <p className="font-mono text-sm tracking-[0.3em] uppercase text-muted-foreground mb-2">
                       {exp.period}
                     </p>
                     <p className="font-mono text-sm text-primary">{exp.org}</p>
@@ -71,7 +74,7 @@ export default function Experience() {
 
                   {/* Right: content */}
                   <div className="md:col-span-7">
-                    <h3 className="font-display text-xl md:text-2xl tracking-[0.05em] uppercase text-foreground mb-4">
+                    <h3 className="font-display text-xl md:text-2xl tracking-[0.05em] uppercase text-foreground group-hover:text-primary transition-colors duration-300 mb-4">
                       {exp.title}
                     </h3>
                     <p className="font-body text-base text-foreground/70" style={{ lineHeight: 1.6 }}>
@@ -128,7 +131,7 @@ export default function Experience() {
                   {selected.logo && (
                     <img src={selected.logo} alt={selected.org} className="h-8 w-auto mb-4 object-contain opacity-80" />
                   )}
-                  <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-primary mb-2">
+                  <p className="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-2">
                     {selected.period} · {selected.org}
                   </p>
                   <h2 className="font-display text-xl md:text-2xl tracking-[0.05em] uppercase text-foreground">
@@ -163,7 +166,7 @@ export default function Experience() {
 
       <footer className="border-t border-border/30 px-6 md:px-16 py-8">
         <div className="max-w-7xl mx-auto flex items-center justify-center">
-          <p className="font-mono text-xs tracking-[0.15em] uppercase text-muted-foreground">
+          <p className="font-mono text-sm tracking-[0.15em] uppercase text-muted-foreground">
             Sangeet Satpathy · {new Date().getFullYear()}
           </p>
         </div>

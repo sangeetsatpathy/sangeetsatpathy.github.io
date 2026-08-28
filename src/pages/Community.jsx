@@ -149,7 +149,7 @@ export default function Community() {
 
       <footer className="border-t border-border/30 px-6 md:px-16 py-8">
         <div className="max-w-7xl mx-auto flex items-center justify-center">
-          <p className="font-mono text-xs tracking-[0.15em] uppercase text-muted-foreground">
+          <p className="font-mono text-sm tracking-[0.15em] uppercase text-muted-foreground">
             Sangeet Satpathy · {new Date().getFullYear()}
           </p>
         </div>

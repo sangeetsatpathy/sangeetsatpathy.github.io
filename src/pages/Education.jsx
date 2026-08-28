@@ -116,16 +116,31 @@ export default function Education() {
           <div className="border-t border-border/30 py-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
               <div className="md:col-span-4">
-                <p className="font-mono text-xs font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
+                <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
                   Expected June 2028
                 </p>
                 <p className="font-mono text-sm font-semibold text-primary">Stanford University</p>
-                <p className="font-mono text-xs text-foreground/65 mt-1">GPA: 3.922 / 4.0</p>
+                <p className="font-mono text-sm text-foreground/65 mt-1">GPA: 3.922 / 4.0</p>
               </div>
               <div className="md:col-span-8">
                 <h3 className="font-display text-xl tracking-[0.05em] uppercase text-foreground mb-2">
                   BS, Electrical Engineering & Computer Science
                 </h3>
+                 <Expandable title="Planned Courses 2026–2027" defaultOpen>
+                  <CourseList courses={[
+                    "EE102A (Signals and Systems I)",
+                    "EE108 (Digital System Design)", 
+                    "EE278 (Probability and Statistical Inference)", 
+                    "EE65 (Modern Physics for Engineers)", 
+                    "CS161 (Design and Analysis of Algorithms)", 
+                    "EE263 (Singular Value Decomposition)", 
+                    "CS140E (Operating Systems Implementation)", 
+                    "CS231N (Deep Learning for Computer Vision)", 
+                    "EE102B (Signals and Systems II)", 
+                    "EE142 (Engineering Electromagnetics)" 
+                  ]} />
+                </Expandable>
+                
                 <Expandable title="Courses 2025–2026" defaultOpen>
                   <CourseList courses={[
                     "Quantum Computing (CS259Q)",
@@ -147,16 +162,30 @@ export default function Education() {
           <div className="border-t border-border/30 py-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
               <div className="md:col-span-4">
-                <p className="font-mono text-xs font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
+                <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
                   Aug 2021 – June 2025
                 </p>
                 <p className="font-mono text-sm font-semibold text-primary">Henry M. Gunn High School</p>
-                <p className="font-mono text-xs text-foreground/65 mt-1">GPA: 4.0 UW / 4.45 W</p>
+                <p className="font-mono text-sm text-foreground/65 mt-1">GPA: 4.0 UW / 4.45 W</p>
               </div>
               <div className="md:col-span-8">
                 <h3 className="font-display text-xl tracking-[0.05em] uppercase text-foreground mb-2">
                   High School Diploma
                 </h3>
+                <Expandable title="Relevant Courses" defaultOpen>
+                  <CourseList courses={[
+                    "Engineering Technology (Gunn Robotics Team)", 
+                    "AP Physics C (Mechanics, Electricity and Magnetism)", 
+                    "Digital Electronics", 
+                    "AP Calculus BC", 
+                    "AP Chemistry", 
+                    "AAR (Advanced Authentic Research)", 
+                    "Principles of Engineering and Robotics Honors", 
+                    "AP Computer Science A", 
+                    "Introduction to Engineering  and Design Honors"
+                  ]} />
+                </Expandable>
+
                 <p className="font-body text-base text-foreground/75 mb-4" style={{ lineHeight: 1.6 }}>
                   French National Honor Society · Track & Field (2022, 2023)
                 </p>
@@ -168,11 +197,11 @@ export default function Education() {
           <div className="border-t border-border/30 py-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
               <div className="md:col-span-4">
-                <p className="font-mono text-xs font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
+                <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
                   Aug 2021 – May 2025
                 </p>
                 <p className="font-mono text-sm font-semibold text-primary">De Anza & Foothill College</p>
-                <p className="font-mono text-xs text-foreground/65 mt-1">GPA: 4.0 · Dean's List</p>
+                <p className="font-mono text-sm text-foreground/65 mt-1">GPA: 4.0 · Dean's List</p>
               </div>
               <div className="md:col-span-8">
                 <h3 className="font-display text-xl tracking-[0.05em] uppercase text-foreground mb-2">
@@ -229,7 +258,7 @@ export default function Education() {
 
       <footer className="border-t border-border/30 px-6 md:px-16 py-8">
         <div className="max-w-7xl mx-auto flex items-center justify-center">
-          <p className="font-mono text-xs tracking-[0.15em] uppercase text-muted-foreground">
+          <p className="font-mono text-sm tracking-[0.15em] uppercase text-muted-foreground">
             Sangeet Satpathy · {new Date().getFullYear()}
           </p>
         </div>

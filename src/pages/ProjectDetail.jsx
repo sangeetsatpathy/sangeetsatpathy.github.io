@@ -23,7 +23,7 @@ export default function ProjectDetail() {
           </h1>
           <Link
             to="/projects"
-            className="font-mono text-xs tracking-[0.2em] uppercase text-primary hover:text-foreground transition-colors"
+            className="font-mono text-sm tracking-[0.2em] uppercase text-primary hover:text-foreground transition-colors"
           >
             ← Return to Archive
           </Link>
@@ -41,7 +41,7 @@ export default function ProjectDetail() {
       <div className="fixed top-8 left-1/2 -translate-x-1/2 z-40 hidden md:block">
         <Link
           to="/projects"
-          className="font-mono text-xs tracking-[0.2em] uppercase text-foreground/40 hover:text-primary transition-colors duration-500 flex items-center gap-2"
+          className="font-mono text-sm tracking-[0.2em] uppercase text-foreground/40 hover:text-primary transition-colors duration-500 flex items-center gap-2"
         >
           <ArrowLeft size={14} />
           Archive
@@ -52,7 +52,7 @@ export default function ProjectDetail() {
       <div className="md:hidden pt-6 px-6">
         <Link
           to="/projects"
-          className="font-mono text-xs tracking-[0.2em] uppercase text-foreground/40 hover:text-primary transition-colors duration-500 flex items-center gap-2 min-h-[44px]"
+          className="font-mono text-sm tracking-[0.2em] uppercase text-foreground/40 hover:text-primary transition-colors duration-500 flex items-center gap-2 min-h-[44px]"
         >
           <ArrowLeft size={14} />
           Archive
@@ -79,7 +79,7 @@ export default function ProjectDetail() {
           <div className="px-6 md:px-16 lg:px-24 py-12 md:py-24">
             <PageTransition>
               {/* Category */}
-              <p className="font-mono text-xs tracking-[0.3em] uppercase text-primary mb-6">
+              <p className="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-6">
                 {project.category}
               </p>
 
@@ -92,27 +92,27 @@ export default function ProjectDetail() {
               <div className="border border-border/30 p-6 mb-12">
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-1">
+                    <p className="font-mono text-sm tracking-[0.3em] uppercase text-muted-foreground mb-1">
                       Role
                     </p>
                     <p className="font-mono text-sm text-foreground">{project.role}</p>
                   </div>
                   <div>
-                    <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-1">
+                    <p className="font-mono text-sm tracking-[0.3em] uppercase text-muted-foreground mb-1">
                       Year
                     </p>
                     <p className="font-mono text-sm text-foreground">{project.year}</p>
                   </div>
                 </div>
                 <div className="mt-6">
-                  <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
+                  <p className="font-mono text-sm tracking-[0.3em] uppercase text-muted-foreground mb-2">
                     Stack
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((t) => (
                       <span
                         key={t}
-                        className="font-mono text-xs px-3 py-1 border border-border/30 text-foreground/70"
+                        className="font-mono text-sm px-3 py-1 border border-border/30 text-foreground/70"
                       >
                         {t}
                       </span>
@@ -137,7 +137,7 @@ export default function ProjectDetail() {
               {/* Links */}
               {project.links.length > 0 && (
                 <div className="mt-12 pt-8 border-t border-border/30">
-                  <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-4">
+                  <p className="font-mono text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
                     Links
                   </p>
                   <div className="flex flex-wrap gap-4">
@@ -165,7 +165,7 @@ export default function ProjectDetail() {
               <div className="mt-20 pt-8 border-t border-border/30">
                 <Link
                   to="/projects"
-                  className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground hover:text-primary transition-colors duration-500"
+                  className="font-mono text-sm tracking-[0.2em] uppercase text-muted-foreground hover:text-primary transition-colors duration-500"
                 >
                   ← Back to All Projects
                 </Link>

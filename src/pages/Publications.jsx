@@ -12,7 +12,7 @@ function PdfAccordion({ label, src }) {
     <div className="mt-4 border-t border-border/20 pt-3">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 font-mono text-xs font-semibold tracking-[0.25em] uppercase text-primary/70 hover:text-primary transition-colors duration-300 group"
+        className="flex items-center gap-2 font-mono text-sm font-semibold tracking-[0.25em] uppercase text-primary/70 hover:text-primary transition-colors duration-300 group"
       >
         <motion.span animate={{ rotate: open ? 180 : 0 }} transition={{ duration: 0.22 }}>
           <ChevronDown size={12} />
@@ -48,9 +48,9 @@ const researchPapers = [
   {
     title: "Investigating Optimal Movement Patterns Amongst Robotic Surgeons",
     type: "Research Paper",
-    venue: "Expected publication 2027",
-    status: "In Progress",
-    description: "Analyzing teleoperation data from expert and novice robotic surgeons to identify movement signatures that correlate with surgical performance outcomes. Part of ongoing research at Stanford's CHARM Lab under Dr. Allison Okamura.",
+    venue: "Accepted for presentation at IROS 2026",
+    status: "Accepted",
+    description: "Analyzing teleoperation data from expert and novice robotic surgeons to identify movement signatures that correlate with surgical performance outcomes. Part of ongoing research at Stanford's CHARM Lab under Dr. Allison Okamura. Accepted for presentation at IROS 2026.",
     links: [],
     pdfs: [],
   },
@@ -127,7 +127,7 @@ function PubCard({ pub }) {
               {pub.type}
             </p>
             {pub.status && (
-              <span className="font-mono text-xs font-semibold tracking-[0.2em] uppercase px-2 py-0.5 border border-primary/30 text-primary/70">
+              <span className="font-mono text-sm font-semibold tracking-[0.2em] uppercase px-2 py-0.5 border border-primary/30 text-primary/70">
                 {pub.status}
               </span>
             )}
@@ -151,7 +151,7 @@ function PubCard({ pub }) {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-xs tracking-[0.2em] uppercase text-primary/60 hover:text-primary transition-colors duration-500 flex items-center gap-2 min-h-[44px]"
+                  className="font-mono text-sm tracking-[0.2em] uppercase text-primary/60 hover:text-primary transition-colors duration-500 flex items-center gap-2 min-h-[44px]"
                 >
                   {link.label}
                   <ExternalLink size={12} />
@@ -225,7 +225,7 @@ export default function Publications() {
 
       <footer className="border-t border-border/30 px-6 md:px-16 py-8">
         <div className="max-w-7xl mx-auto flex items-center justify-center">
-          <p className="font-mono text-xs tracking-[0.15em] uppercase text-muted-foreground">
+          <p className="font-mono text-sm tracking-[0.15em] uppercase text-muted-foreground">
             Sangeet Satpathy · {new Date().getFullYear()}
           </p>
         </div>

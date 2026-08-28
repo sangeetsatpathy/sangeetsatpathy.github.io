@@ -139,13 +139,13 @@ export default function Home() {
           <div className="mt-12 flex flex-wrap gap-6">
             <a
               href="mailto:sangeet1@stanford.edu"
-              className="font-mono text-xs tracking-[0.2em] uppercase text-primary hover:text-foreground transition-colors duration-500 border-b border-primary/30 hover:border-foreground/30 pb-1"
+              className="font-mono text-sm tracking-[0.2em] uppercase text-primary hover:text-foreground transition-colors duration-500 border-b border-primary/30 hover:border-foreground/30 pb-1"
             >
               sangeet1@stanford.edu
             </a>
             <a
               href="mailto:sangeet.satpathy@gmail.com"
-              className="font-mono text-xs tracking-[0.2em] uppercase text-primary hover:text-foreground transition-colors duration-500 border-b border-primary/30 hover:border-foreground/30 pb-1"
+              className="font-mono text-sm tracking-[0.2em] uppercase text-primary hover:text-foreground transition-colors duration-500 border-b border-primary/30 hover:border-foreground/30 pb-1"
             >
               sangeet.satpathy@gmail.com
             </a>
@@ -159,14 +159,14 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border/30 px-6 md:px-16 py-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
-          <p className="font-mono text-xs tracking-[0.15em] uppercase text-muted-foreground">
+          <p className="font-mono text-sm tracking-[0.15em] uppercase text-muted-foreground">
             Sangeet Satpathy · {new Date().getFullYear()}
           </p>
           <div className="flex gap-6">
-            <a href="https://github.com/sangeetsatpathy" target="_blank" rel="noopener noreferrer" className="font-mono text-xs tracking-[0.15em] uppercase text-muted-foreground hover:text-primary transition-colors duration-500">
+            <a href="https://github.com/sangeetsatpathy" target="_blank" rel="noopener noreferrer" className="font-mono text-sm tracking-[0.15em] uppercase text-muted-foreground hover:text-primary transition-colors duration-500">
               GitHub
             </a>
-            <a href="mailto:sangeet1@stanford.edu" className="font-mono text-xs tracking-[0.15em] uppercase text-muted-foreground hover:text-primary transition-colors duration-500">
+            <a href="mailto:sangeet1@stanford.edu" className="font-mono text-sm tracking-[0.15em] uppercase text-muted-foreground hover:text-primary transition-colors duration-500">
               Email
             </a>
           </div>

@@ -66,7 +66,7 @@ export default function Awards() {
       <div className="pt-24 md:pt-32 px-6 md:px-16 pb-32">
         <div className="max-w-5xl mx-auto">
           <PageTransition>
-            <p className="font-mono text-xs tracking-[0.3em] uppercase text-primary mb-4">
+            <p className="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4">
               The Honors
             </p>
             <h1 className="font-display text-4xl md:text-6xl tracking-[0.1em] uppercase text-foreground mb-6">
@@ -82,7 +82,7 @@ export default function Awards() {
               <GraceGlow key={i}>
                 <div className="border-t border-border/30 py-10 md:py-14 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-12">
                   <div className="md:col-span-3">
-                    <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+                    <p className="font-mono text-sm tracking-[0.3em] uppercase text-muted-foreground">
                       {award.date}
                     </p>
                   </div>
@@ -104,7 +104,7 @@ export default function Awards() {
 
       <footer className="border-t border-border/30 px-6 md:px-16 py-8">
         <div className="max-w-7xl mx-auto flex items-center justify-center">
-          <p className="font-mono text-xs tracking-[0.15em] uppercase text-muted-foreground">
+          <p className="font-mono text-sm tracking-[0.15em] uppercase text-muted-foreground">
             Sangeet Satpathy · {new Date().getFullYear()}
           </p>
         </div>

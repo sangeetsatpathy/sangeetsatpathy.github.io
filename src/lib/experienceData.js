@@ -20,8 +20,8 @@ The system is designed for performance at scale — processing real-time data st
     org: "Stanford CHARM Lab",
     logo: "/images/charm.jpg",
     period: "January 2026 – Present",
-    description: "Designed surgical training taskpads, trained YOLO object detection models for surgical cylinder identification, engineered drop-detection systems, and developed metrics pipelines for teleoperation analysis under Dr. Allison Okamura.",
-    details: `Working under PhD Student Mary Kate Gale and visiting Master's student Shujiro Shobayashi in the lab of Dr. Allison Okamura at Stanford's CHARM Lab.
+    description: "Designed surgical training taskpads, trained YOLO object detection models for surgical cylinder identification, engineered drop-detection systems, and developed metrics pipelines for teleoperation analysis under Dr. Allison Okamura. This research has been accepted for presentation at IROS 2026.",
+    details: `Working under PhD Student Mary Kate Gale and visiting Master's student Shujiro Shobayashi in the lab of Dr. Allison Okamura at Stanford's CHARM Lab. This research has been accepted for presentation at IROS 2026.
 
 Designed and built a surgical training taskpad from scratch — including conductive-paint peg detection, LED feedback circuitry, and Arduino firmware to emit lift/place signals for downstream analysis.
 

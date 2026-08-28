@@ -32,7 +32,7 @@ export default function MediaGallery({ media, onOpenLightbox }) {
     <>
       {/* Thumbnail strip — overflow-hidden on wrapper prevents dialog horizontal scroll */}
       <div className="mt-8 pt-8 border-t border-border/30 overflow-hidden">
-        <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-4">
+        <p className="font-mono text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
           Media
         </p>
         <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
