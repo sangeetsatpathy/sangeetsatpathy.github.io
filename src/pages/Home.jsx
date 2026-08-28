@@ -97,20 +97,23 @@ export default function Home() {
         </motion.div>
 
         {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        <motion.button
+          onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 cursor-pointer p-2 focus:outline-none"
           animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          whileHover={{ scale: 1.15 }}
+          transition={{ y: { duration: 2, repeat: Infinity, ease: "easeInOut" }, scale: { duration: 0.2 } }}
+          aria-label="Scroll down to about section"
         >
           <ArrowDown
             size={36}
             style={{ color: "#ffd060", filter: "drop-shadow(0 0 10px rgba(255,208,96,0.85))" }}
           />
-        </motion.div>
+        </motion.button>
       </section>
 
       {/* About */}
-      <section className="max-w-4xl mx-auto px-6 md:px-16 py-24 md:py-40">
+      <section id="about" className="max-w-4xl mx-auto px-6 md:px-16 py-24 md:py-40">
         <PageTransition>
           <p className="font-body text-lg md:text-xl leading-relaxed text-foreground/80" style={{ lineHeight: 1.6 }}>
             I'm a student at Stanford University studying Computer Science and Electrical Engineering.

@@ -9,6 +9,7 @@ import GraceGlow from "../components/GraceGlow";
 import { Plus, X } from "lucide-react";
 import MediaGallery, { Lightbox } from "../components/MediaGallery";
 import SectionAccordion from "../components/SectionAccordion";
+import LinkedText from "../components/LinkedText";
 import { experiences } from "../lib/experienceData";
 
 export default function Experience() {
@@ -42,11 +43,8 @@ export default function Experience() {
             <h1 className="font-display text-4xl md:text-6xl tracking-[0.1em] uppercase text-foreground mb-6">
               Experience
             </h1>
-            <p className="font-body text-lg text-foreground/50 max-w-2xl mb-4" style={{ lineHeight: 1.6 }}>
+            <p className="font-body text-lg text-foreground/50 max-w-2xl mb-20" style={{ lineHeight: 1.6 }}>
               A record of positions held, systems built, and problems solved.
-            </p>
-            <p className="font-mono text-sm md:text-base font-semibold tracking-[0.1em] uppercase text-primary mb-20">
-              Click on each role below to learn more →
             </p>
           </PageTransition>
 
@@ -73,20 +71,25 @@ export default function Experience() {
                   </div>
 
                   {/* Right: content */}
-                  <div className="md:col-span-7">
+                  <div className="md:col-span-6">
                     <h3 className="font-display text-xl md:text-2xl tracking-[0.05em] uppercase text-foreground group-hover:text-primary transition-colors duration-300 mb-4">
                       {exp.title}
                     </h3>
                     <p className="font-body text-base text-foreground/70" style={{ lineHeight: 1.6 }}>
-                      {exp.description}
+                      <LinkedText text={exp.description} stopPropagation />
                     </p>
                   </div>
 
                   {/* Expand indicator */}
-                  <div className="md:col-span-1 flex items-start justify-end pt-1">
+                  <div className="md:col-span-2 flex items-start justify-end gap-2 pt-1">
+                    <span className="font-mono text-sm font-bold tracking-[0.1em] uppercase text-primary text-right">
+                      Click to
+                      <br />
+                      Learn More
+                    </span>
                     <Plus
                       size={16}
-                      className="text-primary/30 group-hover:text-primary transition-colors duration-500"
+                      className="text-primary/30 group-hover:text-primary transition-colors duration-500 flex-shrink-0 mt-0.5"
                     />
                   </div>
                 </button>
@@ -141,7 +144,7 @@ export default function Experience() {
                 <div className="space-y-4">
                   {selected.details.split("\n\n").map((para, i) => (
                     <p key={i} className="font-body text-base text-foreground/70" style={{ lineHeight: 1.7 }}>
-                      {para}
+                      <LinkedText text={para} />
                     </p>
                   ))}
                 </div>

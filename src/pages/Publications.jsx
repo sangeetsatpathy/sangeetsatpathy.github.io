@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ExternalLink, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import CornerNav from "../components/CornerNav";
+import LinkedText from "../components/LinkedText";
 import FilmGrain from "../components/FilmGrain";
 import PageTransition from "../components/PageTransition";
 import GraceGlow from "../components/GraceGlow";
@@ -50,7 +51,7 @@ const researchPapers = [
     type: "Research Paper",
     venue: "Accepted for presentation at IROS 2026",
     status: "Accepted",
-    description: "Analyzing teleoperation data from expert and novice robotic surgeons to identify movement signatures that correlate with surgical performance outcomes. Part of ongoing research at Stanford's CHARM Lab under Dr. Allison Okamura. Accepted for presentation at IROS 2026.",
+    description: "Analyzing teleoperation data from expert and novice robotic surgeons to identify movement signatures that correlate with surgical performance outcomes. Research done at Stanford's CHARM Lab under Dr. Allison Okamura. Accepted for presentation at IROS 2026.",
     links: [],
     pdfs: [],
   },
@@ -133,7 +134,7 @@ function PubCard({ pub }) {
             )}
           </div>
           <p className="font-mono text-sm text-foreground/60" style={{ lineHeight: 1.6 }}>
-            {pub.venue}
+            <LinkedText text={pub.venue} />
           </p>
         </div>
         <div className="md:col-span-8">
@@ -141,7 +142,7 @@ function PubCard({ pub }) {
             {pub.title}
           </h3>
           <p className="font-body text-base text-foreground/60 mb-4" style={{ lineHeight: 1.6 }}>
-            {pub.description}
+            <LinkedText text={pub.description} />
           </p>
           {pub.links.length > 0 && (
             <div className="flex flex-wrap gap-4 mb-2">

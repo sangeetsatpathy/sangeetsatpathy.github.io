@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Projects", path: "/projects" },
   { label: "Experience", path: "/experience" },
   { label: "Education", path: "/education" },
+  { label: "Skills & Tools", path: "/skills" },
   { label: "Publications", path: "/publications" },
   { label: "Beyond Engineering", path: "/community" },
 ];

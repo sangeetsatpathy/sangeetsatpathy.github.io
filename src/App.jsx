@@ -13,6 +13,7 @@ import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import Experience from './pages/Experience';
 import Education from './pages/Education';
+import SkillsTools from './pages/SkillsTools';
 import Publications from './pages/Publications';
 import Awards from './pages/Awards';
 import Community from './pages/Community';
@@ -48,6 +49,7 @@ const AuthenticatedApp = () => {
       <Route path="/projects/:slug" element={<ProjectDetail />} />
       <Route path="/experience" element={<Experience />} />
       <Route path="/education" element={<Education />} />
+      <Route path="/skills" element={<SkillsTools />} />
       <Route path="/publications" element={<Publications />} />
       <Route path="/awards" element={<Awards />} />
       <Route path="/community" element={<Community />} />

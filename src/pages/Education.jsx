@@ -3,7 +3,6 @@ import { ChevronDown, ChevronRight } from "lucide-react";
 import CornerNav from "../components/CornerNav";
 import FilmGrain from "../components/FilmGrain";
 import PageTransition from "../components/PageTransition";
-import GraceGlow from "../components/GraceGlow";
 
 function Expandable({ title, children, defaultOpen = false }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -39,29 +38,6 @@ function CourseList({ courses }) {
   );
 }
 
-const skills = [
-  {
-    category: "Machine Learning & AI",
-    items: "Computer Vision (Object Detection, Object Tracking, YOLO), Reinforcement Learning (Continual RL, MARL), Deep Learning (Neural Networks), Natural Language Processing, Tokenization, Supervised Learning (Regression, Classification), Machine Learning Algorithms, ML Lifecycle (Data Processing, Feature Engineering, Hyperparameter Tuning, Model Evaluation), Statistical Analysis, Probability — scikit-learn, Pandas, NumPy, OpenCV, Matplotlib",
-  },
-  {
-    category: "Robotics",
-    items: "CAD (Computer-Aided Design), Mechanical Design, PID Control, Electrical Wiring & Soldering, Kinematics, Machining (Lathe, Mill)",
-  },
-  {
-    category: "Programming Languages, Web & Databases",
-    items: "Python, C++, Java, C, JavaScript, HTML, CSS, SQL, MongoDB",
-  },
-  {
-    category: "Software Engineering",
-    items: "Algorithms, Data Structures, API Development (REST, Postman), Full-Stack Development, Object-Oriented Design, Debugging, Testing, Node.js, Git, AWS EC2",
-  },
-  {
-    category: "Systems & Low-Level",
-    items: "Embedded Systems, Bare-Metal Programming, Interrupts, Event-Driven Systems, Computer Architecture, Distributed Systems, IoT, RF Protocols, Serial Communication (SPI, I2C, UART)",
-  },
-];
-
 const certificates = [
   "NAFTrack Certificate — Engineering (NAF, June 2025)",
   "Certificate of Achievement — Research, Design, and Development for Global Good (Foothill College, June 2024)",
@@ -90,27 +66,6 @@ export default function Education() {
               Education
             </h1>
           </PageTransition>
-
-          {/* Skills */}
-          <GraceGlow>
-            <div className="border border-border/30 p-6 md:p-10 mb-16">
-              <h2 className="font-display text-lg tracking-[0.15em] uppercase text-foreground mb-8">
-                Skills & Tools
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {skills.map((s) => (
-                  <div key={s.category}>
-                    <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-primary mb-2">
-                      {s.category}
-                    </p>
-                    <p className="font-body text-base text-foreground/80" style={{ lineHeight: 1.7 }}>
-                      {s.items}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </GraceGlow>
 
           {/* Stanford */}
           <div className="border-t border-border/30 py-12">
