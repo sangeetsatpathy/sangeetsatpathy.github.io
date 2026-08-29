@@ -88,7 +88,11 @@ export default function Education() {
                 <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
                   Expected June 2028
                 </p>
-                <p className="font-mono text-sm font-semibold text-primary">Stanford University</p>
+                <p className="font-mono text-sm font-semibold text-primary">
+                  <a href="https://www.stanford.edu/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground transition-colors">
+                    Stanford University
+                  </a>
+                </p>
                 <p className="font-mono text-sm text-foreground/65 mt-1">GPA: 3.922 / 4.0</p>
               </div>
               <div className="md:col-span-8">
@@ -134,7 +138,11 @@ export default function Education() {
                 <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
                   Aug 2021 – June 2025
                 </p>
-                <p className="font-mono text-sm font-semibold text-primary">Henry M. Gunn High School</p>
+                <p className="font-mono text-sm font-semibold text-primary">
+                  <a href="https://gunn.pausd.org/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground transition-colors">
+                    Henry M. Gunn High School
+                  </a>
+                </p>
                 <p className="font-mono text-sm text-foreground/65 mt-1">GPA: 4.0 UW / 4.45 W</p>
               </div>
               <div className="md:col-span-8">
@@ -223,22 +231,28 @@ export default function Education() {
               Certificates
             </h2>
             <ul className="space-y-3">
-              {certificates.map((cert, i) => (
-                <li key={i} className="font-body text-base text-foreground/80 pl-4 border-l-2 border-primary/30" style={{ lineHeight: 1.6 }}>
-                  {cert.url ? (
-                    <a
-                      href={cert.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline underline-offset-2 hover:text-primary transition-colors"
-                    >
-                      {cert.label}
-                    </a>
-                  ) : (
-                    cert.label
-                  )}
-                </li>
-              ))}
+              {certificates.map((cert, i) => {
+                const parenIdx = cert.label.indexOf("(");
+                const main = parenIdx === -1 ? cert.label : cert.label.slice(0, parenIdx).trimEnd();
+                const rest = parenIdx === -1 ? "" : " " + cert.label.slice(parenIdx);
+                return (
+                  <li key={i} className="font-body text-base text-foreground/80 pl-4 border-l-2 border-primary/30" style={{ lineHeight: 1.6 }}>
+                    {cert.url ? (
+                      <a
+                        href={cert.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline underline-offset-2 hover:text-primary transition-colors"
+                      >
+                        {main}
+                      </a>
+                    ) : (
+                      main
+                    )}
+                    {rest}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
