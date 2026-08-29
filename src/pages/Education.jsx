@@ -169,7 +169,15 @@ export default function Education() {
                 <p className="font-mono text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground mb-2">
                   Aug 2021 – May 2025
                 </p>
-                <p className="font-mono text-sm font-semibold text-primary">De Anza & Foothill College</p>
+                <p className="font-mono text-sm font-semibold text-primary">
+                  <a href="https://deanza.edu/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                    De Anza College
+                  </a>
+                  {" & "}
+                  <a href="https://foothill.edu/index.html" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                    Foothill College
+                  </a>
+                </p>
                 <p className="font-mono text-sm text-foreground/65 mt-1">GPA: 4.0 · Dean's List</p>
               </div>
               <div className="md:col-span-8">
