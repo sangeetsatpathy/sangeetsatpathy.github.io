@@ -29,11 +29,25 @@ function Expandable({ title, children, defaultOpen = false }) {
 function CourseList({ courses }) {
   return (
     <ul className="space-y-1.5">
-      {courses.map((c, i) => (
-        <li key={i} className="font-body text-sm text-foreground/75" style={{ lineHeight: 1.6 }}>
-          {c}
-        </li>
-      ))}
+      {courses.map((c, i) => {
+        const course = typeof c === "string" ? { label: c } : c;
+        return (
+          <li key={i} className="font-body text-sm text-foreground/75" style={{ lineHeight: 1.6 }}>
+            {course.url ? (
+              <a
+                href={course.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary underline underline-offset-2 hover:text-foreground transition-colors"
+              >
+                {course.label}
+              </a>
+            ) : (
+              course.label
+            )}
+          </li>
+        );
+      })}
     </ul>
   );
 }
@@ -83,30 +97,30 @@ export default function Education() {
                 </h3>
                  <Expandable title="Planned Courses 2026–2027" defaultOpen>
                   <CourseList courses={[
-                    "EE102A (Signals and Systems I)",
-                    "EE108 (Digital System Design)", 
-                    "EE278 (Probability and Statistical Inference)", 
-                    "EE65 (Modern Physics for Engineers)", 
-                    "CS161 (Design and Analysis of Algorithms)", 
-                    "EE263 (Singular Value Decomposition)", 
-                    "CS140E (Operating Systems Implementation)", 
-                    "CS231N (Deep Learning for Computer Vision)", 
-                    "EE102B (Signals and Systems II)", 
-                    "EE142 (Engineering Electromagnetics)" 
+                    { label: "EE102A (Signals and Systems I)", url: "https://explorecourses.stanford.edu/search?q=EE102A" },
+                    { label: "EE108 (Digital System Design)", url: "https://explorecourses.stanford.edu/search?q=EE108" },
+                    { label: "EE278 (Probability and Statistical Inference)", url: "https://web.stanford.edu/class/ee278/" },
+                    { label: "EE65 (Modern Physics for Engineers)", url: "https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog&q=physics+65" },
+                    { label: "CS161 (Design and Analysis of Algorithms)", url: "https://cs161-stanford.github.io/" },
+                    { label: "EE263 (Singular Value Decomposition)", url: "https://ee263.stanford.edu/" },
+                    { label: "CS140E (Operating Systems Implementation)", url: "https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&q=CS140E" },
+                    { label: "CS231N (Deep Learning for Computer Vision)", url: "https://cs231n.stanford.edu/" },
+                    { label: "EE102B (Signals and Systems II)", url: "https://explorecourses.stanford.edu/search?q=EE102B" },
+                    { label: "EE142 (Engineering Electromagnetics)", url: "https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&q=EE142" },
                   ]} />
                 </Expandable>
                 
                 <Expandable title="Courses 2025–2026" defaultOpen>
                   <CourseList courses={[
-                    "Quantum Computing (CS259Q)",
-                    "Machine Learning (CS229)",
-                    "Computer Systems from the Ground Up (CS107E)",
-                    "Circuits I (EE101A)",
-                    "Automata & Complexity Theory (CS154)",
-                    "Probability for Computer Scientists (CS109)",
-                    "Programming Abstractions (CS106B)",
-                    "Enrichment Adventures in Programming Abstractions (CS106M)",
-                    "Differential Equations with Linear Algebra (Math 53)",
+                    { label: "Quantum Computing (CS259Q)", url: "https://bulletin.stanford.edu/courses/2136071" },
+                    { label: "Machine Learning (CS229)", url: "https://cs229.stanford.edu/" },
+                    { label: "Computer Systems from the Ground Up (CS107E)", url: "https://web.stanford.edu/class/cs107e/" },
+                    { label: "Circuits I (EE101A)", url: "https://bulletin.stanford.edu/courses/2031031" },
+                    { label: "Automata & Complexity Theory (CS154)", url: "https://bulletin.stanford.edu/courses/1056821" },
+                    { label: "Probability for Computer Scientists (CS109)", url: "https://web.stanford.edu/class/cs109/" },
+                    { label: "Programming Abstractions (CS106B)", url: "https://web.stanford.edu/class/cs106b/" },
+                    { label: "Enrichment Adventures in Programming Abstractions (CS106M)", url: "https://web.stanford.edu/class/cs106m/syllabus" },
+                    { label: "Differential Equations with Linear Algebra (Math 53)", url: "https://web.stanford.edu/class/math53/" },
                   ]} />
                 </Expandable>
               </div>
@@ -129,14 +143,14 @@ export default function Education() {
                 </h3>
                 <Expandable title="Relevant Courses" defaultOpen>
                   <CourseList courses={[
-                    "Engineering Technology (Gunn Robotics Team)", 
-                    "AP Physics C (Mechanics, Electricity and Magnetism)", 
-                    "Digital Electronics", 
-                    "AP Calculus BC", 
-                    "AP Chemistry", 
-                    "AAR (Advanced Authentic Research)", 
-                    "Principles of Engineering and Robotics Honors", 
-                    "AP Computer Science A", 
+                    { label: "Engineering Technology (Gunn Robotics Team)", url: "https://www.gunnrobotics.com/" },
+                    "AP Physics C (Mechanics, Electricity and Magnetism)",
+                    "Digital Electronics",
+                    "AP Calculus BC",
+                    "AP Chemistry",
+                    { label: "AAR (Advanced Authentic Research)", url: "https://aar.pausd.org/" },
+                    "Principles of Engineering and Robotics Honors",
+                    "AP Computer Science A",
                     "Introduction to Engineering  and Design Honors"
                   ]} />
                 </Expandable>
