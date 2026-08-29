@@ -53,15 +53,15 @@ function CourseList({ courses }) {
 }
 
 const certificates = [
-  "NAFTrack Certificate — Engineering (NAF, June 2025)",
-  "Certificate of Achievement — Research, Design, and Development for Global Good (Foothill College, June 2024)",
-  "Certificate of Achievement — Software Development in C++ (Foothill College, December 2023)",
-  "Certificate of Achievement — Software Development in Python (Foothill College, December 2023)",
-  "Certificate of Achievement — Advanced Software Development (Foothill College, March 2023)",
-  "Certificate of Achievement — Software Development in Java (Foothill College, March 2023)",
-  "Certified Onshape Associate — CAD (Onshape, May 2022)",
-  "NESA Lifetime Member (August 2023)",
-  "PADI Open Water Diver Certification (August 2019)",
+  { label: "NAFTrack Certificate — Engineering (NAF, June 2025)", url: "https://naf.org/our-academies/career-pathways/academy-of-engineering/" },
+  { label: "Certificate of Achievement — Research, Design, and Development for Global Good (Foothill College, June 2024)", url: "https://catalog.foothill.edu/degrees-certificates/learning-in-new-media-classrooms/#text" },
+  { label: "Certificate of Achievement — Software Development in C++ (Foothill College, December 2023)", url: "https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text" },
+  { label: "Certificate of Achievement — Software Development in Python (Foothill College, December 2023)", url: "https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text" },
+  { label: "Certificate of Achievement — Advanced Software Development (Foothill College, March 2023)", url: "https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text" },
+  { label: "Certificate of Achievement — Software Development in Java (Foothill College, March 2023)", url: "https://catalog.foothill.edu/degrees-certificates/computer-science/index.html#text" },
+  { label: "Certified Onshape Associate — CAD (Onshape, May 2022)", url: "https://learn.onshape.com/courses/certified-onshape-associate" },
+  { label: "NESA Lifetime Member (August 2023)" },
+  { label: "PADI Open Water Diver Certification (August 2019)" },
 ];
 
 export default function Education() {
@@ -170,11 +170,11 @@ export default function Education() {
                   Aug 2021 – May 2025
                 </p>
                 <p className="font-mono text-sm font-semibold text-primary">
-                  <a href="https://deanza.edu/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  <a href="https://deanza.edu/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground transition-colors">
                     De Anza College
                   </a>
                   {" & "}
-                  <a href="https://foothill.edu/index.html" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  <a href="https://foothill.edu/index.html" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground transition-colors">
                     Foothill College
                   </a>
                 </p>
@@ -225,7 +225,18 @@ export default function Education() {
             <ul className="space-y-3">
               {certificates.map((cert, i) => (
                 <li key={i} className="font-body text-base text-foreground/80 pl-4 border-l-2 border-primary/30" style={{ lineHeight: 1.6 }}>
-                  {cert}
+                  {cert.url ? (
+                    <a
+                      href={cert.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-2 hover:text-primary transition-colors"
+                    >
+                      {cert.label}
+                    </a>
+                  ) : (
+                    cert.label
+                  )}
                 </li>
               ))}
             </ul>
