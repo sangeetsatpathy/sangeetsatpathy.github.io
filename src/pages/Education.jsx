@@ -201,8 +201,8 @@ export default function Education() {
                 </Expandable>
                 <Expandable title="Foothill College (2021–2022)">
                   <CourseList courses={[
-                    "OOP in Java (CS 1A)", "OOP in Python (CS 3A)", "Intermediate Java (CS 1B)",
-                    "OOP in C++ (CS 2A)", "Intermediate Python (CS 3B)", "JavaScript for Programmers (CS 22A)",
+                    "Object-Oriented Programming in Java (CS 1A)", "Object-Oriented Programming in Python (CS 3A)", "Object-Oriented Programming in C++ (CS 2A)", "Intermediate Software Design in Java (CS 1B)",
+                    "Intermediate Software Design in Python (CS 3B)", "JavaScript for Programmers (CS 22A)",
                   ]} />
                 </Expandable>
               </div>
