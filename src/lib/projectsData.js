@@ -65,6 +65,37 @@ Skills demonstrated: low-level systems programming in C (no OS, direct hardware 
     ],
   },
   {
+    slug: "true-random-number-generator",
+    title: "Generating True Random Numbers",
+    category: "Stanford · CS109 · Bare-Metal",
+    year: "2026",
+    role: "Sole Developer",
+    tech: ["C", "Bare-Metal", "Interrupts", "Entropy", "SHA-256", "Hashing"],
+    image: "/images/cs109-rng.jpg",
+    imageAlt: "Fractal spirals with polyhedral dice, representing entropy and true randomness",
+    summary: "A true random number generator built on bare-metal hardware, harvesting entropy from keyboard timing jitter and distilling it with a custom SHA-256-inspired hash.",
+    description: `Computers are deterministic, so a standard random() call isn't actually random — it's the output of an algorithm like a Linear Congruential Generator or Linear Feedback Shift Register, both of which just cycle through a fixed, seedable sequence. This project started from that discomfort: if computers can't generate randomness from within, where does true randomness actually come from, and how would you build a system that harvests it?
+
+Built on the bare-metal interrupt handler library developed in CS107E, this program treats the sub-millisecond variation in keyboard interrupt timings as an entropy source, then distills that noisy signal into uniform random bits using a custom hash function modeled on SHA-256's core operations.`,
+    links: [
+      { label: "Code", url: "https://github.com/sangeetsatpathy/cs109-rng/tree/main" },
+      { label: "Demo Video", url: "https://www.youtube.com/watch?v=bGMgc3__Tus" },
+    ],
+    media: [],
+    sections: [
+      {
+        title: "How It Works",
+        content: `Most standard random functions aren't random at all — they're linear, deterministic patterns. An LCG repeatedly computes X_{i+1} = (aX_i + c) mod m from a starting seed, and an LFSR shifts a bit array while feeding new bits back in as a function (usually XOR) of the existing ones. Seeding a "random" function just means restarting that cycle from a known point — which is also exactly why these generators are unsafe for anything security-sensitive: enough observed outputs and the underlying pattern falls out.
+
+True randomness has to come from outside the machine. Systems typically draw on things like radioactive decay, atmospheric static, or an internal "entropy pool" fed by interrupt timings, user input, and network jitter. This project used the last of those: since CS107E had already produced a working interrupt-driven keyboard handler, the timing deltas between keystrokes became the entropy source. Typing speed itself isn't random — people type at a fairly steady pace — but the small variations between individual keystrokes are, so the entropy pool needed a large volume of samples to accumulate enough usable randomness.
+
+That raises the question of what "random" even means. A bitstring is random if it can't be compressed into a shorter description of itself (its Kolmogorov complexity), and entropy is a practical stand-in for that — a measure of how surprising or predictable a distribution is. Raw keyboard timing data has fairly low entropy on its own: typing has structure (common letter sequences, roughly constant pace), so it's compressible and needed to be distilled rather than used directly.
+
+That distillation used a custom hash function inspired by SHA-256's core building blocks — XOR, bit rotation, a majority function (whichever of 3 input bits appears twice wins), and a choice function (one bit selects between the other two). Those pieces are combined so every output bit ends up depending on every input bit, producing the "avalanche effect" where flipping a single input bit cascades into a completely different output. That's precisely what an entropy-maximizing function needs to do: spread inputs as uniformly as possible across the output space, turning a low-entropy, human-patterned signal into high-entropy, effectively random numbers. A good chunk of the implementation involved pressure-testing the hash design against an AI collaborator (Google Gemini) to find and patch weaknesses before arriving at the final algorithm.`,
+      },
+    ],
+  },
+  {
     slug: "neural-network-scratch",
     title: "Neural Network from Scratch",
     category: "Personal · Machine Learning · Python",
@@ -181,26 +212,6 @@ The ultimate goal was to contribute valuable insights into the feasibility and b
 Accepted and presented at the Foothill College Research & Service Leadership Symposium (RSLS) May 2024: "Automated Detection of Cars for the Visually Impaired to Cross Roads."`,
       },
     ],
-  },
-  {
-    slug: "true-random-number-generator",
-    title: "Generating True Random Numbers",
-    category: "Stanford · CS109 · Bare-Metal",
-    year: "2026",
-    role: "Sole Developer",
-    tech: ["C", "Bare-Metal", "Interrupts", "Entropy", "SHA-256", "Hashing"],
-    image: "/images/cs109-rng.jpg",
-    imageAlt: "Fractal spirals with polyhedral dice, representing entropy and true randomness",
-    summary: "A true random number generator built on bare-metal hardware, harvesting entropy from keyboard click timings and distilling it with a custom SHA-256-inspired hash.",
-    description: `Wrote a custom program to generate truly random numbers, using the bare-metal system developed from CS107E. An interrupt-driven keyboard system creates and manages an entropy pool dependent on keyboard click timings.
-
-Implemented a custom hashing function inspired by SHA-256 to distill the entropy pool and generate random numbers.`,
-    links: [
-      { label: "Code", url: "https://github.com/sangeetsatpathy/cs109-rng/tree/main" },
-      { label: "Demo Video", url: "https://www.youtube.com/watch?v=bGMgc3__Tus" },
-    ],
-    media: [],
-    sections: [],
   },
 ];
 
