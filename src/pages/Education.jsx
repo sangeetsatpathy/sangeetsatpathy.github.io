@@ -102,7 +102,8 @@ export default function Education() {
                  <Expandable title="Planned Courses 2026–2027" defaultOpen>
                   <CourseList courses={[
                     { label: "EE102A (Signals and Systems I)", url: "https://explorecourses.stanford.edu/search?q=EE102A" },
-                    { label: "EE108 (Digital System Design)", url: "https://explorecourses.stanford.edu/search?q=EE108" },
+                    { label: "CS248B (Computer Graphics: Animation and Simulation)", url: "https://stanford-cs248b.github.io/autumn25/" },
+                    { label: "CS137A (Robot Autonomy)", url: "https://stanfordasl.github.io/PoRA-I/aa174a_aut2526/" },
                     { label: "EE278 (Probability and Statistical Inference)", url: "https://web.stanford.edu/class/ee278/" },
                     { label: "EE65 (Modern Physics for Engineers)", url: "https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog&q=physics+65" },
                     { label: "CS161 (Design and Analysis of Algorithms)", url: "https://cs161-stanford.github.io/" },

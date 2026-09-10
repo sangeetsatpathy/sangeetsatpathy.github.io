@@ -182,6 +182,26 @@ Accepted and presented at the Foothill College Research & Service Leadership Sym
       },
     ],
   },
+  {
+    slug: "true-random-number-generator",
+    title: "Generating True Random Numbers",
+    category: "Stanford · CS109 · Bare-Metal",
+    year: "2026",
+    role: "Sole Developer",
+    tech: ["C", "Bare-Metal", "Interrupts", "Entropy", "SHA-256", "Hashing"],
+    image: "/images/cs109-rng.jpg",
+    imageAlt: "Fractal spirals with polyhedral dice, representing entropy and true randomness",
+    summary: "A true random number generator built on bare-metal hardware, harvesting entropy from keyboard click timings and distilling it with a custom SHA-256-inspired hash.",
+    description: `Wrote a custom program to generate truly random numbers, using the bare-metal system developed from CS107E. An interrupt-driven keyboard system creates and manages an entropy pool dependent on keyboard click timings.
+
+Implemented a custom hashing function inspired by SHA-256 to distill the entropy pool and generate random numbers.`,
+    links: [
+      { label: "Code", url: "https://github.com/sangeetsatpathy/cs109-rng/tree/main" },
+      { label: "Demo Video", url: "https://www.youtube.com/watch?v=bGMgc3__Tus" },
+    ],
+    media: [],
+    sections: [],
+  },
 ];
 
 export function getProjectBySlug(/** @type {string} */ slug) {
