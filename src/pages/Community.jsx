@@ -7,6 +7,7 @@ import GraceGlow from "../components/GraceGlow";
 const categories = [
   {
     name: "Founded & Led",
+    summary: "Organizations built from scratch and run end-to-end — a STEM education nonprofit and an inclusive high school sports club.",
     entries: [
       {
         title: "STEMStart! — Founder & President",
@@ -26,6 +27,7 @@ const categories = [
   },
   {
     name: "Civic & Representation",
+    summary: "Youth representation in official governance — a seat on a BSA regional council board and two school-district committees.",
     entries: [
       {
         title: "Sole Youth Executive Board Member",
@@ -45,6 +47,7 @@ const categories = [
   },
   {
     name: "Scouting",
+    summary: "Scouts BSA program (March 2018 – April 2025): Eagle Scout and 4 Eagle Palms, July 2023 (Grade 11).",
     entries: [
       {
         title: "Eagle Scout & 4 Eagle Palms",
@@ -78,6 +81,7 @@ const categories = [
   },
   {
     name: "Service",
+    summary: "Sustained volunteer work recognized through AmeriCorps' Presidential Volunteer Service Award, earned four years running.",
     entries: [
       {
         title: "Presidential Volunteer Service Award — Gold (×4)",
@@ -113,9 +117,12 @@ export default function Community() {
           <div>
             {categories.map((cat, ci) => (
               <div key={ci}>
-                <div className="border-t border-border/30 pt-10 pb-2">
-                  <p className="font-mono text-sm font-semibold tracking-[0.4em] uppercase text-primary/80">
+                <div className="border-t border-border/30 pt-10 pb-6">
+                  <h2 className="font-display text-2xl md:text-3xl tracking-[0.05em] uppercase text-foreground mb-2">
                     {cat.name}
+                  </h2>
+                  <p className="font-body text-base text-foreground/55 max-w-2xl" style={{ lineHeight: 1.6 }}>
+                    {cat.summary}
                   </p>
                 </div>
                 {cat.entries.map((entry, i) => (
