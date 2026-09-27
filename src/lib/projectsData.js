@@ -65,32 +65,6 @@ Skills demonstrated: low-level systems programming in C (no OS, direct hardware 
     ],
   },
   {
-    slug: "embedded-clock-circuit",
-    title: "Embedded Clock Circuit",
-    category: "Stanford · CS107E · Bare-Metal",
-    year: "2025",
-    role: "Sole Developer",
-    tech: ["C", "Bare-Metal", "GPIO", "7-Segment Display", "Multiplexing", "Breadboarding"],
-    image: "/images/embedded-clock.jpg",
-    imageAlt: "Breadboard circuit with a glowing red four-digit seven-segment display and a five-way navigation button",
-    summary: "A breadboarded clock and countdown timer driving a four-digit seven-segment display, set and controlled with a 5-directional button.",
-    description: `An embedded clock circuit built on a breadboard, driving a four-digit seven-segment display. The user sets the time with a 5-directional navigation button, then the circuit counts down from that value.
-
-The display is wired up with transistors and current-limiting resistors, and the software controls every segment and digit directly from GPIO.`,
-    links: [
-      { label: "Demo Video", url: "https://www.youtube.com/watch?v=otiWG88plEk" },
-    ],
-    media: [],
-    sections: [
-      {
-        title: "How It Works",
-        content: `The four digits of the seven-segment display share their segment lines, so only one digit can be lit at a time. Each digit's common pin is switched through a transistor, and the program cycles through the digits fast enough that persistence of vision makes all four look lit at once.
-
-The 5-directional button is the only input. The directional presses move between digits and change their values while setting the clock, and the center press starts the countdown. Once it's running, the program decrements the time and keeps refreshing the display until it reaches zero.`,
-      },
-    ],
-  },
-  {
     slug: "true-random-number-generator",
     title: "Generating True Random Numbers",
     category: "Stanford · CS109 · Bare-Metal",
@@ -118,6 +92,32 @@ True randomness has to come from outside the machine. Systems typically draw on 
 That raises the question of what "random" even means. A bitstring is random if it can't be compressed into a shorter description of itself (its Kolmogorov complexity), and entropy is a practical stand-in for that — a measure of how surprising or predictable a distribution is. Raw keyboard timing data has fairly low entropy on its own: typing has structure (common letter sequences, roughly constant pace), so it's compressible and needed to be distilled rather than used directly.
 
 That distillation used a custom hash function inspired by SHA-256's core building blocks — XOR, bit rotation, a majority function (whichever of 3 input bits appears twice wins), and a choice function (one bit selects between the other two). Those pieces are combined so every output bit ends up depending on every input bit, producing the "avalanche effect" where flipping a single input bit cascades into a completely different output. That's precisely what an entropy-maximizing function needs to do: spread inputs as uniformly as possible across the output space, turning a low-entropy, human-patterned signal into high-entropy, effectively random numbers. A good chunk of the implementation involved pressure-testing the hash design against an AI collaborator (Google Gemini) to find and patch weaknesses before arriving at the final algorithm.`,
+      },
+    ],
+  },
+  {
+    slug: "embedded-clock-circuit",
+    title: "Embedded Clock Circuit",
+    category: "Stanford · CS107E · Bare-Metal",
+    year: "2025",
+    role: "Sole Developer",
+    tech: ["C", "Bare-Metal", "GPIO", "7-Segment Display", "Multiplexing", "Breadboarding"],
+    image: "/images/embedded-clock.jpg",
+    imageAlt: "Breadboard circuit with a glowing red four-digit seven-segment display and a five-way navigation button",
+    summary: "A breadboarded clock and countdown timer driving a four-digit seven-segment display, set and controlled with a 5-directional button.",
+    description: `An embedded clock circuit built on a breadboard, driving a four-digit seven-segment display. The user sets the time with a 5-directional navigation button, then the circuit counts down from that value.
+
+The display is wired up with transistors and current-limiting resistors, and the software controls every segment and digit directly from GPIO.`,
+    links: [
+      { label: "Demo Video", url: "https://www.youtube.com/watch?v=otiWG88plEk" },
+    ],
+    media: [],
+    sections: [
+      {
+        title: "How It Works",
+        content: `The four digits of the seven-segment display share their segment lines, so only one digit can be lit at a time. Each digit's common pin is switched through a transistor, and the program cycles through the digits fast enough that persistence of vision makes all four look lit at once.
+
+The 5-directional button is the only input. The directional presses move between digits and change their values while setting the clock, and the center press starts the countdown. Once it's running, the program decrements the time and keeps refreshing the display until it reaches zero.`,
       },
     ],
   },
