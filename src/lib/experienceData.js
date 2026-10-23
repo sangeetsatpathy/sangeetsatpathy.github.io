@@ -4,6 +4,7 @@ export const experiences = [
   {
     title: "Researcher",
     org: "Stanford Information Systems Laboratory",
+    logo: "/images/stanford_ee.jpeg",
     heroLabel: "Researcher @ Stanford ISL",
     period: "October 2026 – Present",
     description: "Working on Reinforcement Learning for Robotics, Exploration, and Robot Simulations under Sanjay Lall's Group.",
