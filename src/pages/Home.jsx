@@ -12,9 +12,10 @@ import { ArrowDown } from "lucide-react";
 
 const HERO_IMG = "/images/stanford-img.png";
 
+// Current roles, plus past roles given a heroLabel (e.g. "Prev @ Apple")
 const currentRoles = experiences
-  .filter(e => isCurrentRole(e.period))
-  .map(e => `${e.title} @ ${e.org}`);
+  .filter(e => isCurrentRole(e.period) || e.heroLabel)
+  .map(e => e.heroLabel || `${e.title} @ ${e.org}`);
 
 export default function Home() {
   const { scrollY } = useScroll();

@@ -2,9 +2,20 @@ export const GH = "https://github.com/sangeetsatpathy/sangeetsatpathy.github.io/
 
 export const experiences = [
   {
+    title: "Researcher",
+    org: "Stanford Information Systems Laboratory",
+    heroLabel: "Researcher @ Stanford ISL",
+    period: "October 2026 – Present",
+    description: "Working on Reinforcement Learning for Robotics, Exploration, and Robot Simulations under Sanjay Lall's Group.",
+    details: `Working on Reinforcement Learning for Robotics, Exploration, and Robot Simulations under Sanjay Lall's Group at the Stanford Information Systems Laboratory (ISL).`,
+    media: [],
+    sections: [],
+  },
+  {
     title: "Software Engineering Intern (Summer 2026)",
     org: "Apple",
     logo: "/images/apple.jpg",
+    heroLabel: "Prev @ Apple",
     period: "June 2026 – September 2026",
     description: "Working in the Apple Ads team. Developing high throughput, low latency internal sales analytics system.",
     details: `Working within Apple's Ads reporting services team, contributing to a high-throughput, low-latency internal sales analytics system used to analyze large volumes of ingested advertising data.
@@ -19,9 +30,9 @@ The system is designed for performance at scale — processing real-time data st
     title: "Undergraduate Researcher",
     org: "Stanford CHARM Lab",
     logo: "/images/charm.jpg",
-    period: "January 2026 – Present",
+    period: "January 2026 – August 2026",
     description: "Designed surgical training taskpads, trained YOLO object detection models for surgical cylinder identification, engineered drop-detection systems, and developed metrics pipelines for teleoperation analysis under Dr. Allison Okamura. This research has been accepted for presentation at IROS 2026.",
-    details: `Working under PhD Student Mary Kate Gale and visiting Master's student Shujiro Shobayashi in the lab of Dr. Allison Okamura at Stanford's CHARM Lab. This research has been accepted for presentation at IROS 2026.
+    details: `Worked under PhD Student Mary Kate Gale and visiting Master's student Shujiro Shobayashi in the lab of Dr. Allison Okamura at Stanford's CHARM Lab. This research has been accepted for presentation at IROS 2026.
 
 Designed and built a surgical training taskpad from scratch — including conductive-paint peg detection, LED feedback circuitry, and Arduino firmware to emit lift/place signals for downstream analysis.
 
@@ -44,10 +55,12 @@ Engineered a drop-detection system using bounding-box velocity analysis, and pro
     org: "Stanford Student Space Initiative",
     logo: "/images/ssi.png",
     period: "September 2025 – Present",
-    description: "Developing flight software for SAMWISE, an imaging CubeSat demonstrating next-generation small-satellite capabilities including deployable solar power, precision attitude sensing, and high-rate communications.",
-    details: `Developing flight software for SAMWISE, an imaging CubeSat built to demonstrate next-generation small-satellite capabilities. The mission integrates deployable solar power, precision attitude sensing, and high-rate communications into a compact platform. My work contributes to the core software that coordinates and manages these systems.
+    description: "Developing flight software for SAMWISE, an imaging CubeSat demonstrating star-tracking and enhanced attitude control. Contributed to an over-the-air (OTA) update system enabling in-orbit software deployment via radio, with automatic rollback to a safe version on failure.",
+    details: `Developing flight software for SAMWISE, an imaging CubeSat built to demonstrate next-generation small-satellite capabilities, including star-tracking and enhanced attitude control. The mission integrates deployable solar power, precision attitude sensing, and high-rate communications into a compact platform. My work contributes to the core software that coordinates and manages these systems.
 
-Task example: added a lightweight heartbeat-check mechanism for the Payload Raspberry Pi to improve subsystem robustness, allowing the spacecraft to detect an unresponsive payload and attempt automatic recovery.
+Contributed to an over-the-air (OTA) update system that enables in-orbit software deployment via radio. The system covers file transfer over the radio link, partitioned onboard storage, a controlled boot into the updated firmware, and automatic rollback to a safe version in the event of software failure, so a bad update can't strand the satellite.
+
+Another task: added a lightweight heartbeat-check mechanism for the Payload Raspberry Pi to improve subsystem robustness, allowing the spacecraft to detect an unresponsive payload and attempt automatic recovery.
 
 Working across the flight-software stack, including power management, subsystem coordination, and command-handling logic. The system is designed for autonomous operation, with safeguards to ensure stable imaging and communication throughout the mission. SAMWISE ultimately serves as a technology demonstrator showing how small satellites can execute sophisticated, multi-subsystem missions in low-Earth orbit.`,
     media: [],

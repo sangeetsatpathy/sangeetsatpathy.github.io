@@ -1,5 +1,26 @@
 export const projects = [
   {
+    slug: "physics-based-simulation",
+    title: "Physics-Based Simulation Projects",
+    category: "Stanford · CS248B · Simulation",
+    year: "2026",
+    role: "Sole Developer",
+    tech: ["JavaScript", "Raymarching", "Collision Detection", "Spring Forces", "Particle Fluids"],
+    image: "/images/physics-sim.jpg",
+    imageAlt: "Space-themed pinball game with flippers, asteroid obstacles, and a ring of green bumpers",
+    summary: "Physics simulation algorithms implemented from scratch in JavaScript, from pinball collisions to deformable models and particle-based fluids.",
+    description: `A series of physics-based simulation projects for Stanford's CS248B (Computer Graphics: Animation and Simulation), with every simulation algorithm implemented from scratch in JavaScript.
+
+Examples include raymarching variants for ball-to-ball and ball-to-obstacle collisions in a pinball game, spring forces for deformable model simulations, and particle-based fluids.`,
+    links: [
+      { label: "Course Page", url: "https://stanford-cs248b.github.io/autumn25/" },
+    ],
+    media: [
+      { type: "video", src: "/videos/ball_to_ball_collisions.mp4", alt: "Pinball ball-to-ball collisions" },
+    ],
+    sections: [],
+  },
+  {
     slug: "task-agnostic-macpro",
     title: "Task-Agnostic MACPro",
     category: "Stanford · CS229 · Machine Learning",
